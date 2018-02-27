@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112217471397513
+                    [ferpbillno] => 036.2017112217471397513
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-23 10:49:05
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 吴友朋
+                    [fc_province] => 340000
+                    [fc_provincename] => 安徽省
+                    [fc_city] => 340800
+                    [fc_cityname] => 安庆市
+                    [fc_area] => 340826
+                    [fc_areaname] => 宿松县
+                    [fnotes] => 安徽省安庆市宿松县龙门南路23号
+                    [fc_zip] => 246500
+                    [fc_contact1] => 吴友朋
+                    [fc_phone] => 13955617099
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 900.00
+                    [fhwab] => 95.71
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091003703
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 150.00
+                                    [famount] => 900.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

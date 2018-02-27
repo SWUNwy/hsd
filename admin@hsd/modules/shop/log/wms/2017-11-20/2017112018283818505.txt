@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112018283818505
+                    [ferpbillno] => 036.2017112018283818505
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-20 19:17:06
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 陈浩
+                    [fc_province] => 510000
+                    [fc_provincename] => 四川省
+                    [fc_city] => 511800
+                    [fc_cityname] => 雅安市
+                    [fc_area] => 511825
+                    [fc_areaname] => 天全县
+                    [fnotes] => 四川省雅安市天全县建材北路17号
+                    [fc_zip] => 625500
+                    [fc_contact1] => 陈浩
+                    [fc_phone] => 18095091771
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 150.00
+                    [fhwab] => 15.95
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091002002
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 150.00
+                                    [famount] => 150.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

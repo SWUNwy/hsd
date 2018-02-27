@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 9000000000065374
+                    [ferpbillno] => 036.9000000000065374
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-22 11:51:00
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 郑惠娜
+                    [fc_province] => 350000
+                    [fc_provincename] => 福建省
+                    [fc_city] => 350200
+                    [fc_cityname] => 厦门市
+                    [fc_area] => 350211
+                    [fc_areaname] => 集美区
+                    [fnotes] => 福建省厦门市集美区厦门市集美区同集南路68号国贸商城美岁天地L310-L312
+                    [fc_zip] => 361021
+                    [fc_contact1] => 郑惠娜
+                    [fc_phone] => 13338367718
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 300.00
+                    [fhwab] => 31.90
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091002002
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 150.00
+                                    [famount] => 300.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

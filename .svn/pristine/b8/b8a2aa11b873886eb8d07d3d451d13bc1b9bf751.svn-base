@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><DTC_Message>
+		<MessageHead>
+		<MessageType>ORDER_INFO</MessageType>
+		<MessageId>62d7b9bc-6730-e7ae-867b-abb7bcda2976</MessageId>
+		<ActionType>1</ActionType>
+		<MessageTime>2017-11-14 14:02:26</MessageTime>
+		<SenderId>5012260547</SenderId>
+		<ReceiverId>CQITC</ReceiverId>
+		<SenderAddress />
+	    <ReceiverAddress />
+	    <PlatFormNo />
+	    <CustomCode />
+	    <SeqNo />
+	    <Note />
+		<UserNo>5012260547</UserNo>
+		<Password>caa3b905704826f89b803176dcc7bd3b</Password>
+		</MessageHead><MessageBody>
+				 <DTCFlow>
+				  <ORDER_HEAD>
+				    <CUSTOMS_CODE>8013</CUSTOMS_CODE>
+				    <SORTLINE_ID>SORTLINE02</SORTLINE_ID>
+				    <BIZ_TYPE_CODE>I20</BIZ_TYPE_CODE>
+				    <ORIGINAL_ORDER_NO>9000000000000101</ORIGINAL_ORDER_NO>
+				    <ESHOP_ENT_CODE>5012260547</ESHOP_ENT_CODE>
+				    <ESHOP_ENT_NAME>重庆倍赞电子商务有限公司</ESHOP_ENT_NAME>
+				    <DESP_ARRI_COUNTRY_CODE>142</DESP_ARRI_COUNTRY_CODE>
+				    <SHIP_TOOL_CODE>Y</SHIP_TOOL_CODE>
+				    <RECEIVER_ID_NO>500106198602027711</RECEIVER_ID_NO>
+				    <RECEIVER_NAME>张三</RECEIVER_NAME>
+				    <RECEIVER_ADDRESS>天津天津市和平区测试地址我不知道</RECEIVER_ADDRESS>
+				    <RECEIVER_TEL>13648363357</RECEIVER_TEL>
+				    <GOODS_FEE>281.5</GOODS_FEE>
+				    <TAX_FEE>33.50</TAX_FEE>
+				    <GROSS_WEIGHT>0.8</GROSS_WEIGHT>
+				    <PROXY_ENT_CODE/>
+				    <PROXY_ENT_NAME/>
+				    <TRANSPORT_FEE>0</TRANSPORT_FEE>
+					<CHECK_TYPE>P</CHECK_TYPE>
+			        <CC_TRADE_CODE>500666001T</CC_TRADE_CODE>
+			        <CC_TRADE_NAME>重庆丝路广序国际物流有限公司</CC_TRADE_NAME>
+				    <UNI_ESHOP_ENT_CODE/>
+				    <UNI_ESHOP_ENT_NAME/>
+				    <EBP_CODE>5012260547</EBP_CODE>
+        			<EBP_NAME>重庆倍赞电子商务有限公司</EBP_NAME>
+        			<ASSURE_CODE>5012260547</ASSURE_CODE>
+        			<SEND_ENT_CODE>5012260547</SEND_ENT_CODE>
+				    <BUYER_REG_NO>13648363357</BUYER_REG_NO>
+				    <BUYER_NAME>张三</BUYER_NAME>
+					<BUYER_ID_TYPE>1</BUYER_ID_TYPE>
+					<BUYER_ID>500106198602027711</BUYER_ID>
+					<DISCOUNT>0</DISCOUNT>
+					<ACTUAL_PAID>315.00</ACTUAL_PAID>
+					<INSURED_FEE>0</INSURED_FEE>
+					
+				  <ORDER_DETAIL>
+				      <SKU>4062300001503</SKU>
+				      <GOODS_SPEC>奶粉，热量70千卡/蛋白质1.5g/碳水化合物8.1g/脂肪3.5g/纤维素 0.1g/矿物质270.5mg，供婴幼儿食用，800g/盒，Hipp</GOODS_SPEC>
+				      <GOODS_NAME>德国喜宝HippBIO3段奶粉800g</GOODS_NAME>
+				      <HS_CODE>1901101000</HS_CODE>
+				      <CURRENCY_CODE>142</CURRENCY_CODE>
+				      <PRICE>93.83</PRICE>
+				      <QTY>3</QTY>
+				      <GOODS_FEE>281.5</GOODS_FEE>
+				      <TAX_FEE>33.50</TAX_FEE>
+				      <COUNTRY>304</COUNTRY>
+				      <UNIT_CODE>140</UNIT_CODE>
+          			  <NOTE></NOTE>
+				      <G_NUM>1</G_NUM>
+				      <QTY2></QTY2>
+				      <UNIT2></UNIT2>
+			      </ORDER_DETAIL>
+			      </ORDER_HEAD>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>

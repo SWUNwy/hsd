@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 9000000000065071
+                    [ferpbillno] => 036.9000000000065071
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-22 11:50:54
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 周世靖
+                    [fc_province] => 440000
+                    [fc_provincename] => 广东省
+                    [fc_city] => 440100
+                    [fc_cityname] => 广州市
+                    [fc_area] => 440105
+                    [fc_areaname] => 海珠区
+                    [fnotes] => 广东省广州市海珠区江燕路南珠南街2-20号
+                    [fc_zip] => 510300
+                    [fc_contact1] => 周世靖
+                    [fc_phone] => 15766789682
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 900.00
+                    [fhwab] => 95.71
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091002002
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 150.00
+                                    [famount] => 900.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

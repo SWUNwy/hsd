@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 9000000000059819
+                    [ferpbillno] => 036.9000000000059819
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-22 11:42:32
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 廖梅丽
+                    [fc_province] => 350000
+                    [fc_provincename] => 福建省
+                    [fc_city] => 350500
+                    [fc_cityname] => 泉州市
+                    [fc_area] => 350524
+                    [fc_areaname] => 安溪县
+                    [fnotes] => 福建省泉州市安溪县湖头镇中山街依美缘康馨
+                    [fc_zip] => 362400
+                    [fc_contact1] => 廖梅丽
+                    [fc_phone] => 13959733012
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 900.00
+                    [fhwab] => 95.71
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091003703
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 150.00
+                                    [famount] => 900.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

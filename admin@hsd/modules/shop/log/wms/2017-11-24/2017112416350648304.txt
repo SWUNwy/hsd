@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112416350648304
+                    [ferpbillno] => 036.2017112416350648304
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-24 17:50:07
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 黄业松
+                    [fc_province] => 440000
+                    [fc_provincename] => 广东
+                    [fc_city] => 440700
+                    [fc_cityname] => 江门市
+                    [fc_area] => 440703
+                    [fc_areaname] => 蓬江区
+                    [fnotes] => 广东江门市蓬江区白石大道166号三楼3F028
+                    [fc_zip] => 529000
+                    [fc_contact1] => 黄业松
+                    [fc_phone] => 18824088240
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 376.00
+                    [fhwab] => 39.99
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042292300
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 188.00
+                                    [famount] => 376.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

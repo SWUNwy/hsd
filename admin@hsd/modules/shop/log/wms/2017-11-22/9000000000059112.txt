@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 9000000000059112
+                    [ferpbillno] => 036.9000000000059112
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-22 11:42:17
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 陈斌
+                    [fc_province] => 440000
+                    [fc_provincename] => 广东省
+                    [fc_city] => 440100
+                    [fc_cityname] => 广州市
+                    [fc_area] => 440113
+                    [fc_areaname] => 番禺区
+                    [fnotes] => 广东省广州市番禺区富怡路23号云山诗意
+                    [fc_zip] => 511400
+                    [fc_contact1] => 陈斌
+                    [fc_phone] => 18922128696
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 450.00
+                    [fhwab] => 47.86
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091002002
+                                    [funit] => 个
+                                    [fqty] => 3
+                                    [fprice] => 150.00
+                                    [famount] => 450.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

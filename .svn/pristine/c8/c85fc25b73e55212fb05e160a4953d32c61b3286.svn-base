@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112317142280251
+                    [ferpbillno] => 036.2017112317142280251
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-23 18:18:42
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 欧阳锦花
+                    [fc_province] => 440000
+                    [fc_provincename] => 广东省
+                    [fc_city] => 440600
+                    [fc_cityname] => 佛山市
+                    [fc_area] => 440605
+                    [fc_areaname] => 南海区
+                    [fnotes] => 广东省佛山市南海区狮山镇小塘三环路上林苑升平百货一楼
+                    [fc_zip] => 528251
+                    [fc_contact1] => 欧阳锦花
+                    [fc_phone] => 18025973718
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 600.00
+                    [fhwab] => 63.81
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091003703
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 150.00
+                                    [famount] => 600.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017111716253315236
+                    [ferpbillno] => 036.2017111716253315236
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-20 14:23:17
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 熊恋
+                    [fc_province] => 430000
+                    [fc_provincename] => 湖南省
+                    [fc_city] => 430100
+                    [fc_cityname] => 长沙市
+                    [fc_area] => 430103
+                    [fc_areaname] => 天心区
+                    [fnotes] => 湖南省长沙市天心区长沙理工大学金盆岭校区南苑二栋
+                    [fc_zip] => 410004
+                    [fc_contact1] => 熊恋
+                    [fc_phone] => 13739074076
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 1200.00
+                    [fhwab] => 127.61
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091109605
+                                    [funit] => 个
+                                    [fqty] => 8
+                                    [fprice] => 150.00
+                                    [famount] => 1200.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

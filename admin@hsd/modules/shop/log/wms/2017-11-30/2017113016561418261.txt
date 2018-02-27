@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017113016561418261
+                    [ferpbillno] => 036.2017113016561418261
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-30 18:03:01
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 袁国军
+                    [fc_province] => 430000
+                    [fc_provincename] => 湖南
+                    [fc_city] => 430100
+                    [fc_cityname] => 长沙市
+                    [fc_area] => 430124
+                    [fc_areaname] => 宁乡县
+                    [fnotes] => 湖南长沙市宁乡县楚沩西路41号宁乡县交警大队
+                    [fc_zip] => 410600
+                    [fc_contact1] => 袁国军
+                    [fc_phone] => 18900759990
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 1434.00
+                    [fhwab] => 152.50
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042291602
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 239.00
+                                    [famount] => 1434.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

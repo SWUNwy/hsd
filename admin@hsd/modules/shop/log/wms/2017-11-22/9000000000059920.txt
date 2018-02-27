@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 9000000000059920
+                    [ferpbillno] => 036.9000000000059920
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-22 11:42:40
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 熊丽
+                    [fc_province] => 430000
+                    [fc_provincename] => 湖南省
+                    [fc_city] => 430500
+                    [fc_cityname] => 邵阳市
+                    [fc_area] => 430528
+                    [fc_areaname] => 新宁县
+                    [fnotes] => 湖南省邵阳市新宁县高桥镇黄甲山宏春实木楼梯扶手
+                    [fc_zip] => 422700
+                    [fc_contact1] => 熊丽
+                    [fc_phone] => 18890450907
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 450.00
+                    [fhwab] => 47.86
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091003703
+                                    [funit] => 个
+                                    [fqty] => 3
+                                    [fprice] => 150.00
+                                    [famount] => 450.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

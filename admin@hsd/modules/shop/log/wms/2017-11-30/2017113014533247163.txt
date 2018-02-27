@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017113014533247163
+                    [ferpbillno] => 036.2017113014533247163
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-30 14:59:21
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 宋彦
+                    [fc_province] => 510000
+                    [fc_provincename] => 四川省
+                    [fc_city] => 510100
+                    [fc_cityname] => 成都市
+                    [fc_area] => 510112
+                    [fc_areaname] => 龙泉驿区
+                    [fnotes] => 四川省成都市龙泉驿区大面街道天鹅西湖南路6号世茂城一期6栋2单元701
+                    [fc_zip] => 610100
+                    [fc_contact1] => 宋彦
+                    [fc_phone] => 18908090548
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 416.00
+                    [fhwab] => 44.24
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042231205
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 104.00
+                                    [famount] => 416.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

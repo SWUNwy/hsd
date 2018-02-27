@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017113016561425429
+                    [ferpbillno] => 036.2017113016561425429
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-30 18:02:02
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 梁雪媚
+                    [fc_province] => 440000
+                    [fc_provincename] => 广东省
+                    [fc_city] => 440100
+                    [fc_cityname] => 广州市
+                    [fc_area] => 440103
+                    [fc_areaname] => 荔湾区
+                    [fnotes] => 广东省广州市荔湾区南源街道南岸路电业新村村中2号102
+                    [fc_zip] => 510170
+                    [fc_contact1] => 梁雪媚
+                    [fc_phone] => 13631497437
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 150.00
+                    [fhwab] => 15.95
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091003703
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 150.00
+                                    [famount] => 150.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

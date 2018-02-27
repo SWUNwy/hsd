@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112018283795981
+                    [ferpbillno] => 036.2017112018283795981
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-20 21:00:38
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 刘素红
+                    [fc_province] => 430000
+                    [fc_provincename] => 湖南省
+                    [fc_city] => 430100
+                    [fc_cityname] => 长沙市
+                    [fc_area] => 430111
+                    [fc_areaname] => 雨花区
+                    [fnotes] => 湖南省长沙市雨花区湖南省长沙市雨花区汇金路七里香榭5栋一单元
+                    [fc_zip] => 410011
+                    [fc_contact1] => 刘素红
+                    [fc_phone] => 15575959510
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 780.00
+                    [fhwab] => 82.95
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 130.00
+                                    [famount] => 780.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112018283765636
+                    [ferpbillno] => 036.2017112018283765636
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-20 21:13:32
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 张平
+                    [fc_province] => 430000
+                    [fc_provincename] => 湖南省
+                    [fc_city] => 431000
+                    [fc_cityname] => 郴州市
+                    [fc_area] => 431002
+                    [fc_areaname] => 北湖区
+                    [fnotes] => 湖南省郴州市北湖区郴州市人民西路新星楼
+                    [fc_zip] => 423000
+                    [fc_contact1] => 张平
+                    [fc_phone] => 18173562966
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 300.00
+                    [fhwab] => 31.90
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091003703
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 150.00
+                                    [famount] => 300.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

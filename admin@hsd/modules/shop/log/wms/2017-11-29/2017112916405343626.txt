@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112916405343626
+                    [ferpbillno] => 036.2017112916405343626
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-29 17:35:39
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 田梦
+                    [fc_province] => 370000
+                    [fc_provincename] => 山东省
+                    [fc_city] => 371300
+                    [fc_cityname] => 临沂市
+                    [fc_area] => 371323
+                    [fc_areaname] => 沂水县
+                    [fnotes] => 山东省临沂市沂水县双城路翰林华府南伊亲公司
+                    [fc_zip] => 276400
+                    [fc_contact1] => 田梦
+                    [fc_phone] => 15263963922
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 1040.00
+                    [fhwab] => 110.60
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 8
+                                    [fprice] => 130.00
+                                    [famount] => 1040.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

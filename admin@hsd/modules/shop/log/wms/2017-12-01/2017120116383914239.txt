@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017120116383914239
+                    [ferpbillno] => 036.2017120116383914239
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-12-01 17:48:59
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 姜楠
+                    [fc_province] => 350000
+                    [fc_provincename] => 湖南
+                    [fc_city] => 350800
+                    [fc_cityname] => 张家界市
+                    [fc_area] => 350822
+                    [fc_areaname] => 永定区
+                    [fnotes] => 湖南张家界市永定区文昌阁工商银行上面千仞岗旁边19号
+                    [fc_zip] => 364100
+                    [fc_contact1] => 姜楠
+                    [fc_phone] => 15074456262
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 1434.00
+                    [fhwab] => 152.50
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042291602
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 239.00
+                                    [famount] => 1434.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

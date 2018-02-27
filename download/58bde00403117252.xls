@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:x="urn:schemas-microsoft-com:office:excel"
+	xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:html="http://www.w3.org/TR/REC-html40">
+<Styles>
+<Style ss:ID="Default" ss:Name="Normal">
+			   <Alignment ss:Vertical="Center"/>
+			   <Borders/>
+			   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+			   <Interior/>
+			   <NumberFormat/>
+			   <Protection/>
+			  </Style>
+<Style ss:ID="s_title"><Font  ss:FontName="宋体" ss:Size="12" ss:Bold="1"/></Style>
+</Styles>
+<Worksheet ss:Name="错误订单">
+<Table ss:DefaultRowHeight="20">
+<Column ss:Index="1" ss:AutoFitWidth="0"/>
+<Row>
+<Cell  ><Data ss:Type="String">商品总数</Data></Cell>
+<Cell  ><Data ss:Type="String">订单号</Data></Cell>
+<Cell  ><Data ss:Type="String">收货电话</Data></Cell>
+<Cell  ><Data ss:Type="String">收货地址</Data></Cell>
+<Cell  ><Data ss:Type="String">商品编号</Data></Cell>
+<Cell  ><Data ss:Type="String">顾客姓名</Data></Cell>
+<Cell  ><Data ss:Type="String">顾客身份证号</Data></Cell>
+<Cell  ><Data ss:Type="String">失败原因</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">2</Data></Cell>
+<Cell  ><Data ss:Type="String">950644642241186</Data></Cell>
+<Cell  ><Data ss:Type="String">13648363321</Data></Cell>
+<Cell  ><Data ss:Type="String">安徽省，芜湖市，镜湖区，赭麓公共服务中心赭山中路1-6号寒亭制冷有限公司</Data></Cell>
+<Cell  ><Data ss:Type="String">8712400110136</Data></Cell>
+<Cell  ><Data ss:Type="String">张三</Data></Cell>
+<Cell  ><Data ss:Type="String">340504198903071000</Data></Cell>
+<Cell  ><Data ss:Type="String">没有找到相关商品</Data></Cell>
+</Row>
+</Table>
+</Worksheet>
+</Workbook>

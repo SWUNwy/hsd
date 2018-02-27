@@ -1,0 +1,12 @@
+[2017-12-11 15:10:08] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'order_remark' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,order_remark) VALUES ('2017121115100881114','test000','490566320208485006','3','倍赞店铺','6','5454454564564','admin@qq.com','1512976208','online','10','134.28','0','14.28','120','99','500106198602027000','-1',NULL)
+[2017-12-11 15:10:20] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'order_remark' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,order_remark) VALUES ('2017121115102031591','test000','390566320219998006','3','倍赞店铺','6','5454454564564','admin@qq.com','1512976219','online','10','134.28','0','14.28','120','99','500106198602027000','-1',NULL)
+[2017-12-11 15:12:17] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'order_remark' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,order_remark) VALUES ('2017121115121743307','test000','130566320337177006','3','倍赞店铺','6','5454454564564','admin@qq.com','1512976336','online','10','134.28','0','14.28','120','99','500106198602027000','-1',NULL)
+[2017-12-11 15:47:47] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'order_remark' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,order_remark) VALUES ('2017121115474742260','test000','420566322467002006','3','倍赞店铺','6','5454454564564','admin@qq.com','1512978466','online','10','134.28','0','14.28','120','99','500106198602027000','-1',NULL)

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344013625
+                    [ferpbillno] => 036.2017112717344013625
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:47:02
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 邬美琪
+                    [fc_province] => 410000
+                    [fc_provincename] => 河南
+                    [fc_city] => 410100
+                    [fc_cityname] => 郑州市
+                    [fc_area] => 410104
+                    [fc_areaname] => 管城回族区
+                    [fnotes] => 河南郑州市管城回族区朝凤路航海路口交叉口西500米路北河南广电塔1楼郭焱美发店
+                    [fc_zip] => 450000
+                    [fc_contact1] => 邬美琪
+                    [fc_phone] => 15903990654
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 1128.00
+                    [fhwab] => 119.96
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042292300
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 188.00
+                                    [famount] => 1128.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

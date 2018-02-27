@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344156309
+                    [ferpbillno] => 036.2017112717344156309
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:46:51
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 凌亚群
+                    [fc_province] => 320000
+                    [fc_provincename] => 江苏
+                    [fc_city] => 320400
+                    [fc_cityname] => 常州市
+                    [fc_area] => 320404
+                    [fc_areaname] => 钟楼区
+                    [fnotes] => 江苏常州市钟楼区北港街道凯尔枫尚花园六栋架空层富友收件室
+                    [fc_zip] => 213023
+                    [fc_contact1] => 凌亚群
+                    [fc_phone] => 13813549578
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 376.00
+                    [fhwab] => 39.99
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042292300
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 188.00
+                                    [famount] => 376.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

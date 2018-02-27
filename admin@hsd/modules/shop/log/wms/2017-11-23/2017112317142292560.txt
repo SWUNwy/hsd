@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112317142292560
+                    [ferpbillno] => 036.2017112317142292560
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-23 18:19:19
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 王海燕
+                    [fc_province] => 340000
+                    [fc_provincename] => 安徽
+                    [fc_city] => 341000
+                    [fc_cityname] => 黄山市
+                    [fc_area] => 341003
+                    [fc_areaname] => 黄山区
+                    [fnotes] => 安徽黄山市黄山区北海南路平东社区卫生服务站
+                    [fc_zip] => 242700
+                    [fc_contact1] => 王海燕
+                    [fc_phone] => 13855952169
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 290.00
+                    [fhwab] => 30.84
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 145.00
+                                    [famount] => 290.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

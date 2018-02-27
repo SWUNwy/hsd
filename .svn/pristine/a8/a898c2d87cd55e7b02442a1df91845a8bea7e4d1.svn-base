@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344138827
+                    [ferpbillno] => 036.2017112717344138827
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:46:34
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 邓于铭
+                    [fc_province] => 440000
+                    [fc_provincename] => 广东省
+                    [fc_city] => 440900
+                    [fc_cityname] => 茂名市
+                    [fc_area] => 440904
+                    [fc_areaname] => 电白区
+                    [fnotes] => 广东省茂名市电白区广东省茂名市电白区电城镇电城长途汽车站万顺学车1号
+                    [fc_zip] => 525400
+                    [fc_contact1] => 邓于铭
+                    [fc_phone] => 13535914561
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 390.00
+                    [fhwab] => 41.47
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 3
+                                    [fprice] => 130.00
+                                    [famount] => 390.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

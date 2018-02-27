@@ -1,0 +1,1148 @@
+<?php
+/**
+ * 海关报文
+ *
+ *
+ *
+ *
+ * 
+ */
+defined('ByShopKJYP') or exit('Access Invalid!');
+
+class hggmdataModel extends Model{
+	private $list_setting=array();
+	public function __construct() {
+		//取海关参数
+      	$model_setting = Model('setting');      	
+		$this->list_setting = $model_setting->getListSetting();
+    } 
+	/**
+	 * 生成报文头部
+	 * @return [type] [description]
+	 */
+	public function xmlHead($messagetype,$actiontype)
+	{
+		if($messagetype=="SKU_INFO")
+		{
+			$str = $this->GetSkuinfoXmlHead($messagetype,$actiontype);
+		}
+		else
+		{
+			$str = $this->GetOtherXmlHead($messagetype,$actiontype);
+		}
+		return $str;
+
+	}
+
+	/**
+	 * 取Skuinfoxml头部
+	 */
+	private function GetSkuinfoXmlHead($messagetype,$actiontype)
+	{
+		
+		$guid=$this->uuid();
+		$str = "<DTC_Message>
+		<MessageHead>
+		<MessageType>".$messagetype."</MessageType>
+		<MessageId>".$guid."</MessageId>
+		<ActionType>".$actiontype."</ActionType>
+		<MessageTime>".date("Y-m-d H:i:s",time())."</MessageTime>
+		<SenderId>".$this->list_setting['hg_user']."</SenderId>
+		<ReceiverId>CQITC</ReceiverId>
+		<UserNo>".$this->list_setting['hg_user']."</UserNo>
+		<Password>".md5($guid.$this->list_setting['hg_pwd'])."</Password>
+		</MessageHead>";
+		return $str;
+	}
+
+	/**
+	 * 取其它xml头部
+	 */
+	private function GetOtherXmlHead($messagetype,$actiontype)
+	{
+
+		$guid=$this->uuid();
+		$str = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><DTC_Message>
+		<MessageHead>
+		<MessageType>".$messagetype."</MessageType>
+		<MessageId>".$guid."</MessageId>
+		<ActionType>".$actiontype."</ActionType>
+		<MessageTime>".date("Y-m-d H:i:s",time())."</MessageTime>
+		<SenderId>".$this->list_setting['hg_user']."</SenderId>
+		<ReceiverId>CQITC</ReceiverId>
+		<SenderAddress />
+	    <ReceiverAddress />
+	    <PlatFormNo />
+	    <CustomCode />
+	    <SeqNo />
+	    <Note />
+		<UserNo>".$this->list_setting['hg_user']."</UserNo>
+		<Password>".md5($guid.$this->list_setting['hg_pwd'])."</Password>
+		</MessageHead>";
+		return $str;
+
+	}
+
+	/**
+	 * 生成报文内容
+	 * @param  [type] $order [description]
+	 * @param  [type] $type  [description]
+	 * @return [type]        [description]
+	 */
+	public function xmlBody($order,$type)
+	{
+		$str = "";
+		//type类型1是订单，2是支付单 ，3退货 , 4运单号 , 5清单 ,6新的运单号
+		switch ($type) {
+			case 1:
+				$str = $this->OrderXmlBody($order);
+				break;
+			case 2:
+				$str = $this->PayXmlBody($order);
+				break;
+			case 3:
+				$str = $this->CancelXmlBody($order);
+				break;
+			case 4:
+				$str = $this->BillXmlBody($order);
+				break;
+			case 5:
+				$str = $this->DetailXmlBody($order);
+				break;	
+			case 6:
+				$str = $this->NewBillXmlBody($order);
+				break;		
+			default:
+				# code...
+				break;
+		}
+		return $str;
+	}
+
+	public function taoBody($arr,$type)
+	{
+		$datas = "";
+		//1.商品入库，2.提交订单，3.取运单号，4.取消订单 ，5.海关码前取运单号
+		switch ($type) {
+			case 1:
+				$datas = $this->TaoGoodsBody($arr);		
+				$str = print_r($datas,true);		
+				$this->WriteLog($arr['goods_serial'],$str,7);
+				break;
+			case 2:
+				$datas = $this->TaoOrderBody($arr);
+				$str = print_r($datas,true);				
+				$this->WriteLog($arr['order_sn'],$str,7);
+				break;
+			case 3:
+				$datas = $this->TaoBillBody($arr);
+				$str = print_r($datas,true);	
+				$this->WriteLog($arr['order_sn'],$str,7);
+				break;
+			case 4:
+				$datas = $this->TaoCancelBody($arr);
+				break;	
+			case 5:
+				$datas = $this->GetTaoBillBody($arr);
+				$this->WriteLog($arr['order_sn'],$str,7);
+				break;			
+			default:
+				# code...
+				break;
+		}
+		return $datas;
+
+	}
+
+	/**
+	 * 生成商品备案报文
+	 */
+	public function xmlGoodsBody($goods)
+	{
+
+		if($goods['goods_is_experiment_goods']==0)
+		{
+			$str = " <MessageBody>
+			<DTCFlow>
+			  <SKU_INFO>
+				<ESHOP_ENT_CODE>".$this->list_setting['hg_user']."</ESHOP_ENT_CODE>
+				<ESHOP_ENT_NAME>".$this->list_setting['hg_qyname']."</ESHOP_ENT_NAME>
+				<EXTERNAL_NO></EXTERNAL_NO>
+				<SKU>".$goods['goods_serial']."</SKU>
+				<GOODS_NAME>".$goods['goods_goods_name']."</GOODS_NAME>
+				<GOODS_SPEC>".$goods['goods_goods_spec']."</GOODS_SPEC>
+				<DECLARE_UNIT>".$goods['goods_declare_unit_id']."</DECLARE_UNIT>
+				<POST_TAX_NO>".$goods['goods_tax_no']."</POST_TAX_NO>
+				<LEGAL_UNIT>".$goods['goods_legal_unit_id']."</LEGAL_UNIT>
+				<CONV_LEGAL_UNIT_NUM>".$goods['goods_conv_legal_unit_num']."</CONV_LEGAL_UNIT_NUM>
+				<HS_CODE>".$goods['goods_sh_code']."</HS_CODE>
+				<IN_AREA_UNIT>".$goods['goods_in_area_unit_id']."</IN_AREA_UNIT>
+				<CONV_IN_AREA_UNIT_NUM>".$goods['goods_conv_in_area_unit_num']."</CONV_IN_AREA_UNIT_NUM>
+			  </SKU_INFO>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>
+		  ";
+		}
+		else if($goods['goods_is_experiment_goods']==1)
+		{
+			$str = " <MessageBody>
+			<DTCFlow>
+			  <SKU_INFO>
+				<ESHOP_ENT_CODE>".$this->list_setting['hg_user']."</ESHOP_ENT_CODE>
+				<ESHOP_ENT_NAME>".$this->list_setting['hg_qyname']."</ESHOP_ENT_NAME>
+				<SKU>".$goods['goods_serial']."</SKU>
+				<GOODS_NAME>".$goods['goods_goods_name']."</GOODS_NAME>
+				<GOODS_SPEC>".$goods['goods_goods_spec']."</GOODS_SPEC>
+				<DECLARE_UNIT>".$goods['goods_declare_unit_id']."</DECLARE_UNIT>
+				<POST_TAX_NO>".$goods['goods_tax_no']."</POST_TAX_NO>
+				<LEGAL_UNIT>".$goods['goods_legal_unit_id']."</LEGAL_UNIT>
+				<CONV_LEGAL_UNIT_NUM>".$goods['goods_conv_legal_unit_num']."</CONV_LEGAL_UNIT_NUM>
+				<HS_CODE>".$goods['goods_sh_code']."</HS_CODE>
+				<IN_AREA_UNIT>".$goods['goods_in_area_unit_id']."</IN_AREA_UNIT>
+				<CONV_IN_AREA_UNIT_NUM>".$goods['goods_conv_in_area_unit_num']."</CONV_IN_AREA_UNIT_NUM>
+				<IS_EXPERIMENT_GOODS>".$goods['goods_is_experiment_goods']."</IS_EXPERIMENT_GOODS>
+				<CHECK_ORG_CODE>".$goods['goods_check_org_code']."</CHECK_ORG_CODE>
+				<PRODUCER_NAME>".$goods['goods_producer_name']."</PRODUCER_NAME>
+				<ORIGIN_COUNTRY_CODE>".$goods['goods_origin_country_code']."</ORIGIN_COUNTRY_CODE>
+				<SUPPLIER_NAME>".$goods['goods_supplier_name']."</SUPPLIER_NAME>
+				<IS_CNCA_POR>".$goods['	goods_is_cnca_por']."</IS_CNCA_POR>
+				<IS_CNCA_POR_DOC>".$goods['goods_is_cnca_por_doc']."</IS_CNCA_POR_DOC>
+				<IS_ORIGIN_PLACE_CERT>".$goods['goods_is_origin_place_cert']."</IS_ORIGIN_PLACE_CERT>
+				<IS_TEST_REPORT>".$goods['goods_is_test_report']."</IS_TEST_REPORT>
+				<IS_LEGAL_TICKET>".$goods['goods_is_legal_ticket']."</IS_LEGAL_TICKET>
+				<IS_MARK_EXCHANGE>".$goods['goods_is_mark_exchange']."</IS_MARK_EXCHANGE>
+				<CNCA_POR_DOC>".$this->imagesbs64($goods['goods_is_cnca_por_doc'],$goods['goods_cnca_por_doc'])."</CNCA_POR_DOC>
+				<ORIGIN_PLACE_CERT>".$this->imagesbs64($goods['goods_is_origin_place_cert'],$goods['goods_origin_place_cert'])."</ORIGIN_PLACE_CERT>
+				<TEST_REPORT>".$this->imagesbs64($goods['goods_is_test_report'],$goods['goods_test_report'])."</TEST_REPORT>
+				<LEGAL_TICKET>".$this->imagesbs64($goods['goods_is_legal_ticket'],$goods['goods_legal_ticket'])."</LEGAL_TICKET>
+				<MARK_EXCHANGE>".$this->imagesbs64($goods['goods_is_mark_exchange'],$goods['goods_mark_exchange'])."</MARK_EXCHANGE>
+
+			  </SKU_INFO>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>
+		  ";
+		}
+		return $str;
+	}
+
+	/**
+	 * 订单内容报文
+	 * @param [type] $order [description]
+	 */
+	private function OrderXmlBody($order)
+	{
+		$model_tax = Model('tax');
+		$model_goods = Model('goods');
+		$model_goods_record = Model('goods_record');
+		$reciver_info = $order['extend_order_common']['reciver_info'];
+		$order_amount = $order['order_amount'];
+		$order['order_amount'] = $order['order_amount']-$order['order_tax'] ;
+		$goods_gross_weight = $this->GetGrossWeight($order);
+		//毛重
+		$goods_net_weight = $this->GetNetWeight($order);
+		//用户名取手机号
+		$order['buyer_name'] = $reciver_info['phone'];
+		//取业务类型 直购 还是保税
+		$biz = $this->GetBiz($order);
+		$order['shipping_fee'] = 0;
+		foreach ($order['extend_order_goods'] as $k => $v) {
+			// // print_r($order['extend_order_goods']);
+			// // die("get extend_order_goods");
+			// echo "<br />";
+			$orderNum = $v['goods_num'];
+			// print_r($orderNum);
+			// echo "<br />";
+			// // die("get new_Num");
+		}
+		// print_r($orderNum);
+		// echo "<br />";
+		// print_r($goods_gross_weight);
+		// echo "<br />";
+		// echo "订单goods_gross_weight=".$goods_gross_weight*$orderNum;
+		// echo "<br />";
+		// print_r($goods_net_weight);
+		// echo "<br />";
+		// echo "订单goods_net_weight=".$goods_net_weight*$orderNum;
+		// echo "<br />";
+		// // print_r($order);
+		// die("get order_array");
+		$str = "<MessageBody>
+				 <DTCFlow>
+				  <ORDER_HEAD>
+				    <CUSTOMS_CODE>".$biz['customes_code']."</CUSTOMS_CODE>
+				    <SORTLINE_ID>".$biz['SORTLINE_ID']."</SORTLINE_ID>
+				    <BIZ_TYPE_CODE>".$biz['code']."</BIZ_TYPE_CODE>
+				    <ORIGINAL_ORDER_NO>".$order['order_sn']."</ORIGINAL_ORDER_NO>
+				    <ESHOP_ENT_CODE>".$this->list_setting['hg_user']."</ESHOP_ENT_CODE>
+				    <ESHOP_ENT_NAME>".$this->list_setting['hg_qyname']."</ESHOP_ENT_NAME>
+				    <DESP_ARRI_COUNTRY_CODE>142</DESP_ARRI_COUNTRY_CODE>
+				    <SHIP_TOOL_CODE>Y</SHIP_TOOL_CODE>
+				    <RECEIVER_ID_NO>".trim($reciver_info['member_idcard'])."</RECEIVER_ID_NO>
+				    <RECEIVER_NAME>".trim($order['extend_order_common']['reciver_name'])."</RECEIVER_NAME>
+				    <RECEIVER_ADDRESS>".preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","",$reciver_info['address'])."</RECEIVER_ADDRESS>
+				    <RECEIVER_TEL>".trim($reciver_info['phone'])."</RECEIVER_TEL>
+				    <GOODS_FEE>".$order['order_amount']."</GOODS_FEE>
+				    <TAX_FEE>".$order['order_tax']."</TAX_FEE>
+				    <GROSS_WEIGHT>".$goods_gross_weight*$orderNum."</GROSS_WEIGHT>
+				    <PROXY_ENT_CODE/>
+				    <PROXY_ENT_NAME/>
+				    <TRANSPORT_FEE>".$order['shipping_fee']."</TRANSPORT_FEE>
+					<CHECK_TYPE>".$this->list_setting['hg_type']."</CHECK_TYPE>
+			        <CC_TRADE_CODE>5006660012</CC_TRADE_CODE>
+			        <CC_TRADE_NAME>重庆嘉铂国际物流有限公司</CC_TRADE_NAME>
+				    <UNI_ESHOP_ENT_CODE/>
+				    <UNI_ESHOP_ENT_NAME/>
+				    <EBP_CODE>".$this->list_setting['hg_user']."</EBP_CODE>
+        			<EBP_NAME>".$this->list_setting['hg_qyname']."</EBP_NAME>
+        			<ASSURE_CODE>".$this->list_setting['hg_user']."</ASSURE_CODE>
+        			<SEND_ENT_CODE>".$this->list_setting['hg_user']."</SEND_ENT_CODE>
+				    <BUYER_REG_NO>".$order['buyer_name']."</BUYER_REG_NO>
+				    <BUYER_NAME>".trim($order['extend_order_common']['reciver_name'])."</BUYER_NAME>
+					<BUYER_ID_TYPE>1</BUYER_ID_TYPE>
+					<BUYER_ID>".trim(strtoupper($reciver_info['member_idcard']))."</BUYER_ID>
+					<DISCOUNT>0</DISCOUNT>
+					<ACTUAL_PAID>".$order_amount."</ACTUAL_PAID>
+					<INSURED_FEE>0</INSURED_FEE>
+					<NET_WEIGHT>".$goods_net_weight*$orderNum."</NET_WEIGHT>
+					";
+					// echo $str;
+					// die("get str");
+		foreach($order['extend_order_goods'] as $key=> $value){										   	
+				
+				$goods_info = $model_goods->getGoodsInfoById($value['goods_id']);
+	   			$goods_record = $model_goods_record->getGoodsRecord(array('goods_serial'=>$goods_info['goods_serial']));
+
+				//判断是否几罐组合				
+				if($goods_info["goods_spec"]!="N;")
+				//取标题中的数字
+				{
+					$arr = unserialize($goods_info["goods_spec"]);
+					$str_spec = end($arr);
+					$mynum=$this->findNum($str_spec);
+					if($mynum==0)
+			        {
+			            $mynum=1;
+			        }
+					$value['goods_num']=$value['goods_num']*$mynum;
+				}
+				
+			  $value['goods_pay_price'] = $value['goods_pay_price'] - $value['goods_tax'];
+			  $goods_unit2 = $goods_record['goods_unit2'] !="-1"?$goods_record['goods_unit2']:"";
+			  $goods_qty2 = $goods_unit2!=""?$value['goods_num']:"";
+			  $str.="
+				  <ORDER_DETAIL>
+				      <SKU>".str_replace("CQZY","",$goods_info['goods_serial'])."</SKU>
+				      <GOODS_SPEC>".$goods_record['goods_goods_spec']."</GOODS_SPEC>
+				      <GOODS_NAME>".$goods_record['goods_goods_name']."</GOODS_NAME>
+				      <HS_CODE>".$goods_record['goods_sh_code']."</HS_CODE>
+				      <CURRENCY_CODE>142</CURRENCY_CODE>
+				      <PRICE>".sprintf("%.2f", $value['goods_pay_price']/$value['goods_num'])."</PRICE>
+				      <QTY>".$value['goods_num']."</QTY>
+				      <GOODS_FEE>".$value['goods_pay_price']."</GOODS_FEE>
+				      <TAX_FEE>".number_format($value['goods_tax'],2)."</TAX_FEE>
+				      <COUNTRY>".$goods_record['goods_origin_country_code']."</COUNTRY>
+				      <UNIT_CODE>".$goods_record['goods_declare_unit_id']."</UNIT_CODE>
+          			  <NOTE>".$order['order_remark']."</NOTE>
+				      <G_NUM>".($key+1)."</G_NUM>
+				      <QTY2>".$goods_qty2."</QTY2>
+				      <UNIT2>".$goods_unit2 ."</UNIT2>
+			      </ORDER_DETAIL>
+			      ";
+			  
+		}
+		$str.="</ORDER_HEAD>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>";
+
+		return $str;
+	}
+
+	/**
+	 * 支付单报文
+	 * @param [type] $order [description]
+	 */
+	private function PayXmlBody($order){
+		$reciver_info = $order['extend_order_common']['reciver_info'];
+		$member_idcard = $this->list_setting['hg_type']=="R"?$reciver_info['member_idcard']:"";
+		$reciver_name = $this->list_setting['hg_type']=="R"?$order['extend_order_common']['reciver_name']:"";
+		$phone = $this->list_setting['hg_type']=="R"?$reciver_info['phone']:"";
+		$payer_id_type = $this->list_setting['hg_type']=="R"?1:"";
+		$order_amount = $order['order_amount'];
+		$order['order_amount'] = $order['order_amount']-$order['order_tax'];
+		//取业务类型 直购 还是保税
+		$biz = $this->GetBiz($order);
+		$order['shipping_fee'] = 0;
+		$str = " <MessageBody>
+					<DTCFlow>
+					  <PAYMENT_INFO>
+					    <CUSTOMS_CODE>".$biz['customes_code']."</CUSTOMS_CODE>
+					    <BIZ_TYPE_CODE>".$biz['code']."</BIZ_TYPE_CODE>
+					    <ESHOP_ENT_CODE>".$this->list_setting['hg_user']."</ESHOP_ENT_CODE>
+					    <ESHOP_ENT_NAME>".$this->list_setting['hg_qyname']."</ESHOP_ENT_NAME>
+					    <PAYMENT_ENT_CODE>".$this->list_setting['hg_user']."</PAYMENT_ENT_CODE>
+					    <PAYMENT_ENT_NAME>".$this->list_setting['hg_qyname']."</PAYMENT_ENT_NAME>
+					    <PAYMENT_NO>".$order['pay_sn']."</PAYMENT_NO>
+					    <ORIGINAL_ORDER_NO>".$order['order_sn']."</ORIGINAL_ORDER_NO>
+					    <PAY_AMOUNT>".$order_amount."</PAY_AMOUNT>
+					    <GOODS_FEE>".$order['order_amount']."</GOODS_FEE>
+					    <TAX_FEE>".$order['order_tax']."</TAX_FEE>
+					    <CURRENCY_CODE>142</CURRENCY_CODE>
+					    <MEMO />
+						<PAYMENT_ID_NO>".$member_idcard."</PAYMENT_ID_NO>
+						<PAYMENT_NAME>".$reciver_name."</PAYMENT_NAME>
+						<PAYMENT_TEL>".$phone."</PAYMENT_TEL>
+						<SEND_ENT_CODE>".$this->list_setting['hg_user']."</SEND_ENT_CODE>
+						<PAYER_ID_TYPE>".$payer_id_type."</PAYER_ID_TYPE>
+						<TRANSPORT_FEE>".$order['shipping_fee']."</TRANSPORT_FEE>
+						<INSURED_FEE>0</INSURED_FEE>
+					</PAYMENT_INFO>
+					</DTCFlow>
+					</MessageBody>
+				 </DTC_Message>
+				";
+	     return $str;	
+	}
+
+	/**
+	 * 退货报文
+	 * @param [type] $order [description]
+	 */
+	private function CancelXmlBody($order)
+	{
+		 $str = "<MessageBody>
+					    <DTCFlow>
+					      <ORDER_RETURN_INFO>
+					        <ORIGINAL_ORDER_NO>".$order['order_sn']."</ORIGINAL_ORDER_NO>
+					        <ESHOP_ENT_CODE>".$this->list_setting['hg_user']."</ESHOP_ENT_CODE>
+					        <RETURN_REASON>拍错</RETURN_REASON>
+					        <QUALITY_REPORT />
+					      </ORDER_RETURN_INFO>
+					    </DTCFlow>
+					   </MessageBody>
+				   </DTC_Message>";
+		  return $str;
+	  
+	}
+
+	/**
+	 * 运单报文
+	 * @param [type] $order [description]
+	 */
+	private function BillXmlBody($order)
+	{
+		$reciver_info = $order['extend_order_common']['reciver_info'];
+		//查询运单企业和代码
+		$express_info = $this->GetExpress($order);
+		//结束
+		$goods_num = $this->GetOrderNum($order);		
+		$goods_gross_weight = $this->GetGrossWeight($order);
+		//取业务类型 直购 还是保税
+		$biz = $this->GetBiz($order);
+		$str = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+				<ORDER_SET_TRANSPORT_NO_B2B>
+				  <ORIGINAL_ORDER_NO>".$order['order_sn']."</ORIGINAL_ORDER_NO>
+				  <TRANSPORT_BILL_NO>".$order['shipping_code']."</TRANSPORT_BILL_NO>
+				  <ESHOP_ENT_CODE>".$this->list_setting['hg_user']."</ESHOP_ENT_CODE>
+			      <ESHOP_ENT_NAME>".$this->list_setting['hg_qyname']."</ESHOP_ENT_NAME>
+				  <LOGISTCS_NAME>".$express_info['e_bname']."</LOGISTCS_NAME>
+				  <LOGISTCS_CODE>".$express_info['e_bcode']."</LOGISTCS_CODE>
+				  <EBP_ENT_CODE>".$this->list_setting['hg_user']."</EBP_ENT_CODE>
+			      <EBP_ENT_NAME>".$this->list_setting['hg_qyname']."</EBP_ENT_NAME>
+				</ORDER_SET_TRANSPORT_NO_B2B>";	
+	    return  $str;
+
+	}
+
+	/**
+	 * 新运单报文
+	 * @param [type] $order [description]
+	 */
+	private function NewBillXmlBody($order)
+	{
+		$reciver_info = $order['extend_order_common']['reciver_info'];
+		//查询运单企业和代码
+		$express_info = $this->GetExpress($order);
+		//结束
+		$goods_num = $this->GetOrderNum($order);		
+		$goods_gross_weight = $this->GetGrossWeight($order);
+		//取业务类型 直购 还是保税
+		$biz = $this->GetBiz($order);
+
+		$str = "<MessageBody>
+			    <DTCFlow>
+			      <BILL_INFO>
+			      	<ORIGINAL_ORDER_NO>".$order['order_sn']."</ORIGINAL_ORDER_NO>
+			      	<BIZ_TYPE_CODE>".$biz['code']."</BIZ_TYPE_CODE>
+			      	<BIZ_TYPE_NAME>".$biz['type']."</BIZ_TYPE_NAME>
+			      	<TRANSPORT_BILL_NO>".$order['shipping_code']."</TRANSPORT_BILL_NO>
+			        <ESHOP_ENT_CODE>".$this->list_setting['hg_user']."</ESHOP_ENT_CODE>
+			        <ESHOP_ENT_NAME>".$this->list_setting['hg_qyname']."</ESHOP_ENT_NAME>
+			        <CUSTOMS_CODE>".$biz['customes_code']."</CUSTOMS_CODE>
+			        <CUSTOMS_NAME>".$biz['customes_name']."</CUSTOMS_NAME>
+			        <LOGISTICS_ENT_CODE>".$express_info['e_bcode']."</LOGISTICS_ENT_CODE>
+			        <LOGISTICS_ENT_NAME>".$express_info['e_bname']."</LOGISTICS_ENT_NAME>
+			        <QTY>".$goods_num."</QTY>
+			        <RECEIVER_ID_NO>".$reciver_info['member_idcard']."</RECEIVER_ID_NO>
+			        <RECEIVER_NAME>".$order['extend_order_common']['reciver_name']."</RECEIVER_NAME>
+			        <RECEIVER_ADDRESS>".preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","",$reciver_info['address'])."</RECEIVER_ADDRESS>
+			        <RECEIVER_TEL>".$reciver_info['phone']."</RECEIVER_TEL>
+			        <GROSS_WEIGHT>".$goods_gross_weight."</GROSS_WEIGHT>			        
+			      </BILL_INFO>
+			    </DTCFlow>
+			   </MessageBody>
+			</DTC_Message>";
+	  return  $str;
+
+	}
+	/**
+	 * 清单报文
+	 * @param [type] $order [description]
+	 */
+	private function DetailXmlBody($order)
+	{	
+		$model_goods = Model('goods');
+		$model_goods_record = Model('goods_record');
+		$reciver_info = $order['extend_order_common']['reciver_info'];
+		//查询运单企业和代码
+		$express_info = $this->GetExpress($order);
+		//结束
+		//净重
+		$goods_gross_weight = $this->GetGrossWeight($order);
+		//毛重
+		$goods_net_weight = $this->GetNetWeight($order);
+		//数量
+		$goods_num = $this->GetOrderNum($order);	
+		//取东西
+		$goods_record = $this->GetGoodsRecord($order['extend_order_goods'][0]['goods_id']);
+		$order['shipping_fee'] = 0;
+		//取业务类型 直购 还是保税
+		$biz = $this->GetBiz($order);
+		$str = "<MessageBody>
+			    <DTCFlow>
+			      <LIST_HEAD>
+			      	<I_E_FLAG>I</I_E_FLAG>
+			      	<ORIGINAL_ORDER_NO>".$order['order_sn']."</ORIGINAL_ORDER_NO>
+			      	<ESHOP_ENT_CODE>".$this->list_setting['hg_user']."</ESHOP_ENT_CODE>
+			      	<ESHOP_ENT_NAME>".$this->list_setting['hg_qyname']."</ESHOP_ENT_NAME>
+			      	<DESP_ARRI_COUNTRY_CODE>142</DESP_ARRI_COUNTRY_CODE>
+			      	<SHIP_TOOL_CODE>".$goods_record['goods_ship_tool_code']."</SHIP_TOOL_CODE>
+					<GROSS_WEIGHT>".$goods_net_weight."</GROSS_WEIGHT>
+					<TRANSPORT_FEE>".$order['shipping_fee']."</TRANSPORT_FEE>
+					<EBP_CODE>".$this->list_setting['hg_user']."</EBP_CODE>
+					<EBP_NAME>".$this->list_setting['hg_qyname']."</EBP_NAME>
+					<LOGISTICS_CODE>".$express_info['e_bcode']."</LOGISTICS_CODE>
+					<LOGISTICS_NAME>".$express_info['e_bname']."</LOGISTICS_NAME>
+					<BUYER_NAME>".$order['extend_order_common']['reciver_name']."</BUYER_NAME>
+					<BUYER_ID_TYPE>1</BUYER_ID_TYPE>
+					<BUYER_ID>".$reciver_info['member_idcard']."</BUYER_ID>
+					<CONSIGNEE_PHONE>".$reciver_info['phone']."</CONSIGNEE_PHONE>
+					<CONSIGNEE_ADDR>".preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","",$reciver_info['address'])."</CONSIGNEE_ADDR>
+					<DISCOUNT>0</DISCOUNT>	
+					<ACTUAL_PAID>".$order['order_amount']."</ACTUAL_PAID>				
+					<LOGISTICS_NO>".$order['shipping_code']."</LOGISTICS_NO>
+					<PORT_CODE>".$biz['customes_code']."</PORT_CODE>
+					<I_E_DATE>".date("Y-m-d",$goods_record['goods_i_e_date'])."</I_E_DATE>
+					<AGENT_CODE>".$this->list_setting['hg_user']."</AGENT_CODE>
+					<AGENT_NAME>".$this->list_setting['hg_qyname']."</AGENT_NAME>
+					<TRADE_MODE>".$biz['TRADE_MODE']."</TRADE_MODE>
+					<INSURED_FEE>0</INSURED_FEE>
+					<CURRENCY>".$goods_record['goods_currency']."</CURRENCY>
+					<PACK_NO>".$goods_num."</PACK_NO>
+					<NET_WEIGHT>".$goods_gross_weight."</NET_WEIGHT>
+					<APP_DATE>".date("Y-m-d",time())."</APP_DATE>
+					<APP_SENDER_ID>CQITC</APP_SENDER_ID>
+					<CUSTOMS_CODE>".$biz['customes_code']."</CUSTOMS_CODE>
+					<TOTAL_PRICE>".$order['goods_amount']."</TOTAL_PRICE>
+					<TOTAL_TAX>".$order['order_tax']."</TOTAL_TAX>
+			      ";
+
+	   if(!empty($order['extend_order_goods']))
+	   {
+	   		
+	   		foreach ($order['extend_order_goods'] as $key => $value) {
+	   			//取商品备案表数据	   			
+	   			$goods_record = $this->GetGoodsRecord($value['goods_id']);
+	   			$value['goods_pay_price'] = $value['goods_pay_price'] - $value['goods_tax'];
+	   			//print_r($goods_record);
+				$str.="<LIST_DETAIL>
+			      	<SKU>".str_replace("CQZY","",$goods_record['goods_serial'])."</SKU>
+			      	<H_S_CODE>".$goods_record['goods_sh_code']."</H_S_CODE>
+			      	<G_NAME>".$goods_record['goods_goods_name']."</G_NAME>
+			      	<GOODS_SPEC>".$goods_record['goods_goods_spec']."</GOODS_SPEC>
+			      	<CURRENCY_CODE>142</CURRENCY_CODE>
+			      	<PRICE>".sprintf("%.2f", $value['goods_pay_price']/$value['goods_num'])."</PRICE>
+			      	<GOODS_FEE>".$value['goods_pay_price']."</GOODS_FEE>
+			      	<COUNTRY>".$goods_record['goods_origin_country_code']."</COUNTRY>
+			      	<QTY>".$value['goods_num']."</QTY>
+			      	<UNIT>".$goods_record['goods_declare_unit_id']."</UNIT>
+			      	<QTY1>".$goods_record['goods_conv_legal_unit_num']."</QTY1>
+			      	<UNIT1>".$goods_record['goods_legal_unit_id']."</UNIT1>
+			      	<G_NUM>". ($key+1)."</G_NUM>
+			      </LIST_DETAIL>
+			      " ;
+
+	   		}
+	   }
+
+		$str.= "  </LIST_HEAD>
+		         </DTCFlow>
+			   </MessageBody>
+			</DTC_Message>";
+		 return  $str;
+	}
+
+	/**
+	 * 淘宝仓商品入库
+	 * @param [type] $arr [description]
+	 */
+	private function TaoGoodsBody($arr)
+	{
+
+		$datas = array(
+    			'time' => date('Y-m-d H:i:s',time()),
+    			'method' => 'item.in',
+    			'dhfcode' => $this->list_setting['tao_dhfcode'] ,    			
+				'sku' => $arr['goods_serial'],
+				'goods_name' => $arr['goods_goods_name'],
+				'barcode' => $arr['goods_serial'],
+				'GOODS_SPEC' => $arr['goods_goods_spec'],
+				'PRICE' =>0,
+				'DECLARE_UNIT' => $arr['goods_declare_unit_id'],
+				'POST_TAX_NO' => $arr['goods_tax_no'],
+				'LEGAL_UNIT' => $arr['goods_legal_unit_id'],
+				'CONV_LEGAL_UNIT_NUM' => $arr['goods_conv_legal_unit_num'],
+				'HS_CODE' => $arr['goods_sh_code'],
+				'IN_AREA_UNIT' => $arr['goods_in_area_unit_id'],
+				'CONV_IN_AREA_UNIT_NUM' => $arr['goods_conv_in_area_unit_num'],
+				'IS_EXPERIMENT_GOODS' => 1,
+				'ORIGIN_COUNTRY_CODE' => $arr['c_id'],
+				'CHECK_ORG_CODE' =>'SORTLINE02' ,
+				'SUPPLIER_NAME' => "",
+				'POST_TAX_RATE' =>0,
+    	);		
+
+		$datas['sign']=$this->sign($datas);
+		return $datas;
+	}
+
+	/**
+	 * 取圆通单号报文
+	 * @param [type] $arr [description]
+	 */
+	public function GetTaoBillBody($arr)
+	{
+		foreach($arr['extend_order_goods'] as $k=>$v){	
+			$model_goods = Model("goods");
+			$goods_info = $model_goods->getGoodsInfo(array('goods_id' => $v['goods_id']));
+		
+			//判断是否几罐组合			
+			if($goods_info["goods_spec"]!="N;")
+			//取标题中的数字
+			{
+				$arr1 = unserialize($goods_info["goods_spec"]);
+				$str= end($arr1);
+				$mynum=$this->findNum($str);
+				if($mynum==0)
+	            {
+	                $mynum=1;
+	            }
+				$v['goods_num']=$v['goods_num']*$mynum;
+			}			
+			$goodsarr[$k]['GOODS_NAME']=$goods_info['goods_serial'];
+			$goodsarr[$k]['QTY']=$v['goods_num'];
+		}
+		$address=explode("	",$arr['extend_order_common']['reciver_info']['address']);
+		if($address[2]=="")
+		{
+			$address=explode(" ",$arr['extend_order_common']['reciver_info']['address']);
+		}				
+		$address[2]=explode(" ",$address[2]);
+		//判断导入的订单	
+		$address[2][0]=preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","*",$address[2][0]);
+		if(strstr ($address[2][0],  '*' ))
+		{
+			$address[2]=explode("*",$address[2][0]);
+		}	
+		$myaddress =$address[2][1];
+		if($myaddress=="" && $address[2]!="")
+		{
+			$myaddress=$address[3];
+		}				
+		$datas = array(
+			'time' => date('Y-m-d H:i:s',time()),
+			'method' => 'order.getmailcode',
+			'dhfcode' => $this->list_setting['tao_dhfcode'] ,    			
+			'MAIL_TYPE' => 'YTO',
+			'ORIGINAL_ORDER_NO' =>$arr['order_sn'],
+			'RECEIVER_NAME' => trim($arr['extend_order_common']['reciver_name']),
+			'RECEIVER_TEL' =>trim($arr['extend_order_common']['reciver_info']['phone']),
+			'RECEIVER_ADDRESS' =>preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","",$myaddress),
+			'RECEIVER_CITY' =>$address[1],
+			'RECEIVER_STATE' =>$address[0],
+			'RECEIVER_DISTRICT'=>$address[2][0],		
+		);
+		$datas['sign']=$this->sign($datas);
+		$datas['SUBITEMS']= $goodsarr;
+		return $datas;
+	}
+
+	/**
+	 * 淘宝仓订单入库
+	 * @param [type] $arr [description]
+	 */
+	private function TaoOrderBody($arr)
+	{		
+		foreach($arr['extend_order_goods'] as $k=>$v){	
+			$model_goods = Model("goods");
+			$goods_info = $model_goods->getGoodsInfo(array('goods_id' => $v['goods_id']));
+			$this->GetGoodsRecord($v['goods_id'],'goods_origin_country_code');
+			$goods_origin_country_code = $goods_origin_country_code==""?$this->GetGoodsRecord($v['goods_id'],'goods_origin_country_code'):$goods_origin_country_code;
+			//判断是否几罐组合			
+			if($goods_info["goods_spec"]!="N;")
+			//取标题中的数字
+			{
+				$arr1 = unserialize($goods_info["goods_spec"]);
+				$str= end($arr1);
+				$mynum=$this->findNum($str);
+				if($mynum==0)
+	            {
+	                $mynum=1;
+	            }
+				$v['goods_num']=$v['goods_num']*$mynum;
+			}
+			if($goods_info['goods_groupprice']>0)
+			{
+				$goods_info['goods_price']=$goods_info['goods_groupprice'];
+			}
+			$goodsarr[$k]['SKU']=$goods_info['goods_serial'];
+			$goodsarr[$k]['QTY']=$v['goods_num'];
+			$goodsarr[$k]['GOODS_FEE']=$v['goods_pay_price'];
+			$goodsarr[$k]['TAX_FEE']=number_format($v['goods_tax'],2);
+		}
+		$address=explode("	",$arr['extend_order_common']['reciver_info']['address']);
+		if($address[2]=="")
+		{
+			$address=explode(" ",$arr['extend_order_common']['reciver_info']['address']);
+		}				
+		$address[2]=explode(" ",$address[2]);
+		//判断导入的订单	
+		$address[2][0]=preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","*",$address[2][0]);
+		if(strstr ($address[2][0],  '*' ))
+		{
+			$address[2]=explode("*",$address[2][0]);
+		}	
+		$myaddress =$address[2][1];
+		if($myaddress=="" && $address[2]!="")
+		{
+			$myaddress=$address[3];
+		}				
+		$fee=$arr['order_tax'];
+		$amount = $arr['order_amount'];
+		$arr['order_amount'] = $arr['order_amount']-$arr['order_tax'];		
+		$shipping_express_id=$arr['extend_order_common']['shipping_express_id'];	
+		$arr['shipping_fee'] = 0;
+		$datas = array(
+				'time' => date('Y-m-d H:i:s',time()),
+				'method' => 'order.out',
+				'dhfcode' =>  $this->list_setting['tao_dhfcode'] , 
+				'CUSTOMS_CODE' => 8013,
+				'ORIGINAL_ORDER_NO' => $arr['order_sn'],
+				'DESP_ARRI_COUNTRY_CODE' => "142",
+				'SHIP_TOOL_CODE' => "1",
+				'receiver_id_no' => trim($arr['extend_order_common']['reciver_info']['member_idcard']),
+				'receiver_name' =>  trim($arr['extend_order_common']['reciver_name']),
+				//'receiver_address' => preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","",$arr['extend_order_common']['reciver_info']['address']),
+				'receiver_address' => preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","",$myaddress),
+				'receiver_mobile' => trim($arr['extend_order_common']['reciver_info']['phone']),
+				'receiver_city' => $address[1],
+				'receiver_state' => $address[0],
+				'receiver_district' =>$address[2][0],
+				'GOODS_FEE' => $arr['order_amount'],
+				'TAX_FEE' => $fee,
+				'DISCOUNT' => 0,  //优惠减免金额
+				'ACTUAL_PAID' => $amount, //实际支付金额
+				'INSURED_FEE' => 0, //保费
+				'BUYER_REG_NO' => trim($arr['extend_order_common']['reciver_info']['phone']), //订购人注册号
+				'BUYER_NAME'  => trim($arr['extend_order_common']['reciver_name']), //订购人姓名
+				'BUYER_ID_TYPE'  => 1,//订购人证件类型 1=身份证，2=其他
+				'BUYER_ID'  => trim($arr['extend_order_common']['reciver_info']['member_idcard']),    //订购人证件号码    
+				'TRANSPORT_FEE'  => $arr['shipping_fee'] ,//运费
+				'COUNTRY'  => $goods_origin_country_code, //原产地
+				'SORTLINE_ID' =>"SORTLINE02" ,
+				'BAR_CODE' => $arr['code'],
+				'PUSH_HG'  => 'no',
+				'CHECK_TYPE' =>'p',		 
+		);
+		if($shipping_express_id==8)
+		{
+			$datas['MAILTYPE']="EMS";
+			$datas['MAILCODE']=$arr['shipping_code'];
+		}
+		else if($shipping_express_id==40 && $arr['shipping_code']!="")
+		{
+			$datas['MAILTYPE']="YTO";
+			$datas['MAILCODE']=$arr['shipping_code'];
+		}
+		//生成签名
+		$datas['sign']=$this->sign($datas);
+		$datas['suborders']= $goodsarr;
+		return $datas;
+	}
+
+	/**
+	 * 取订单是哪种方式(网购保税，直购进口)
+	 * @param [type] $order [description]
+	 * 直购进口：I10,网购保税进口：I20
+	 */
+	public function GetBiz($order)
+	{   
+		$biz = array();
+		$model_goods = Model("goods");
+		if(!empty($order['extend_order_goods']))
+		{
+			foreach ($order['extend_order_goods'] as $key => $goods) {
+				$goods_info = $model_goods->getGoodsInfoById($goods['goods_id']);
+				if(strstr($goods_info['goods_serial'],'CQZY'))
+				{
+					$biz['customes_code'] = "8012";
+					$biz['customes_name'] = "西永保税";					
+					$biz['code'] = "I10";
+					$biz['type'] = "直购进口";
+					$biz['SORTLINE_ID'] = "SORTLINE01";
+					$biz['TRADE_MODE'] = '9610';
+				}
+				else
+				{
+					$biz['customes_code'] = "8013";
+					$biz['customes_name'] = "西永保税";		
+					$biz['code'] = "I20";
+					$biz['type'] = "网购保税进口";
+					$biz['SORTLINE_ID'] = "SORTLINE02";
+					$biz['TRADE_MODE'] = '9610';
+				}
+			}
+		}
+		return $biz;
+	}
+
+	/**
+	 * 淘宝仓运单
+	 * @param [type] $arr [description]
+	 */
+	private function TaoBillBody($arr)
+	{
+		$datas = array(
+				'time' => date('Y-m-d H:i:s',time()),
+				'method' => 'order.wlinfo',
+				'dhfcode' => "D00002" ,
+				'ORIGINAL_ORDER_NO' =>  $arr['order_sn'],		
+		);
+		$datas['sign']=$this->sign($datas);
+		return $datas;
+	}	
+
+	/**
+	 * 提交淘宝仓
+	 * @param  [type]  $datas [description]
+	 * @param  integer $type  [description]
+	 * @return [type]         [description]
+	 */
+	public function postTao($datas,$type=1)
+	{
+		$url=$this->list_setting['tao_url'];
+		$ch = curl_init($url);
+		curl_setopt($ch, CURLOPT_TIMEOUT,10);	
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+		if($type)
+		{
+			curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($datas));
+		}
+		else 
+		{
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $datas);
+		}
+	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);	
+		$output = curl_exec($ch);
+		curl_close($ch);
+		return  $output;
+
+	}
+
+	private function GetExpress($order)
+	{
+		$model_express = Model("express");
+		$shipping_express_id = $order['extend_order_common']['shipping_express_id'];
+		return Model()->table("express")->where(array('id'=>$shipping_express_id))->find();
+	}
+
+	/**
+	 * 通过商品ID查询备案信息
+	 * @param [type] $goods_id [description]
+	 * @param string $field    [description]
+	 */
+	private function GetGoodsRecord($goods_id,$field="")
+	{
+		$model_goods = Model("goods");
+		$model_goods_record = Model("goods_record");
+		$goods_info = $model_goods->getGoodsInfoById($goods_id);		
+		$goods_record = $model_goods_record->getGoodsRecord(array('goods_serial'=>$goods_info['goods_serial']));
+		return $field!=""?$goods_record[$field]:$goods_record;
+
+	}
+
+	/**
+	 * 通过订单取净重
+	 * @param [type] $order [description]
+	 */
+	private function GetGrossWeight($order)
+	{
+		return $this->GetFileVale($order,"goods_gross_weight");
+	}
+	
+	/**
+	 * 通过订单取毛重
+	 * @param [type] $order [description]
+	 */
+	private function GetNetWeight($order)
+	{
+		return $this->GetFileVale($order,"goods_net_weight");
+	}
+
+	/**
+	 * 通过订单取商品备案指定字段和
+	 * @param [type] $order [description]
+	 */
+	private function GetFileVale($order,$field)
+	{
+		
+		$res = 0;
+		if(!empty($order['extend_order_goods']))
+		{
+			foreach ($order['extend_order_goods'] as $key => $value) {
+
+				$res = $res + $this->GetGoodsRecord($value['goods_id'],$field);
+			}	
+		}
+		return $res;
+	}
+
+
+	/**
+	 * 通过订单查商品数量
+	 * @param [type] $order [description]
+	 */
+	private function GetOrderNum($order)
+	{
+		$num = 0;
+		if(!empty($order['extend_order_goods']))
+		{	
+			foreach ($order['extend_order_goods'] as $key => $value) {
+				$num = $num + $value['goods_num'];
+			}
+
+		}
+		return $num;
+	}
+
+	/**
+	 * 生成uid
+	 * @param  string $prefix [description]
+	 * @return [type]         [description]
+	 */
+	private function uuid($prefix = '')  
+	{  
+	    $chars = md5(uniqid(mt_rand(), true));  
+	    $uuid  = substr($chars,0,8) . '-';  
+	    $uuid .= substr($chars,8,4) . '-';  
+	    $uuid .= substr($chars,12,4) . '-';  
+	    $uuid .= substr($chars,16,4) . '-';  
+	    $uuid .= substr($chars,20,12);  
+	    return $prefix . $uuid;  
+	}    
+           
+    /**
+     * xml转数组
+     * @param  [type] $xml [description]
+     * @return [type]      [description]
+     */
+	private function xml_to_array($xml)                              
+	{                                                        
+	  $array = (array)(simplexml_load_string($xml));         
+	  foreach ($array as $key=>$item){                       
+	    $array[$key]  =  $this->struct_to_array((array)$item);      
+	  }                                                      
+	  return $array;                                         
+	}      
+
+	private function struct_to_array($item) {                        
+	  if(!is_string($item)) {                                
+	    $item = (array)$item;                                
+	    foreach ($item as $key=>$val){                       
+	      $item[$key]  =  $this->struct_to_array($val);             
+	    }                                                    
+	  }                                                      
+	  return $item;                                          
+	}                   
+
+	private function object_array($array) {  
+	    if(is_object($array)) {  
+	        $array = (array)$array;  
+	     } if(is_array($array)) {  
+	         foreach($array as $key=>$value) {  
+	             $array[$key] = $this->object_array($value);  
+	             }  
+	     }  
+	     return $array;  
+	}
+	
+	/**
+	 * 淘宝仓签名
+	 * @param  [type] $post [description]
+	 * @return [type]       [description]
+	 */
+	private function sign($post)
+	{
+		foreach ($post as $k=>$v)
+		{
+			if ($k!='sign')
+			{
+				$p[$k]=$v;
+			}
+		}
+		ksort($p);
+		$s='';
+
+		foreach ($p as $k=>$v)
+		{
+			$s.=$k.$v;
+		}
+
+		return md5($this->list_setting['tao_secretcode']. $s.$this->list_setting['tao_secretcode']);
+	}
+
+	/**
+	 * 取字符串数字
+	 * @param  string $str [description]
+	 * @return [type]      [description]
+	 */
+	private function findNum($str=''){
+		$str=trim($str);
+		if(empty($str)){return '';}
+		$temp=array('1','2','3','4','5','6','7','8','9','0');
+		$result='';
+		for($i=0;$i<strlen($str);$i++){
+			if(in_array($str[$i],$temp)){
+				$result.=$str[$i];
+			}
+		}
+		if($result==0 )
+		{
+			$result=1;
+		}
+		return $result;
+	}
+
+	/**
+	 * 图片转ba64
+	 * @param  [type] $type   [description]
+	 * @param  [type] $images [description]
+	 * @return [type]         [description]
+	 */
+	public function imagesbs64($type,$images)
+	{
+
+		if($type==0)
+		{
+			return ;
+		}
+
+		$img="";
+		if($images!="")
+		{
+			
+			$file= realpath(dirname(__FILE__).'/../')."/upload/shop/common/".$images;		
+			$fp=fopen($file,"rb");
+			//$data=base64_encode(fread($fp,filesize($file)));
+			$data=fread($fp,filesize($file));
+		    
+			/**$type=getimagesize($file);//取得图片的大小，类型等
+			$fp=fopen($file,"r")or die("Can't open file");
+			$file_content=chunk_split(base64_encode(fread($fp,filesize($file))));//base64编码
+			switch($type[2]){//判读图片类型
+				case 1:$img_type="gif";break;
+				case 2:$img_type="jpg";break;
+				case 3:$img_type="png";break;
+			}
+			$img='data:image/'.$img_type.';base64,'.$file_content;//合成图片的base64编码
+			fclose($fp);	**/
+			$img=bin2hex($data);
+			//$img=$data;
+
+		}
+
+		return $img;
+	}
+	/**
+	 * 
+	 * 生成日志 type:1.订单 2.支付单 3.清单 4.运单 5.退单 6.商品 7.淘宝 8.仓库
+	 * @param [type] $order_sn [description]
+	 * @param [type] $type     [description]
+	 */
+	public function WriteLog($order_sn,$data,$type)
+	{
+		switch ($type) {
+			case 1:
+				$path ='log/order/';
+				break;
+			case 2:
+				$path ='log/pay/';
+				break;
+			case 3:
+				$path ='log/list/';
+				break;
+			case 4:
+				$path ='log/bill/';
+				break;
+			case 5:
+				$path ='log/cancel/';
+				break;
+			case 6:
+				$path ='log/goods/';
+				break;	
+			case 7:
+				$path ='log/taobao/';
+				break;
+			case 8:
+				$path ='log/wms/';
+				break;		
+			default:
+				# code...
+				break;
+		}
+		$date = date("Y-m-d",time());
+		$path = $path.$date."/";
+		$this->createFolder($path); 
+		$fp = fopen($path.$order_sn.".txt",'w');
+		fwrite($fp,$data);
+		fclose($fp);
+		
+	}
+
+	/**
+	 * 递归建立文件夹
+	 * @param  [type] $path [description]
+	 * @return [type]       [description]
+	 */
+    private function createFolder($path) 
+	{ 
+		if (!file_exists($path)) 
+		{ 
+			$this->createFolder(dirname($path)); 
+			mkdir($path, 0777); 
+		} 
+	}  
+
+}

@@ -1,0 +1,6 @@
+[2018-01-10 10:38:10] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Unknown column 'goods_id1' in 'where clause'
+SELECT goods_storage_id FROM `kjyp_goods` WHERE ( goods_id1 = '150770' ) LIMIT 1  
+[2018-01-10 10:40:41] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Unknown column 'goods_id1' in 'where clause'
+SELECT goods_storage_id FROM `kjyp_goods` WHERE ( goods_id1 = '152236' ) LIMIT 1  

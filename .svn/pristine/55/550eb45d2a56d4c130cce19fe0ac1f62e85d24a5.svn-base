@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017120112192597433
+                    [ferpbillno] => 036.2017120112192597433
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-12-01 12:40:02
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 王钧烨
+                    [fc_province] => 520000
+                    [fc_provincename] => 贵州省
+                    [fc_city] => 520200
+                    [fc_cityname] => 六盘水市
+                    [fc_area] => 520201
+                    [fc_areaname] => 钟山区
+                    [fnotes] => 贵州省六盘水市钟山区建设路玫瑰园
+                    [fc_zip] => 553000
+                    [fc_contact1] => 王钧烨
+                    [fc_phone] => 18685890821
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 260.00
+                    [fhwab] => 27.65
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 130.00
+                                    [famount] => 260.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

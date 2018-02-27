@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112015225337794
+                    [ferpbillno] => 036.2017112015225337794
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-20 15:38:20
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 张桂军
+                    [fc_province] => 530000
+                    [fc_provincename] => 云南省
+                    [fc_city] => 530100
+                    [fc_cityname] => 昆明市
+                    [fc_area] => 530129
+                    [fc_areaname] => 寻甸回族彝族自治县
+                    [fnotes] => 云南省昆明市寻甸回族彝族自治县仁德街道办事处月秀路寻甸华润燃气有限公司
+                    [fc_zip] => 655200
+                    [fc_contact1] => 张桂军
+                    [fc_phone] => 13888004685
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 300.00
+                    [fhwab] => 31.90
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091004404
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 150.00
+                                    [famount] => 300.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

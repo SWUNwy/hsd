@@ -1,0 +1,447 @@
+<?php
+/**
+ * 数据推送
+ *
+ * @跨境优品
+ * @license    http://www.kjyp360.com
+ * @link
+ */
+
+defined('ByShopKJYP') or exit('Access Invalid!');
+class pushControl extends SystemControl{
+	private $errMsg = "";
+    public function __construct(){
+       
+    }
+    
+	/**
+     * 推送订单至海关模版
+     */
+    public function post_customsOp()
+    {
+        $id = $_GET['id'];
+        if(empty($id))
+        {
+            showDialog(L('nc_common_op_fail'), 'reload');
+        }       
+        $ids = explode(',',$id);        
+        $count = count($ids);
+        Tpl::output('id',$id);
+        Tpl::output('count',$count);
+        Tpl::setDirquna('shop');
+        Tpl::showpage('order.post_customs', 'null_layout');
+    }
+	
+	 /**
+     * 批量推送订单至海关
+     *
+     */
+    public function ajax_customsOp(){
+        $model_order = Model('order');
+        $order_id = intval($_GET['order_id']);
+        $res = $this->_pushCustomeById($order_id);
+        //推送海关
+        $result['order_id'] = $order_id;
+        if($res){
+            $result['msg'] = "<font style='color:green'><i class='fa fa-check-circle'></i>推送海关成功！</font>";
+        }
+        else{
+            $result['msg'] = "<font style='color:red'><i class='fa fa-times-circle'></i>推送海关失败,".$this->errMsg."</font>"; 
+        }
+        echo json_encode ($result);
+        sleep(1);
+    }
+    
+    /**
+     * 推送数据到海关
+     */
+   	public function pushCustomsOp(){
+   		$res = array();
+		$res['state'] = false;
+		$order_id = intval($_GET['order_id']);
+		$result = $this->_pushCustomeById($order_id);
+		if($result){
+			$res['state'] = true;
+		}else{
+			$res['msg'] = $this->errMsg;
+		}
+		echo json_encode($res);
+		die();
+   	}
+	
+	/**
+	 * 推送到仓库
+	 * @return [type] [description]
+	 */
+   	public function pushWmsOp(){
+   		$model_wms= Model('jbwms');
+    	$condition=array();
+		$result = array();
+		$result['state'] = false;
+    	if($_GET['order_id']<0){
+    		if($_GET['type'] == 'json'){
+    			$result['msg'] = "参数有误！";		
+				echo json_encode($result);
+				die();
+    		}else{
+    			showMessage("参数有误！");
+    		}
+    	}
+    	$condition['order_id']=$_GET['order_id'];
+    	$model_order= Model('order');
+    	$order_info = $model_order->getOrderInfo( $condition,array('order_goods','order_common'));
+   		//判断订单是否是新捷,如果是新捷不用推送订单到仓库
+   		if($order_info['store_storage_id'] == 2){
+   			$result['msg'] = "新捷仓库订单,请直接推送关贸";
+   			echo json_encode($result);
+   			die();
+   		}
+   		//判断是否丝路仓库
+   		if($order_info['store_storage_id'] == 3){
+   			//判断是否推送
+   			if($order_info['is_postmessage'] == 0){
+   				$result['msg'] = "请先推送关贸";
+	   			echo json_encode($result);
+	   			die();
+   			}else{
+   				$model_slwms = Model("slwms");
+   				$ret = $model_slwms->outOrderAdd($order_info);
+   				$ret['Result'] = $ret['RESULTCODE'];
+   				$ret['ErrMessage'] = $ret['RESULTMESSAGE'];
+   			}	   			
+   		}else{
+   			$ret = $model_wms->sendWms($order_info);
+   		}
+   		//$model_wms->getStock("11111111");
+   		$result['state'] = false;
+   		if($ret['Result'] == 0){
+   			$result['state'] = true;
+   			$result['msg'] = "操作成功";
+   			$update = array();
+    		$update['tao_status']=1;
+    		//取运单号
+    		//$express = $model_wms->getWmsExpress($order_info['order_sn']);
+    		//if($express['Result'] == 0){
+    			//$update['shipping_code'] = $ret['ErrMessage'];  			
+    		//}
+    		$model_order->editOrder($update,array('order_id'=>$order_info['order_id']));
+    		$this->_pushCustomeById($order_info['order_id']);	
+
+   		}else{
+   			if(strstr($ret['ErrMessage'],"已存在")){
+   				$update = array();
+    			$update['tao_status']=1;
+    			$model_order->editOrder($update,array('order_id'=>$order_info['order_id']));
+   			}
+   			$result['msg'] = $ret['ErrMessage'];
+   		}
+		echo json_encode($result);
+		die();
+   	}
+
+   	public function getShipOp(){
+   		$model_slwms = Model('slwms');
+		$model_order = Model('order');
+		if($_GET['order_sn']) {
+			$condition['order_sn'] =$_GET['order_sn'];
+			$order= $model_order->getOrderInfo( $condition,array('order_goods','order_common'));
+            if($order['store_storage_id'] == 3){
+            	$update=array();
+	            $shipping_code = $model_slwms->getYtoBill($order);
+	            $update['shipping_code'] = $shipping_code;
+				$result = $model_order->editOrder($update,array('order_id'=>$_GET['order_id']));
+	            $res['msg'] = "操作成功" ;
+           		echo json_encode($res);
+	            die();
+            }
+		}
+
+
+   		$res['msg'] = "暂时不支持本功能" ;
+        echo json_encode($res);
+        die();
+   		$model_order    = Model('order');
+        $order_sn = $_GET['order_sn'];
+        $res = array();
+        $res['state'] = false;
+        if(intval($order_sn)<=0){
+            $res['msg'] = "订单号不能为空" ;
+            echo json_encode($res);
+            die();
+        }
+        
+        $ret = Model("jbwms")->getWmsExpress($order_sn);
+        if($ret['Result'] == 0){
+        	$res['state'] = true;
+        	$res['msg'] = "" ;
+        	$update = array();
+        	$update['shipping_code'] = $ret['ErrMessage'];    	
+        	$model_order->editOrder($update,array('order_sn'=>$order_sn));	
+
+        }else{
+        	$res['msg'] = $ret['ErrMessage'] ;
+        }
+        echo json_encode($res);
+        die();
+   	}
+	/**
+	 * 推送数据至淘宝仓
+	 */
+	public function pushTaoOp(){
+		$model_datamessage= Model('datamessage');
+    	$condition=array();
+		$result = array();
+		$result['state'] = false;
+    	if($_GET['order_id']<0){
+    		if($_GET['type'] == 'json'){
+    			$result['msg'] = "参数有误！";		
+				echo json_encode($result);
+				die();
+    		}else{
+    			showMessage("参数有误！");
+    		}
+    	}
+    	$condition['order_id']=$_GET['order_id'];
+    	$model_order= Model('order');
+    	$order= $model_order->getOrderInfo( $condition,array('order_goods','order_common'));
+		if($order['is_postmessage'] == 0 ){
+			$result['state'] = false;
+			$result['msg'] = "请先推送订单到关贸";
+			echo json_encode($result);
+			die();
+		}	
+    	if($order['tao_state']){
+    		$xml_data=$model_datamessage->taoBody($order,2);   
+    		$res=$model_datamessage->postTao($xml_data,1);
+			//$res['data']=json_decode($res['data'],true);
+       		//$res='{"result":true,"error":0,"data":{"type":"YTO","code":801212850271}}';    		
+    		$res=json_decode($res,true);       		
+       		//print_r($res);
+    		if($res['result']){    	
+    			$update = array();
+    			$update['tao_status']=1;
+    			if($res['data']['code']!=""  && $order['extend_order_common']['shipping_express_id']==40 ){  				
+    				$update['shipping_code']=$res['data']['code'];    			
+    				$update = $model_order->editOrder($update,array('order_id'=>$_GET['order_id']));
+    				$order['shipping_code']=$res['data']['code'];    				
+    			}else{
+    				$update = $model_order->editOrder($update,array('order_id'=>$_GET['order_id']));
+    			}    	
+    			$xml_data2=$model_datamessage->arraytoemsxml($order);				
+    			$model_datamessage->datapost($xml_data2);    	
+				if($_GET['type'] == 'json'){
+	    			$result['msg'] = "操作成功！";		
+					$result['state'] = true;	
+					echo json_encode($result);
+					die();
+				}else{
+					showMessage("操作成功！");  
+				}	
+    		}else{
+				if(strpos($res['error'],"原始订单号交易已存在")!== false){
+					$update = array();
+    				$update['tao_status']=1;
+					$update = $model_order->editOrder($update,array('order_id'=>$_GET['order_id']));
+				}
+				if($_GET['type'] == 'json'){
+	    			$result['msg'] = $res['error'];		
+					echo json_encode($result);
+					die();
+				}else{
+					showMessage($res['error']);
+				}	
+    		}
+    		 
+    	}
+	}
+	
+	/**
+	 * 根据订单ID推送订单到海关
+	 */
+	public function _pushCustomeById($order_id){
+		$model_order= Model('order');
+        $model_datamessage= Model('datamessage');
+		if($order_id<=0){
+            $this->errMsg = "参数有误！";
+			return false;
+		}       
+        $condition['order_id'] = $order_id;
+        $order= $model_order->getOrderInfo( $condition,array('order_goods','order_common'));        
+        if(empty($order)){
+            $this->errMsg = "没有找到相关订单！";
+            return false;
+		}
+		if($order['tao_status'] == 0 && $order['store_storage_id']==1){
+			$this->errMsg = "请先推送订单到仓库!";
+            return false;
+		}
+		if($order['order_state'] != 20){
+			$this->errMsg = "订单状态不是已支付状态!";
+            return false;
+		}
+		if($order['order_tax'] <= 0){
+			$this->errMsg = "税金不能为0!";
+            return false;
+		}
+		if($order['is_postkjyp']){
+			$this->errMsg = "此订单已推送至跨境优品平台!";
+            return false;
+		}
+		if($order['order_sn']==""){
+            $this->errMsg = "订单编号不能为空!";
+            return false;            
+        }        
+        if($order['extend_order_common']['reciver_info']['member_idcard']==""){
+            $this->errMsg = "身份证号码不能为空!";
+            return false;                
+        }
+        if($order['extend_order_common']['reciver_name']==""){
+            $this->errMsg = "姓名不能为空!";
+            return false;            
+        }
+        if(preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","",$order['extend_order_common']['reciver_info']['address'])==""){           
+            $this->errMsg = "收货地址不能为空!";
+            return false;            
+        }
+        if($order['extend_order_common']['reciver_info']['phone']==""){
+            $this->errMsg = "手机号不能为空!";
+            return false;
+        }
+        if($order['is_postmessage']){
+            $this->errMsg = "此订单已推送至海关,请勿重复提交!";
+            return false;
+        }
+		//判断同一身份证一天是否超过2000
+		$model=Model();
+		$member_idcard=$order['member_idcard'];		
+		$condition	= array();
+		//当天时间
+		$start_unixtime = $end_unixtime = strtotime(date("Y-m-d",time()));			
+		$condition['postmessagetime'] = array('time',array($start_unixtime,$end_unixtime));
+		$condition['member_idcard'] = $member_idcard;
+		$condition['order_id'] =  array('not in',$_GET['order_id']);
+		$list=$model->table('orders')->field('sum(goods_amount) as goods_amount')->where($condition)->select();
+		$goods_amount = $list[0]['goods_amount'];		
+		$condition1 = array();
+		$condition1['order_id'] = $_GET['order_id'];
+		$list1=$model->table('orders')->field('sum(goods_amount) as goods_amount')->where($condition1)->select();
+		$goods_amount1 = $list1[0]['goods_amount'];
+		//echo $list[0]['alltax'];		
+		$model_setting = Model('setting');
+        $list_setting = $model_setting->getListSetting();
+		if($goods_amount + $goods_amount1>$list_setting['order_post_amount'] ){
+			$this->errMsg = "今天提交订单总额超过".$list_setting['order_post_amount'].",请明天提交";
+            return false;		
+		}		
+		//身份证相同一天只能提交一单，一周2单，一月4单
+		$where=array();
+		//今天
+		$start=$end=strtotime(date("Y-m-d",time()));			
+		$where['postmessagetime'] = array('time',array($start,$end));
+		$where['order_id']=array('not in',$order['order_id']);
+		$where['member_idcard'] =$order['member_idcard'] ;
+		$order_sum=$model_order->getOrderCount($where);
+		if($order_sum>=$list_setting['order_post_num']){
+			$this->errMsg = "同一身份证同一天只能提交".$list_setting['order_post_num']."单";
+            return false;
+		}
+		$model_hgmessage = Model("hgmessage");
+		$hgmessage = $model_hgmessage->getHgmessageInfo(array('order_sn'=>$order['order_sn'],'messagememo'=>"KJDD入库成功"));
+
+		$xml_data=$model_datamessage->arraytoxml($order);
+		$flag=$model_datamessage->datapost($xml_data); //测试时屏蔽
+		
+		if($flag === "True") { 
+			//判断提交时间是否为空，为空则修改
+			if($order['postmessagetime']==0){
+				 $update_message['postmessagetime']=time();
+			}
+			$update_message['is_postmessage']="1";
+			$update_message['messagecode']="20";
+			$update = $model_order->editOrder($update_message,array('order_id'=>$_GET['order_id']));
+	  	  	if (!$update) {
+		        $this->errMsg = "推送关贸成功";
+	   		}
+			return true;
+		}
+		else{
+		 	$this->errMsg = "推送关贸失败";
+			return false;
+		}	
+	}
+	
+	/**
+	 * 推送运单
+	 */
+	public function pushShipOp(){
+		if($_GET['order_id']) {
+            $condition['order_id'] =$_GET['order_id'];
+        }
+		$model_order= Model('order');
+		$model_datamessage= Model('datamessage');
+		$order= $model_order->getOrderInfo( $condition,array('order_goods','order_common'));	
+		if($order['is_postmessage'] == 0){
+			$result['state'] = false;
+			$result['msg'] = "请先推送订单到关贸";
+			echo json_encode($result);
+			die();
+		}	
+        //运单
+		if($order['shipping_code']==""){
+  			//$order['shipping_code']=$model_datamessage->emspost($order['extend_order_common']['reciver_info']['address']);
+   			//$update['shipping_code']=$order['shipping_code'];
+   			//$update = $model_order->editOrder($update,array('order_sn'=>$order['order_sn']));
+			$result['state'] = false;
+			$result['msg'] = "还没有运单号";
+			echo json_encode($result);
+			die();
+  		}
+		
+  		$xml_data2=$model_datamessage->arraytoemsxml($order); 		
+		$res = $model_datamessage->datapost($xml_data2);		
+		//$xml_data2=$model_datamessage->arraytoemsxml1($order); 		
+		//$res = $model_datamessage->datapost($xml_data2);     	
+		$result = array();
+		$result['state'] = false;		
+		if($res){
+			$result['state'] = true;
+			$result['msg'] = '操作成功';
+		}
+		else{
+			$result['msg'] = '操作失败';
+		}
+		echo json_encode($result);
+		die();
+		
+	}
+	/**
+	 * 推送支付单
+	 */
+	public function pushPayOp(){
+		if($_GET['order_id']) {
+            $condition['order_id'] =$_GET['order_id'];
+        }
+		$model_order= Model('order');
+		$model_datamessage= Model('datamessage');
+		$order= $model_order->getOrderInfo( $condition,array('order_goods','order_common'));
+		if($order['is_postmessage'] == 0){
+			$result['state'] = false;
+			$result['msg'] = "请先推送订单到关贸";
+			echo json_encode($result);
+			die();
+		}
+		$model_payment_message = Model("payment_message");
+ 		$res = $model_payment_message->SendPayMessage($order);
+ 		if($res['flag']){
+ 			$result = array();
+			$result['state'] = true;
+			$result['msg'] = '推送成功';
+ 		}else{
+ 			//showMessage("推送失败:{$res['pay_msg']}","",'html','error');
+			$result['state'] = false;
+			$result['msg'] = "{$res['pay_msg']}";
+ 		}
+		echo json_encode($result);
+	}
+
+}

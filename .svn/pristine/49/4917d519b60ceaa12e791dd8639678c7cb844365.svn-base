@@ -1,0 +1,24 @@
+Array
+(
+    [time] => 2016-05-14 11:31:59
+    [method] => item.in
+    [dhfcode] => D00002
+    [sku] => CQZY18711173001870
+    [goods_name] => 海外直邮Hero Baby荷兰本土美素奶粉标准段1段800g
+    [barcode] => CQZY18711173001870
+    [GOODS_SPEC] => 美素Hero Baby一段，热量276kj/66kcal/碳水化合物7.0g/膳食纤维0.44g/核苷酸3.25mg/蛋白质1.4g/其他25.9mg
+    [PRICE] => 0
+    [DECLARE_UNIT] => 140
+    [POST_TAX_NO] => 01010700
+    [LEGAL_UNIT] => 035
+    [CONV_LEGAL_UNIT_NUM] => 0.8
+    [HS_CODE] => 1901101000
+    [IN_AREA_UNIT] => 140
+    [CONV_IN_AREA_UNIT_NUM] => 1
+    [IS_EXPERIMENT_GOODS] => 1
+    [ORIGIN_COUNTRY_CODE] => 0
+    [CHECK_ORG_CODE] => SORTLINE02
+    [SUPPLIER_NAME] => 
+    [POST_TAX_RATE] => 0
+    [sign] => 8b0532a12fcd1a23ed66f6d38cc4f2d6
+)

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344149562
+                    [ferpbillno] => 036.2017112717344149562
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:43:10
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 邓利钊
+                    [fc_province] => 350000
+                    [fc_provincename] => 福建省
+                    [fc_city] => 350400
+                    [fc_cityname] => 三明市
+                    [fc_area] => 350402
+                    [fc_areaname] => 梅列区
+                    [fnotes] => 福建省三明市梅列区列东街玫瑰新村62栋10号
+                    [fc_zip] => 365000
+                    [fc_contact1] => 邓利钊
+                    [fc_phone] => 13616953119
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 198.00
+                    [fhwab] => 21.06
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.6010090701
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 20.00
+                                    [famount] => 198.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017120112192522235
+                    [ferpbillno] => 036.2017120112192522235
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-12-01 12:40:36
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 赵小妹
+                    [fc_province] => 350000
+                    [fc_provincename] => 福建省
+                    [fc_city] => 350200
+                    [fc_cityname] => 厦门市
+                    [fc_area] => 350206
+                    [fc_areaname] => 湖里区
+                    [fnotes] => 福建省厦门市湖里区何厝砖厂里面红楼虎仔山路155号院子一楼
+                    [fc_zip] => 361006
+                    [fc_contact1] => 赵小妹
+                    [fc_phone] => 18850307477
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 780.00
+                    [fhwab] => 82.95
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 130.00
+                                    [famount] => 780.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

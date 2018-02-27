@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112817344344249
+                    [ferpbillno] => 036.2017112817344344249
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-28 18:29:00
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 曾诚
+                    [fc_province] => 370000
+                    [fc_provincename] => 山东
+                    [fc_city] => 370100
+                    [fc_cityname] => 济南市
+                    [fc_area] => 370102
+                    [fc_areaname] => 历下区
+                    [fnotes] => 山东济南市历下区青年东路1号文教大厦北楼9层919
+                    [fc_zip] => 250014
+                    [fc_contact1] => 曾诚
+                    [fc_phone] => 13911786603
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 239.00
+                    [fhwab] => 25.42
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042291602
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 239.00
+                                    [famount] => 239.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

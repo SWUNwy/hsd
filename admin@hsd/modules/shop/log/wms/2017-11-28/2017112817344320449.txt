@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112817344320449
+                    [ferpbillno] => 036.2017112817344320449
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-28 18:22:21
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 卢梦
+                    [fc_province] => 500000
+                    [fc_provincename] => 重庆市
+                    [fc_city] => 500100
+                    [fc_cityname] => 重庆市
+                    [fc_area] => 500103
+                    [fc_areaname] => 渝中区
+                    [fnotes] => 重庆市重庆市渝中区上清寺街道重庆市渝中区上清寺学田湾下罗家湾26号万和药房
+                    [fc_zip] => 400010
+                    [fc_contact1] => 卢梦
+                    [fc_phone] => 15723260015
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 20.00
+                    [fhwab] => 2.13
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.6010090701
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 20.00
+                                    [famount] => 20.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

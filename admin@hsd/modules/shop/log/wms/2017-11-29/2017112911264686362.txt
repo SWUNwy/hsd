@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112911264686362
+                    [ferpbillno] => 036.2017112911264686362
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-29 11:59:46
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 胡振伟
+                    [fc_province] => 360000
+                    [fc_provincename] => 江西省
+                    [fc_city] => 361000
+                    [fc_cityname] => 抚州市
+                    [fc_area] => 361023
+                    [fc_areaname] => 南丰县
+                    [fnotes] => 江西省抚州市南丰县国际花园南门口（九江银行）
+                    [fc_zip] => 344500
+                    [fc_contact1] => 胡振伟
+                    [fc_phone] => 15907042556
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 520.00
+                    [fhwab] => 55.30
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 130.00
+                                    [famount] => 520.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

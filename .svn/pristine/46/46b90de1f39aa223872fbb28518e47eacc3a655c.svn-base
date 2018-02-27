@@ -1,0 +1,61 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 999
+                    [ferporderbillno] => 9000000000000301
+                    [ferpbillno] => 999.9000000000000301
+                    [fcustno] => 999
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-14 14:39:07
+                    [fdischargeplace] => 03
+                    [fdeliverplace] => 
+                    [fconsigneekey] => xsf
+                    [fc_province] => 120000
+                    [fc_provincename] => 天津
+                    [fc_city] => 120100
+                    [fc_cityname] => 天津市
+                    [fc_area] => 120101
+                    [fc_areaname] => 和平区
+                    [fnotes] => 天津天津市和平区sdfadfsaf
+                    [fc_zip] => 300041
+                    [fc_contact1] => xsf
+                    [fc_phone] => 13648363357
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 150.00
+                    [fhwab] => 15.95
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 999.11111111
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 150.00
+                                    [famount] => 150.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

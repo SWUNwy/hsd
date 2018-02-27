@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112916405317276
+                    [ferpbillno] => 036.2017112916405317276
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-29 17:35:18
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 郑爽
+                    [fc_province] => 510000
+                    [fc_provincename] => 四川
+                    [fc_city] => 510100
+                    [fc_cityname] => 成都市
+                    [fc_area] => 510122
+                    [fc_areaname] => 双流县
+                    [fnotes] => 四川成都市双流县四川省成都市双流县板桥枫林4栋602
+                    [fc_zip] => 610200
+                    [fc_contact1] => 郑爽
+                    [fc_phone] => 15802842597
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 145.00
+                    [fhwab] => 15.42
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 145.00
+                                    [famount] => 145.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112817344428366
+                    [ferpbillno] => 036.2017112817344428366
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-28 18:27:51
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 廖江萍
+                    [fc_province] => 360000
+                    [fc_provincename] => 江西省
+                    [fc_city] => 360300
+                    [fc_cityname] => 萍乡市
+                    [fc_area] => 360302
+                    [fc_areaname] => 安源区
+                    [fnotes] => 江西省萍乡市安源区公园北路25号
+                    [fc_zip] => 337000
+                    [fc_contact1] => 廖江萍
+                    [fc_phone] => 13635950895
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 260.00
+                    [fhwab] => 27.65
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 130.00
+                                    [famount] => 260.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

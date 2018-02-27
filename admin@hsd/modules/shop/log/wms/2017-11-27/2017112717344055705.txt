@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344055705
+                    [ferpbillno] => 036.2017112717344055705
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:47:01
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 秦红民
+                    [fc_province] => 410000
+                    [fc_provincename] => 河南
+                    [fc_city] => 410600
+                    [fc_cityname] => 鹤壁市
+                    [fc_area] => 410611
+                    [fc_areaname] => 淇滨区
+                    [fnotes] => 河南鹤壁市淇滨区闽江路与华夏南路交汇国际展览中心芬芬服装行
+                    [fc_zip] => 458000
+                    [fc_contact1] => 秦红民
+                    [fc_phone] => 13027703953
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 1128.00
+                    [fhwab] => 119.96
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042292300
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 188.00
+                                    [famount] => 1128.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

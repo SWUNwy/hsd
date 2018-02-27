@@ -1,0 +1,31 @@
+<?php defined('ByShopKJYP') or exit('Access Invalid!');?>
+<?php if (!empty($output['code_sale_list']['code_info']) && is_array($output['code_sale_list']['code_info'])) : ?>
+<?php foreach ($output['code_sale_list']['code_info'] as $key => $val): ?>
+<?php if(!empty($val['goods_list']) && is_array($val['goods_list'])) :?>
+<div id="newItemListWrap1">
+  <div class="pro-title mt-35 mb-5 clearfix">
+    <div class="f-l"> <span class="fs-21 cor-3"><?php echo $val['recommend']['name']?></span>
+      <p class="d-ib fs-14 cor-9 lh-32 ml-20">全网好货 精选热卖</p>
+    </div>
+    <a class="f-r lh-32 hov-deline" href="javascript:void(0)" data-rpno="2.1">更多上新 &gt;</a> </div>
+  <div class="wrap mt-10 bg-w w-1188px b-1">
+    <ul>
+      <li class="clearfix">
+        <?php foreach($val['goods_list'] as $k => $v): ?>
+        <div class="new-item f-l pt-10 cor-3 cur-p  br-1 "> <a href="<?php echo urlShop('goods_itemIndex','index',array('goods_id'=>$v['goods_id']));?>" target="_blank" data-rpno="2.2">
+          <div class="w-250px h-250px of-h m-auto pos-r"> <img shopwwi-url="<?php echo strpos($v['goods_pic'],'http')===0 ? $v['goods_pic']:UPLOAD_SITE_URL."/".$v['goods_pic'];?>"  rel='lazy' src="<?php echo SHOP_SITE_URL;?>/img/loading.gif" class="d-ib w-100 va-m"> </div>
+          <div class="new-name w-250px m-auto ta-c fs-14 pt-5"><?php echo $v['goods_name']?></div>
+          <?php if($_SESSION['store_id']>0): ?>
+          <div class="cor-red w-250px m-auto ta-c pt-10 pb-30 fs-14"> ¥<span class="fs-21 fw-b" title="价格"><?php echo $v['goods_price']?></span> </div>
+          <?php else:?>
+          <div class="cor-red w-250px m-auto ta-c pt-10 pb-30 fs-14"> ¥<span class="fs-21 fw-b" title="市场价"><?php echo $v['market_price'];?></span> </div>
+          <?php endif; ?>
+          </a> </div>
+          <?php endforeach;?>
+      </li>
+    </ul>
+  </div>
+</div>
+<?php endif; ?>
+<?php endforeach; ?>
+<?php endif; ?>

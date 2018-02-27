@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112916405364310
+                    [ferpbillno] => 036.2017112916405364310
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-29 17:35:35
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 方莉香
+                    [fc_province] => 450000
+                    [fc_provincename] => 广西
+                    [fc_city] => 450100
+                    [fc_cityname] => 南宁市
+                    [fc_area] => 450108
+                    [fc_areaname] => 良庆区
+                    [fnotes] => 广西南宁市良庆区五象大道668号光明澜湾九里6栋
+                    [fc_zip] => 530219
+                    [fc_contact1] => 方莉香
+                    [fc_phone] => 13877193092
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 1434.00
+                    [fhwab] => 152.50
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042291602
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 239.00
+                                    [famount] => 1434.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,20 @@
+Array
+(
+    [acct] => oqxPfs7cenIKD6OwBCx7LemkjXPM
+    [appid] => 00000000
+    [chnltrxid] => 4200000016201711165046920926
+    [cusid] => 990440153996000
+    [cusorderid] => 260564165840671006
+    [outtrxid] => 260564165840671006
+    [paytime] => 20171116164446
+    [sign] => 903E5BECD83253E01885EBD63B516964
+    [termauthno] => CFT
+    [termrefnum] => 4200000016201711165046920926
+    [termtraceno] => 0
+    [trxamt] => 1
+    [trxcode] => VSP501
+    [trxdate] => 20171116
+    [trxid] => 111724090000072172
+    [trxreserved] => r
+    [trxstatus] => 0000
+)

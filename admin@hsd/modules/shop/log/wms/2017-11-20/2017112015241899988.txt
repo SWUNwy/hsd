@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112015241899988
+                    [ferpbillno] => 036.2017112015241899988
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-20 15:36:04
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 孙昊天
+                    [fc_province] => 320000
+                    [fc_provincename] => 江苏
+                    [fc_city] => 320100
+                    [fc_cityname] => 南京
+                    [fc_area] => 320113
+                    [fc_areaname] => 栖霞区
+                    [fnotes] => 江苏南京栖霞区靖安镇营房韵达快递点
+                    [fc_zip] => 210046
+                    [fc_contact1] => 孙昊天
+                    [fc_phone] => 13645171751
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 520.00
+                    [fhwab] => 55.30
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 130.00
+                                    [famount] => 520.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

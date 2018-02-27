@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><DTC_Message>
+		<MessageHead>
+		<MessageType>ORDER_INFO</MessageType>
+		<MessageId>0c274d62-f04f-ed27-d118-bc6cac6974a5</MessageId>
+		<ActionType>1</ActionType>
+		<MessageTime>2017-11-28 18:29:01</MessageTime>
+		<SenderId>5012260547</SenderId>
+		<ReceiverId>CQITC</ReceiverId>
+		<SenderAddress />
+	    <ReceiverAddress />
+	    <PlatFormNo />
+	    <CustomCode />
+	    <SeqNo />
+	    <Note />
+		<UserNo>5012260547</UserNo>
+		<Password>a9690285818cfd679f1987fc44640ea6</Password>
+		</MessageHead><MessageBody>
+				 <DTCFlow>
+				  <ORDER_HEAD>
+				    <CUSTOMS_CODE>8013</CUSTOMS_CODE>
+				    <SORTLINE_ID>SORTLINE02</SORTLINE_ID>
+				    <BIZ_TYPE_CODE>I20</BIZ_TYPE_CODE>
+				    <ORIGINAL_ORDER_NO>2017112817344344249</ORIGINAL_ORDER_NO>
+				    <ESHOP_ENT_CODE>5012260547</ESHOP_ENT_CODE>
+				    <ESHOP_ENT_NAME>重庆倍赞电子商务有限公司</ESHOP_ENT_NAME>
+				    <DESP_ARRI_COUNTRY_CODE>142</DESP_ARRI_COUNTRY_CODE>
+				    <SHIP_TOOL_CODE>Y</SHIP_TOOL_CODE>
+				    <RECEIVER_ID_NO>43252419840907001X</RECEIVER_ID_NO>
+				    <RECEIVER_NAME>曾诚</RECEIVER_NAME>
+				    <RECEIVER_ADDRESS>山东济南市历下区青年东路1号文教大厦北楼9层919</RECEIVER_ADDRESS>
+				    <RECEIVER_TEL>13911786603</RECEIVER_TEL>
+				    <GOODS_FEE>213.58</GOODS_FEE>
+				    <TAX_FEE>25.42</TAX_FEE>
+				    <GROSS_WEIGHT>1</GROSS_WEIGHT>
+				    <PROXY_ENT_CODE/>
+				    <PROXY_ENT_NAME/>
+				    <TRANSPORT_FEE>0</TRANSPORT_FEE>
+					<CHECK_TYPE>P</CHECK_TYPE>
+			        <CC_TRADE_CODE>5006660012</CC_TRADE_CODE>
+			        <CC_TRADE_NAME>重庆嘉铂国际物流有限公司</CC_TRADE_NAME>
+				    <UNI_ESHOP_ENT_CODE/>
+				    <UNI_ESHOP_ENT_NAME/>
+				    <EBP_CODE>5012260547</EBP_CODE>
+        			<EBP_NAME>重庆倍赞电子商务有限公司</EBP_NAME>
+        			<ASSURE_CODE>5012260547</ASSURE_CODE>
+        			<SEND_ENT_CODE>5012260547</SEND_ENT_CODE>
+				    <BUYER_REG_NO>13911786603</BUYER_REG_NO>
+				    <BUYER_NAME>曾诚</BUYER_NAME>
+					<BUYER_ID_TYPE>1</BUYER_ID_TYPE>
+					<BUYER_ID>43252419840907001X</BUYER_ID>
+					<DISCOUNT>0</DISCOUNT>
+					<ACTUAL_PAID>239.00</ACTUAL_PAID>
+					<INSURED_FEE>0</INSURED_FEE>
+					<NET_WEIGHT>0.8</NET_WEIGHT>
+					
+				  <ORDER_DETAIL>
+				      <SKU>3042291602</SKU>
+				      <GOODS_SPEC>1品名:婴幼儿奶粉;成分:成分:乳糖脱盐乳清,脱脂乳,乳脂,植物油,低聚糖,低聚果糖,乳清蛋白浓缩物,动物油脂,碳酸钙,氯化钾,磷酸钙,氯化镁,维生素C,柠檬酸钾,牛磺酸,乳化剂;3用途:供婴幼儿食用,白金版2段;4包装规格:0.8kg/罐;5品牌:德国爱他美牌</GOODS_SPEC>
+				      <GOODS_NAME>德国爱他美白金2段婴幼儿奶粉</GOODS_NAME>
+				      <HS_CODE>1901101000</HS_CODE>
+				      <CURRENCY_CODE>142</CURRENCY_CODE>
+				      <PRICE>213.58</PRICE>
+				      <QTY>1</QTY>
+				      <GOODS_FEE>213.58</GOODS_FEE>
+				      <TAX_FEE>25.42</TAX_FEE>
+				      <COUNTRY>304</COUNTRY>
+				      <UNIT_CODE>122</UNIT_CODE>
+          			  <NOTE></NOTE>
+				      <G_NUM>1</G_NUM>
+				      <QTY2></QTY2>
+				      <UNIT2></UNIT2>
+			      </ORDER_DETAIL>
+			      </ORDER_HEAD>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>

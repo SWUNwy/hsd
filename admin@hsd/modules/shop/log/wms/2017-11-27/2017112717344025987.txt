@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344025987
+                    [ferpbillno] => 036.2017112717344025987
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:50:00
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 王文杰
+                    [fc_province] => 140000
+                    [fc_provincename] => 山西
+                    [fc_city] => 140100
+                    [fc_cityname] => 太原市
+                    [fc_area] => 140105
+                    [fc_areaname] => 小店区
+                    [fnotes] => 山西太原市小店区庆云街19号保税区进口商品展示体验中心B座216
+                    [fc_zip] => 030032
+                    [fc_contact1] => 王文杰
+                    [fc_phone] => 15534159186
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 752.00
+                    [fhwab] => 79.97
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042292300
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 188.00
+                                    [famount] => 752.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

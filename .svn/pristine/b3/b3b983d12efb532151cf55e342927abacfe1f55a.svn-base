@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><DTC_Message>
+		<MessageHead>
+		<MessageType>ORDER_INFO</MessageType>
+		<MessageId>55a84587-a5fe-6ee9-d0f9-16325175ca1c</MessageId>
+		<ActionType>1</ActionType>
+		<MessageTime>2017-11-18 03:14:57</MessageTime>
+		<SenderId>5012260547</SenderId>
+		<ReceiverId>CQITC</ReceiverId>
+		<SenderAddress />
+	    <ReceiverAddress />
+	    <PlatFormNo />
+	    <CustomCode />
+	    <SeqNo />
+	    <Note />
+		<UserNo>5012260547</UserNo>
+		<Password>3002b9c8bd5101a4ee3a4fb7505cd260</Password>
+		</MessageHead><MessageBody>
+				 <DTCFlow>
+				  <ORDER_HEAD>
+				    <CUSTOMS_CODE>8013</CUSTOMS_CODE>
+				    <SORTLINE_ID>SORTLINE02</SORTLINE_ID>
+				    <BIZ_TYPE_CODE>I20</BIZ_TYPE_CODE>
+				    <ORIGINAL_ORDER_NO>2017111802540126951</ORIGINAL_ORDER_NO>
+				    <ESHOP_ENT_CODE>5012260547</ESHOP_ENT_CODE>
+				    <ESHOP_ENT_NAME>重庆倍赞电子商务有限公司</ESHOP_ENT_NAME>
+				    <DESP_ARRI_COUNTRY_CODE>142</DESP_ARRI_COUNTRY_CODE>
+				    <SHIP_TOOL_CODE>Y</SHIP_TOOL_CODE>
+				    <RECEIVER_ID_NO>330127201508150038</RECEIVER_ID_NO>
+				    <RECEIVER_NAME>徐昊然</RECEIVER_NAME>
+				    <RECEIVER_ADDRESS>浙江省杭州市淳安县里联路105号</RECEIVER_ADDRESS>
+				    <RECEIVER_TEL>13819159452</RECEIVER_TEL>
+				    <GOODS_FEE>176.94</GOODS_FEE>
+				    <TAX_FEE>21.06</TAX_FEE>
+				    <GROSS_WEIGHT>0.6</GROSS_WEIGHT>
+				    <PROXY_ENT_CODE/>
+				    <PROXY_ENT_NAME/>
+				    <TRANSPORT_FEE>0</TRANSPORT_FEE>
+					<CHECK_TYPE>P</CHECK_TYPE>
+			        <CC_TRADE_CODE>5006660012</CC_TRADE_CODE>
+			        <CC_TRADE_NAME>重庆嘉铂国际物流有限公司</CC_TRADE_NAME>
+				    <UNI_ESHOP_ENT_CODE/>
+				    <UNI_ESHOP_ENT_NAME/>
+				    <EBP_CODE>5012260547</EBP_CODE>
+        			<EBP_NAME>重庆倍赞电子商务有限公司</EBP_NAME>
+        			<ASSURE_CODE>5012260547</ASSURE_CODE>
+        			<SEND_ENT_CODE>5012260547</SEND_ENT_CODE>
+				    <BUYER_REG_NO>13819159452</BUYER_REG_NO>
+				    <BUYER_NAME>徐昊然</BUYER_NAME>
+					<BUYER_ID_TYPE>1</BUYER_ID_TYPE>
+					<BUYER_ID>330127201508150038</BUYER_ID>
+					<DISCOUNT>0</DISCOUNT>
+					<ACTUAL_PAID>198.00</ACTUAL_PAID>
+					<INSURED_FEE>0</INSURED_FEE>
+					<NET_WEIGHT>0.4</NET_WEIGHT>
+					
+				  <ORDER_DETAIL>
+				      <SKU>6010090701</SKU>
+				      <GOODS_SPEC>1品名:婴幼儿奶粉400g;2成分:有机全脂奶粉,有机脱脂奶粉,有机脱盐乳清粉,有机大豆油,有机低聚半乳糖,有机向日葵油,含牛奶和大豆制品;3用途:供婴幼儿食用;4包装规格:0.4kg/罐;5:品牌:澳大利亚贝拉米</GOODS_SPEC>
+				      <GOODS_NAME>澳大利亚贝拉米1段婴幼儿奶粉400g</GOODS_NAME>
+				      <HS_CODE>1901101000</HS_CODE>
+				      <CURRENCY_CODE>142</CURRENCY_CODE>
+				      <PRICE>29.49</PRICE>
+				      <QTY>6</QTY>
+				      <GOODS_FEE>176.94</GOODS_FEE>
+				      <TAX_FEE>21.06</TAX_FEE>
+				      <COUNTRY>601</COUNTRY>
+				      <UNIT_CODE>122</UNIT_CODE>
+          			  <NOTE>已向海关提交活动报备</NOTE>
+				      <G_NUM>1</G_NUM>
+				      <QTY2>6</QTY2>
+				      <UNIT2>035</UNIT2>
+			      </ORDER_DETAIL>
+			      </ORDER_HEAD>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>

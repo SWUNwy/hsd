@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017113016561417751
+                    [ferpbillno] => 036.2017113016561417751
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-30 18:03:12
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 葛仙盛
+                    [fc_province] => 610000
+                    [fc_provincename] => 陕西
+                    [fc_city] => 610800
+                    [fc_cityname] => 榆林市
+                    [fc_area] => 610802
+                    [fc_areaname] => 榆阳区
+                    [fnotes] => 陕西榆林市榆阳区望湖星辰东区3#楼1单元302
+                    [fc_zip] => 719000
+                    [fc_contact1] => 葛仙盛
+                    [fc_phone] => 15229855102
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 478.00
+                    [fhwab] => 50.83
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042291602
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 239.00
+                                    [famount] => 478.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

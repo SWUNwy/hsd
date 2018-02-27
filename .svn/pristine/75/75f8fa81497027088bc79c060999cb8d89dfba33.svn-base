@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017111716305588519
+                    [ferpbillno] => 036.2017111716305588519
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-17 16:36:28
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 吴琳
+                    [fc_province] => 610000
+                    [fc_provincename] => 陕西省
+                    [fc_city] => 610700
+                    [fc_cityname] => 汉中市
+                    [fc_area] => 610702
+                    [fc_areaname] => 汉台区
+                    [fnotes] => 陕西省汉中市汉台区黄家塘人民巷福康小区对面百世快递店内
+                    [fc_zip] => 723000
+                    [fc_contact1] => 吴琳
+                    [fc_phone] => 18991602937
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 300.00
+                    [fhwab] => 31.90
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091003703
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 150.00
+                                    [famount] => 300.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344072963
+                    [ferpbillno] => 036.2017112717344072963
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:49:57
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 张莹
+                    [fc_province] => 140000
+                    [fc_provincename] => 山西
+                    [fc_city] => 140100
+                    [fc_cityname] => 太原市
+                    [fc_area] => 140105
+                    [fc_areaname] => 小店区
+                    [fnotes] => 山西太原市小店区太原保税区a座112
+                    [fc_zip] => 030032
+                    [fc_contact1] => 张莹
+                    [fc_phone] => 15535595006
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 188.00
+                    [fhwab] => 19.99
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042292300
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 188.00
+                                    [famount] => 188.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

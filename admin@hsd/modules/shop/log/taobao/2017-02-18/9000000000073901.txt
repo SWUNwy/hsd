@@ -1,0 +1,45 @@
+Array
+(
+    [time] => 2017-02-18 14:42:14
+    [method] => order.out
+    [dhfcode] => D00023
+    [CUSTOMS_CODE] => 8013
+    [ORIGINAL_ORDER_NO] => 9000000000073901
+    [DESP_ARRI_COUNTRY_CODE] => 142
+    [SHIP_TOOL_CODE] => 1
+    [receiver_id_no] => 510124199401020422
+    [receiver_name] => 杨涵
+    [receiver_address] => 红瓦街80号
+    [receiver_mobile] => 18782013261
+    [receiver_city] => 成都市
+    [receiver_state] => 四川省
+    [receiver_district] => 郫县
+    [GOODS_FEE] => 0.01
+    [TAX_FEE] => 0.00
+    [DISCOUNT] => 0
+    [ACTUAL_PAID] => 0.01
+    [INSURED_FEE] => 0
+    [BUYER_REG_NO] => 18782013261
+    [BUYER_NAME] => 杨涵
+    [BUYER_ID_TYPE] => 1
+    [BUYER_ID] => 510124199401020422
+    [TRANSPORT_FEE] => 0
+    [COUNTRY] => 304
+    [SORTLINE_ID] => SORTLINE02
+    [BAR_CODE] => 
+    [PUSH_HG] => no
+    [CHECK_TYPE] => p
+    [sign] => 4d02187fb96eefa3a5d78ba011ac99ef
+    [suborders] => Array
+        (
+            [0] => Array
+                (
+                    [SKU] => 4062300001534
+                    [QTY] => 2
+                    [GOODS_FEE] => 224.00
+                    [TAX_FEE] => 0.00
+                )
+
+        )
+
+)

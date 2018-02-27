@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112416350618230
+                    [ferpbillno] => 036.2017112416350618230
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-24 17:49:48
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 叶锦千
+                    [fc_province] => 330000
+                    [fc_provincename] => 浙江
+                    [fc_city] => 330300
+                    [fc_cityname] => 温州市
+                    [fc_area] => 330324
+                    [fc_areaname] => 永嘉县
+                    [fnotes] => 浙江温州市永嘉县温州市永嘉县桥下镇埠头村小京路228号
+                    [fc_zip] => 325100
+                    [fc_contact1] => 叶锦千
+                    [fc_phone] => 15605779187
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 145.00
+                    [fhwab] => 15.42
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 145.00
+                                    [famount] => 145.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112015550951178
+                    [ferpbillno] => 036.2017112015550951178
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-20 15:56:34
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 丁雅婷
+                    [fc_province] => 330000
+                    [fc_provincename] => 江西省
+                    [fc_city] => 330100
+                    [fc_cityname] => 南昌市
+                    [fc_area] => 330106
+                    [fc_areaname] => 西湖区
+                    [fnotes] => 江西省南昌市西湖区南昌市薄利电动工具超市
+                    [fc_zip] => 310013
+                    [fc_contact1] => 丁雅婷
+                    [fc_phone] => 18866666655
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 402.84
+                    [fhwab] => 42.84
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091004404
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 150.00
+                                    [famount] => 402.84
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

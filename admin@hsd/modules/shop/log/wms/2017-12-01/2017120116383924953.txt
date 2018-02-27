@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017120116383924953
+                    [ferpbillno] => 036.2017120116383924953
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-12-01 17:51:13
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 谢紫月
+                    [fc_province] => 410000
+                    [fc_provincename] => 河南
+                    [fc_city] => 410100
+                    [fc_cityname] => 郑州市
+                    [fc_area] => 410105
+                    [fc_areaname] => 金水区
+                    [fnotes] => 河南郑州市金水区东周路五洲小区12号院12号楼1单元1楼东户
+                    [fc_zip] => 450003
+                    [fc_contact1] => 谢紫月
+                    [fc_phone] => 18530898822
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 870.00
+                    [fhwab] => 92.52
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 145.00
+                                    [famount] => 870.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

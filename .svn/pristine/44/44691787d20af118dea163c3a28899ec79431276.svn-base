@@ -1,0 +1,224 @@
+<?php
+/**
+ * 推送信息到WMS
+ *
+ *
+ *
+ * 
+ * @license    http://www.kjyp360.com
+ * @link
+ * @since
+ */
+defined('ByShopKJYP') or exit('Access Invalid!');
+class jbwmsModel extends Model{
+
+	private $setting_list = array();
+	public function __construct(){
+		$model_setting = Model('setting');
+        $this->setting_list = $model_setting->getListSetting();
+	}
+	/**
+	 * 发送订单到仓库
+	 * @param  [type] $order_info [description]
+	 * @return [type]             [description]
+	 */
+    public function sendWms($order_info){
+    	$json = json_encode($this->_getData($order_info));    	
+    	$param = "";
+    	$requesttime = date("Y-m-d H:i:s");
+    	$param['key'] = $this->setting_list['wms_key'];
+    	$param['method'] = "sendPutOrder";
+    	$param['json'] = $json;
+    	$param['requesttime'] = $requesttime;
+    	$param['sign'] = md5($json.$this->setting_list['wms_code'].$param['requesttime']); 
+    	$ret = $this->Post($param);
+    	$ret = json_decode($ret,true);
+    	return $ret;
+    }
+
+    public function sendHgcode($order_sn,$hgcode){
+    	$param = "";
+    	$requesttime = date("Y-m-d H:i:s");
+    	$json = $this->setting_list['wms_user'].".".$order_sn."|".$hgcode;
+    	$param['key'] = $this->setting_list['wms_key'];
+    	$param['method'] = "Hgcode";
+    	$param['json'] = $json;
+    	$param['requesttime'] = $requesttime;
+    	$param['sign'] = md5($json.$this->setting_list['wms_code'].$param['requesttime']);
+    	$ret = $this->Post($param);
+     	$ret = json_decode($ret,true);
+     	return $ret;
+    }
+
+    /**
+     * 取运单号
+     * @return [type] [description]
+     */
+    public function getWmsExpress($order_sn){
+    	$param = "";
+    	$requesttime = date("Y-m-d H:i:s");
+    	$json = $this->setting_list['wms_user'].".".$order_sn;
+    	$param['key'] = $this->setting_list['wms_key'];
+    	$param['method'] = "getDeliveryNo";
+    	$param['json'] = $json;
+    	$param['requesttime'] = $requesttime;
+    	$param['sign'] = md5($json.$this->setting_list['wms_code'].$param['requesttime']);
+    	$ret = $this->Post($param);
+     	$ret = json_decode($ret,true);
+     	return $ret;
+    }
+
+    private function _getData($order_info){
+    	//$address=explode("	",$order_info['extend_order_common']['reciver_info']['address']);
+    	$goods = Model("goods")->field('goods_wmstype')->getGoodsInfoById($order_info['extend_order_goods'][0]['goods_id']);
+        if($order_info['order_id']<658){
+            $fstockinno = $goods['goods_wmstype'];
+        }else{
+            $fstockinno = $order_info['extend_order_goods'][0]['goods_wmstype'];
+        }
+        $address = $order_info['extend_order_common']['reciver_info']['address'];
+    	$area = explode(" ",$order_info['extend_order_common']['reciver_info']['area']);
+    	$model_region = Model("region");
+	 	$region = $model_region->getParent($area[2]);
+    	$param = array();
+    	$param['action'] = "billfromerptowms";
+    	$param['data']['head'] = array(
+    		'fbilltype' => 2,
+    		'faccountno' => $this->setting_list['wms_user'],
+    		'ferporderbillno' => $order_info['order_sn'],
+    		'ferpbillno' => $this->setting_list['wms_user'].".".$order_info['order_sn'],
+    		'fcustno' => $this->setting_list['wms_user'],
+    		'fstockinno' => $fstockinno,
+    		'fstockoutno' => '01',
+    		'fbillerno' => '',
+    		'fbillrepno' => '',
+    		'fcheckerno' => '',
+    		'fbilldate' => date('Y-m-d H:i:s',time()),
+            "fremark" => $fstockinno!="01"?"CC".$fstockinno:"",
+    		'fdischargeplace' => $this->getExpress(),
+    		'fdeliverplace' => "",
+    		'fconsigneekey' => trim($order_info['extend_order_common']['reciver_name']),
+    		"fc_province" => $region[2]['id'],
+    		"fc_provincename" => $area[0],
+    		"fc_city" => $region[1]['id'],
+    		"fc_cityname" => $area[1],
+    		"fc_area" => $region[0]['id'],
+    		"fc_areaname" => $area[2],
+    		"fnotes" => preg_replace("/(\s|\&nbsp\;|　|\xc2\xa0)/","",$address),
+    		"fc_zip" => $region[0]['zip_code'],
+    		"fc_contact1" => trim($order_info['extend_order_common']['reciver_name']),
+    		"fc_phone" => trim($order_info['extend_order_common']['reciver_info']['phone']),
+    		"fhgbarcode" => "",
+    		"fbigpen" => "",
+    		"ftxlogisticid" => "",
+    		"fmawb" => $order_info['order_amount'],
+    		"fhwab" => $order_info['order_tax'],
+    		"fbjflag" => "N",
+            "fbjamt" => "0",
+    		
+    	);
+    	$list = array();
+    	if(!empty($order_info['extend_order_goods'])){
+    		foreach ($order_info['extend_order_goods'] as $key => $value) {
+    			$goods_info = Model("goods")->field('goods_spec,goods_serial,goods_wmstype')->getGoodsInfoById($value['goods_id']);
+    			//$goods_info['goods_serial'] = "11111111";
+    			$list['ficno'] = $this->setting_list['wms_user'].".".$goods_info['goods_serial'];
+    			$list['funit'] = '个';
+    			if($goods_info["goods_spec"]!="N;"){
+					$arr1 = unserialize($goods_info["goods_spec"]);
+					$str = end($arr1);
+					$mynum = $this->findNum($str);
+					if($mynum == 0){
+		                $mynum = 1;
+		            }
+					$list['fqty'] = $value['goods_num'] * $mynum;
+				}else{
+					$list['fqty'] = $value['goods_num'];
+				}
+				$list['fprice'] = $value['goods_price'];
+				$list['famount'] = $value['goods_pay_price'];
+				$list['fremarkdtail'] = "个";
+				$param['data']['detail']['list'][] = $list;
+    		}
+    	}
+        
+    	Model("hggmdata")->WriteLog($order_info['order_sn'],print_r($param,true),8);
+    	return $param;
+    }
+
+    /**
+     * 查询商品库存
+     * @param  [type] $goods_serial [description]
+     * @return [type]             [description]
+     */
+    public function getStock($goods_serial){
+    	$param = "";
+    	$requesttime = date("Y-m-d H:i:s");
+    	$json = $this->setting_list['wms_user'].".".$goods_serial;
+    	$param['key'] = $this->setting_list['wms_key'];
+    	$param['method'] = "getStock";
+    	$param['json'] = $json;
+    	$param['requesttime'] = $requesttime;
+    	$param['sign'] = md5($json.$this->setting_list['wms_code'].$param['requesttime']);
+    	
+    	$ret = $this->Post($param);
+     	$ret = json_decode($ret,true);
+     	if($ret['Result']==0){
+     		$message = urldecode($ret['ErrMessage']);
+     		$message = json_decode($message,true);
+     	}
+     	print_r($message);
+    }
+
+    
+
+	private function Post($post_data){
+		$url = $this->setting_list['wms_url'];
+		foreach($post_data as $key=> $value){
+			$data .= "{$key}=".$value."&";
+		}
+		$data = trim($data,"&");
+		$ch = curl_init();
+	    curl_setopt($ch, CURLOPT_URL, $url);
+	    curl_setopt($ch, CURLOPT_POST, 1);
+	    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+	    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	    $data = curl_exec($ch);
+        return $data;
+    }
+	
+	/**
+	 * 取字符串数字
+	 * @param  string $str [description]
+	 * @return [type]      [description]
+	 */
+	private function findNum($str=''){
+		$str=trim($str);
+		if(empty($str)){return '';}
+		$temp=array('1','2','3','4','5','6','7','8','9','0');
+		$result='';
+		for($i=0;$i<strlen($str);$i++){
+			if(in_array($str[$i],$temp)){
+				$result.=$str[$i];
+			}
+		}
+		if($result==0 ){
+			$result=1;
+		}
+		return $result;
+	}
+
+	/**
+	 * 查询用的什么快递 
+	 * @return [type] [description]
+	 */
+	public function getExpress($type = "wms"){
+		$wms_express = $this->setting_list['wms_express'];
+		if($type == "wms"){
+			return str_replace(array('EMS','YTO','YD'),array('03','07','05'),$wms_express);
+		}else{
+			$express = Model("express")->field('id')->where(array('e_code'=>$wms_express))->find();
+			return $express['id'];
+		}
+	}
+}

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112014375122673
+                    [ferpbillno] => 036.2017112014375122673
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-20 15:09:02
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 李强
+                    [fc_province] => 140000
+                    [fc_provincename] => 山西省
+                    [fc_city] => 141100
+                    [fc_cityname] => 吕梁市
+                    [fc_area] => 141102
+                    [fc_areaname] => 离石区
+                    [fnotes] => 山西省吕梁市离石区滨河北路泰和城市广场三层
+                    [fc_zip] => 033000
+                    [fc_contact1] => 李强
+                    [fc_phone] => 15135830556
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 66.00
+                    [fhwab] => 7.02
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.6010090701
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 33.00
+                                    [famount] => 66.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

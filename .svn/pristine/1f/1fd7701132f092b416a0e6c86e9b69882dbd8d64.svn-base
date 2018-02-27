@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><DTC_Message>
+		<MessageHead>
+		<MessageType>ORDER_INFO</MessageType>
+		<MessageId>a28901d0-a856-4909-160c-091026eb052f</MessageId>
+		<ActionType>1</ActionType>
+		<MessageTime>2017-11-23 10:50:35</MessageTime>
+		<SenderId>5012260547</SenderId>
+		<ReceiverId>CQITC</ReceiverId>
+		<SenderAddress />
+	    <ReceiverAddress />
+	    <PlatFormNo />
+	    <CustomCode />
+	    <SeqNo />
+	    <Note />
+		<UserNo>5012260547</UserNo>
+		<Password>9152c7965228f5056b7a1b185418e4aa</Password>
+		</MessageHead><MessageBody>
+				 <DTCFlow>
+				  <ORDER_HEAD>
+				    <CUSTOMS_CODE>8013</CUSTOMS_CODE>
+				    <SORTLINE_ID>SORTLINE02</SORTLINE_ID>
+				    <BIZ_TYPE_CODE>I20</BIZ_TYPE_CODE>
+				    <ORIGINAL_ORDER_NO>2017112217471377602</ORIGINAL_ORDER_NO>
+				    <ESHOP_ENT_CODE>5012260547</ESHOP_ENT_CODE>
+				    <ESHOP_ENT_NAME>重庆倍赞电子商务有限公司</ESHOP_ENT_NAME>
+				    <DESP_ARRI_COUNTRY_CODE>142</DESP_ARRI_COUNTRY_CODE>
+				    <SHIP_TOOL_CODE>Y</SHIP_TOOL_CODE>
+				    <RECEIVER_ID_NO>431126199310188418</RECEIVER_ID_NO>
+				    <RECEIVER_NAME>雷德海</RECEIVER_NAME>
+				    <RECEIVER_ADDRESS>广东省东莞市莞城区松山湖科技产业园区万科金域松湖小区26栋119号</RECEIVER_ADDRESS>
+				    <RECEIVER_TEL>18029066658</RECEIVER_TEL>
+				    <GOODS_FEE>804.29</GOODS_FEE>
+				    <TAX_FEE>95.71</TAX_FEE>
+				    <GROSS_WEIGHT>1</GROSS_WEIGHT>
+				    <PROXY_ENT_CODE/>
+				    <PROXY_ENT_NAME/>
+				    <TRANSPORT_FEE>0</TRANSPORT_FEE>
+					<CHECK_TYPE>P</CHECK_TYPE>
+			        <CC_TRADE_CODE>5006660012</CC_TRADE_CODE>
+			        <CC_TRADE_NAME>重庆嘉铂国际物流有限公司</CC_TRADE_NAME>
+				    <UNI_ESHOP_ENT_CODE/>
+				    <UNI_ESHOP_ENT_NAME/>
+				    <EBP_CODE>5012260547</EBP_CODE>
+        			<EBP_NAME>重庆倍赞电子商务有限公司</EBP_NAME>
+        			<ASSURE_CODE>5012260547</ASSURE_CODE>
+        			<SEND_ENT_CODE>5012260547</SEND_ENT_CODE>
+				    <BUYER_REG_NO>18029066658</BUYER_REG_NO>
+				    <BUYER_NAME>雷德海</BUYER_NAME>
+					<BUYER_ID_TYPE>1</BUYER_ID_TYPE>
+					<BUYER_ID>431126199310188418</BUYER_ID>
+					<DISCOUNT>0</DISCOUNT>
+					<ACTUAL_PAID>900.00</ACTUAL_PAID>
+					<INSURED_FEE>0</INSURED_FEE>
+					<NET_WEIGHT>0.85</NET_WEIGHT>
+					
+				  <ORDER_DETAIL>
+				      <SKU>3091003703</SKU>
+				      <GOODS_SPEC>1.品名:婴幼儿配方奶粉;2.成分:脱钙牛奶乳清,植物油,乳糖,脱脂牛奶,半乳糖寡糖,乳清蛋白浓缩物,果寡糖,碳酸钙,氯化钾,柠檬酸三钾,牛磺酸,3用于:供婴幼儿食用,3段;4包装规格:0.8kg/罐;5品牌:荷兰牛栏牌</GOODS_SPEC>
+				      <GOODS_NAME>荷兰牛栏婴幼儿配方奶粉3段</GOODS_NAME>
+				      <HS_CODE>1901101000</HS_CODE>
+				      <CURRENCY_CODE>142</CURRENCY_CODE>
+				      <PRICE>134.05</PRICE>
+				      <QTY>6</QTY>
+				      <GOODS_FEE>804.29</GOODS_FEE>
+				      <TAX_FEE>95.71</TAX_FEE>
+				      <COUNTRY>309</COUNTRY>
+				      <UNIT_CODE>122</UNIT_CODE>
+          			  <NOTE></NOTE>
+				      <G_NUM>1</G_NUM>
+				      <QTY2></QTY2>
+				      <UNIT2></UNIT2>
+			      </ORDER_DETAIL>
+			      </ORDER_HEAD>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>

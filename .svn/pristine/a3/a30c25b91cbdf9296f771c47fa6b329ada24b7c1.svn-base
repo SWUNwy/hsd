@@ -1,0 +1,27 @@
+[2018-01-19 10:02:04] /hsd/index.php?m=store_payment&a=real_order ( m=store_payment&a=real_order ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `kjyp_order_goods` WHERE order_id= LIMIT 1  
+[2018-01-19 10:02:04] /hsd/index.php?m=store_payment&a=real_order ( m=store_payment&a=real_order ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `kjyp_order_goods` WHERE order_id= LIMIT 1  
+[2018-01-19 10:02:04] /hsd/index.php?m=store_payment&a=real_order ( m=store_payment&a=real_order ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `kjyp_order_goods` WHERE order_id= LIMIT 1  
+[2018-01-19 10:02:24] /hsd/index.php?m=store_payment&a=real_order ( m=store_payment&a=real_order ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `kjyp_order_goods` WHERE order_id= LIMIT 1  
+[2018-01-19 10:02:24] /hsd/index.php?m=store_payment&a=real_order ( m=store_payment&a=real_order ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `kjyp_order_goods` WHERE order_id= LIMIT 1  
+[2018-01-19 10:02:24] /hsd/index.php?m=store_payment&a=real_order ( m=store_payment&a=real_order ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `kjyp_order_goods` WHERE order_id= LIMIT 1  
+[2018-01-19 10:03:37] /hsd/index.php?m=store_payment&a=real_order ( m=store_payment&a=real_order ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `kjyp_order_goods` WHERE order_id= LIMIT 1  
+[2018-01-19 10:03:37] /hsd/index.php?m=store_payment&a=real_order ( m=store_payment&a=real_order ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `kjyp_order_goods` WHERE order_id= LIMIT 1  
+[2018-01-19 10:03:37] /hsd/index.php?m=store_payment&a=real_order ( m=store_payment&a=real_order ) 
+ERR: Db Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+SELECT * FROM `kjyp_order_goods` WHERE order_id= LIMIT 1  

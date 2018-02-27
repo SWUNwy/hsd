@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112317142285464
+                    [ferpbillno] => 036.2017112317142285464
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-23 18:20:54
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 刘秀兰
+                    [fc_province] => 500000
+                    [fc_provincename] => 重庆
+                    [fc_city] => 500100
+                    [fc_cityname] => 县
+                    [fc_area] => 500243
+                    [fc_areaname] => 彭水苗族土家族自治县
+                    [fnotes] => 重庆县彭水苗族土家族自治县紹庆街道滨江社区滨江路c15栋（黄金海岸）物管处
+                    [fc_zip] => 409600
+                    [fc_contact1] => 刘秀兰
+                    [fc_phone] => 13896829228
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 752.00
+                    [fhwab] => 79.97
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042292300
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 188.00
+                                    [famount] => 752.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

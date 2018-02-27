@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344174340
+                    [ferpbillno] => 036.2017112717344174340
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:46:48
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 孙静
+                    [fc_province] => 440000
+                    [fc_provincename] => 贵州
+                    [fc_city] => 440100
+                    [fc_cityname] => 贵阳市
+                    [fc_area] => 440111
+                    [fc_areaname] => 白云区
+                    [fnotes] => 贵州贵阳市白云区贵阳白云都拉营绿地营销中心
+                    [fc_zip] => 510405
+                    [fc_contact1] => 孙静
+                    [fc_phone] => 13984880846
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 290.00
+                    [fhwab] => 30.84
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 145.00
+                                    [famount] => 290.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

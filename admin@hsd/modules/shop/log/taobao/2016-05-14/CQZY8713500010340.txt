@@ -1,0 +1,24 @@
+Array
+(
+    [time] => 2016-05-14 11:53:55
+    [method] => item.in
+    [dhfcode] => D00002
+    [sku] => CQZY8713500010340
+    [goods_name] => 海外直邮荷兰本土美素精装版1段
+    [barcode] => CQZY8713500010340
+    [GOODS_SPEC] => 荷兰本土美素精装版；800g/盒；1段
+    [PRICE] => 0
+    [DECLARE_UNIT] => 122
+    [POST_TAX_NO] => 01010700
+    [LEGAL_UNIT] => 035
+    [CONV_LEGAL_UNIT_NUM] => 0.8
+    [HS_CODE] => 1901101000
+    [IN_AREA_UNIT] => 122
+    [CONV_IN_AREA_UNIT_NUM] => 1
+    [IS_EXPERIMENT_GOODS] => 1
+    [ORIGIN_COUNTRY_CODE] => 0
+    [CHECK_ORG_CODE] => SORTLINE02
+    [SUPPLIER_NAME] => 
+    [POST_TAX_RATE] => 0
+    [sign] => d486ae6fa424a923ffb9c7f9e84d1343
+)

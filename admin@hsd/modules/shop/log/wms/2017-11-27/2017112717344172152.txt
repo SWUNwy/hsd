@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344172152
+                    [ferpbillno] => 036.2017112717344172152
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:46:50
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 王国君
+                    [fc_province] => 510000
+                    [fc_provincename] => 四川
+                    [fc_city] => 511500
+                    [fc_cityname] => 宜宾市
+                    [fc_area] => 511502
+                    [fc_areaname] => 翠屏区
+                    [fnotes] => 四川宜宾市翠屏区西郊街道金帝庄园AB区之间milkfamily生活馆（竹维斯旁）
+                    [fc_zip] => 644000
+                    [fc_contact1] => 王国君
+                    [fc_phone] => 15281402167
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 580.00
+                    [fhwab] => 61.68
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 145.00
+                                    [famount] => 580.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112817344384705
+                    [ferpbillno] => 036.2017112817344384705
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-28 18:26:37
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 欧丽萍
+                    [fc_province] => 450000
+                    [fc_provincename] => 广西壮族自治区
+                    [fc_city] => 450300
+                    [fc_cityname] => 桂林市
+                    [fc_area] => 450323
+                    [fc_areaname] => 灵川县
+                    [fnotes] => 广西壮族自治区桂林市灵川县广西壮族自治区桂林市灵川县定江镇利民街20号
+                    [fc_zip] => 541200
+                    [fc_contact1] => 欧丽萍
+                    [fc_phone] => 13457653337
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 40.00
+                    [fhwab] => 4.25
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.6010090701
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 20.00
+                                    [famount] => 40.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

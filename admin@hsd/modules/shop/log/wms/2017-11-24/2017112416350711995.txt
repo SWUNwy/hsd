@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112416350711995
+                    [ferpbillno] => 036.2017112416350711995
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-24 17:48:31
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 沈春娜
+                    [fc_province] => 330000
+                    [fc_provincename] => 浙江省
+                    [fc_city] => 330200
+                    [fc_cityname] => 宁波市
+                    [fc_area] => 330212
+                    [fc_areaname] => 鄞州区
+                    [fnotes] => 浙江省宁波市鄞州区东钱湖镇康兴路1号大昌建设集团东钱湖分公司
+                    [fc_zip] => 315100
+                    [fc_contact1] => 沈春娜
+                    [fc_phone] => 15669113925
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 600.00
+                    [fhwab] => 63.81
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091109605
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 150.00
+                                    [famount] => 600.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

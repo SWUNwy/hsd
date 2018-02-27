@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344136225
+                    [ferpbillno] => 036.2017112717344136225
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:46:47
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 唐晓云
+                    [fc_province] => 330000
+                    [fc_provincename] => 浙江
+                    [fc_city] => 330200
+                    [fc_cityname] => 宁波市
+                    [fc_area] => 330212
+                    [fc_areaname] => 鄞州区
+                    [fnotes] => 浙江宁波市鄞州区宁波市下应街道潘火街道童王小区️2幢303
+                    [fc_zip] => 315100
+                    [fc_contact1] => 唐晓云
+                    [fc_phone] => 13567889389
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 580.00
+                    [fhwab] => 61.68
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 145.00
+                                    [famount] => 580.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

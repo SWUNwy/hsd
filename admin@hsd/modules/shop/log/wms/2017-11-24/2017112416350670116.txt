@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112416350670116
+                    [ferpbillno] => 036.2017112416350670116
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-24 17:49:37
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 张林海
+                    [fc_province] => 340000
+                    [fc_provincename] => 安徽省
+                    [fc_city] => 340200
+                    [fc_cityname] => 芜湖市
+                    [fc_area] => 340221
+                    [fc_areaname] => 芜湖县
+                    [fnotes] => 安徽省芜湖市芜湖县安徽省芜湖市芜湖县湾址镇邮政局巷口晓水服饰
+                    [fc_zip] => 241100
+                    [fc_contact1] => 张林海
+                    [fc_phone] => 18130325868
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 640.00
+                    [fhwab] => 68.06
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.6010017401
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 160.00
+                                    [famount] => 640.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

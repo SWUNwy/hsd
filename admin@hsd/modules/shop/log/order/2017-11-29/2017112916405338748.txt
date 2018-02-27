@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><DTC_Message>
+		<MessageHead>
+		<MessageType>ORDER_INFO</MessageType>
+		<MessageId>829b7968-8794-a8e6-ea87-3900eb1f65a9</MessageId>
+		<ActionType>1</ActionType>
+		<MessageTime>2017-11-29 17:35:33</MessageTime>
+		<SenderId>5012260547</SenderId>
+		<ReceiverId>CQITC</ReceiverId>
+		<SenderAddress />
+	    <ReceiverAddress />
+	    <PlatFormNo />
+	    <CustomCode />
+	    <SeqNo />
+	    <Note />
+		<UserNo>5012260547</UserNo>
+		<Password>380849ff2e0c26cebcb490791a74419d</Password>
+		</MessageHead><MessageBody>
+				 <DTCFlow>
+				  <ORDER_HEAD>
+				    <CUSTOMS_CODE>8013</CUSTOMS_CODE>
+				    <SORTLINE_ID>SORTLINE02</SORTLINE_ID>
+				    <BIZ_TYPE_CODE>I20</BIZ_TYPE_CODE>
+				    <ORIGINAL_ORDER_NO>2017112916405338748</ORIGINAL_ORDER_NO>
+				    <ESHOP_ENT_CODE>5012260547</ESHOP_ENT_CODE>
+				    <ESHOP_ENT_NAME>重庆倍赞电子商务有限公司</ESHOP_ENT_NAME>
+				    <DESP_ARRI_COUNTRY_CODE>142</DESP_ARRI_COUNTRY_CODE>
+				    <SHIP_TOOL_CODE>Y</SHIP_TOOL_CODE>
+				    <RECEIVER_ID_NO>332622196712150549</RECEIVER_ID_NO>
+				    <RECEIVER_NAME>王丹红</RECEIVER_NAME>
+				    <RECEIVER_ADDRESS>浙江舟山市普陀区舟山市普陀区東港文康街96號</RECEIVER_ADDRESS>
+				    <RECEIVER_TEL>15858072088</RECEIVER_TEL>
+				    <GOODS_FEE>259.16</GOODS_FEE>
+				    <TAX_FEE>30.84</TAX_FEE>
+				    <GROSS_WEIGHT>1</GROSS_WEIGHT>
+				    <PROXY_ENT_CODE/>
+				    <PROXY_ENT_NAME/>
+				    <TRANSPORT_FEE>0</TRANSPORT_FEE>
+					<CHECK_TYPE>P</CHECK_TYPE>
+			        <CC_TRADE_CODE>5006660012</CC_TRADE_CODE>
+			        <CC_TRADE_NAME>重庆嘉铂国际物流有限公司</CC_TRADE_NAME>
+				    <UNI_ESHOP_ENT_CODE/>
+				    <UNI_ESHOP_ENT_NAME/>
+				    <EBP_CODE>5012260547</EBP_CODE>
+        			<EBP_NAME>重庆倍赞电子商务有限公司</EBP_NAME>
+        			<ASSURE_CODE>5012260547</ASSURE_CODE>
+        			<SEND_ENT_CODE>5012260547</SEND_ENT_CODE>
+				    <BUYER_REG_NO>15858072088</BUYER_REG_NO>
+				    <BUYER_NAME>王丹红</BUYER_NAME>
+					<BUYER_ID_TYPE>1</BUYER_ID_TYPE>
+					<BUYER_ID>332622196712150549</BUYER_ID>
+					<DISCOUNT>0</DISCOUNT>
+					<ACTUAL_PAID>290.00</ACTUAL_PAID>
+					<INSURED_FEE>0</INSURED_FEE>
+					<NET_WEIGHT>0.8</NET_WEIGHT>
+					
+				  <ORDER_DETAIL>
+				      <SKU>3042232901</SKU>
+				      <GOODS_SPEC>1品名:婴幼儿奶粉;成分:脱盐乳精,植物油,低聚糖,乳糖,,磷酸钙,柠檬酸钾,维生素,大豆软磷脂,氯化胆碱,牛磺酸,核苷酸;3用途:供婴幼儿食用,1段;4包装规格:0.8kg/盒;5品牌:德国爱他美牌</GOODS_SPEC>
+				      <GOODS_NAME>德国爱他美1段</GOODS_NAME>
+				      <HS_CODE>1901101000</HS_CODE>
+				      <CURRENCY_CODE>142</CURRENCY_CODE>
+				      <PRICE>129.58</PRICE>
+				      <QTY>2</QTY>
+				      <GOODS_FEE>259.16</GOODS_FEE>
+				      <TAX_FEE>30.84</TAX_FEE>
+				      <COUNTRY>304</COUNTRY>
+				      <UNIT_CODE>122</UNIT_CODE>
+          			  <NOTE></NOTE>
+				      <G_NUM>1</G_NUM>
+				      <QTY2></QTY2>
+				      <UNIT2></UNIT2>
+			      </ORDER_DETAIL>
+			      </ORDER_HEAD>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>

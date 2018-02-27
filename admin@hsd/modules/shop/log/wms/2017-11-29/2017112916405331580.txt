@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112916405331580
+                    [ferpbillno] => 036.2017112916405331580
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-29 17:35:07
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 李炜毅
+                    [fc_province] => 440000
+                    [fc_provincename] => 广东
+                    [fc_city] => 445100
+                    [fc_cityname] => 潮州市
+                    [fc_area] => 445102
+                    [fc_areaname] => 湘桥区
+                    [fnotes] => 广东潮州市湘桥区彩虹路锦绣家园12幢301
+                    [fc_zip] => 521000
+                    [fc_contact1] => 李炜毅
+                    [fc_phone] => 15907673210
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 870.00
+                    [fhwab] => 92.52
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 145.00
+                                    [famount] => 870.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

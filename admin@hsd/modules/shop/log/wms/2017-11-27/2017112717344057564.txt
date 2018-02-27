@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344057564
+                    [ferpbillno] => 036.2017112717344057564
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:47:04
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 秦翠娟
+                    [fc_province] => 410000
+                    [fc_provincename] => 河南
+                    [fc_city] => 410100
+                    [fc_cityname] => 郑州市
+                    [fc_area] => 410184
+                    [fc_areaname] => 新郑市
+                    [fnotes] => 河南郑州市新郑市航空港区云港路蓝天商务花园3号楼2509室
+                    [fc_zip] => 451100
+                    [fc_contact1] => 秦翠娟
+                    [fc_phone] => 15036128380
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 1128.00
+                    [fhwab] => 119.96
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042292300
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 188.00
+                                    [famount] => 1128.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,24 @@
+Array
+(
+    [time] => 2016-05-14 11:28:56
+    [method] => item.in
+    [dhfcode] => D00002
+    [sku] => CQZY8712400115797
+    [goods_name] => 海外直邮Nutrilon荷兰本土牛栏奶粉3段（铁罐装）
+    [barcode] => CQZY8712400115797
+    [GOODS_SPEC] => 奶粉；能量275/65前焦/千卡，脂肪（46%）2.6g，饱和脂肪1.2g，单不饱和脂肪酸0.58g等；供婴幼儿食用；800g；Nutrilon
+    [PRICE] => 0
+    [DECLARE_UNIT] => 122
+    [POST_TAX_NO] => 01010700
+    [LEGAL_UNIT] => 035
+    [CONV_LEGAL_UNIT_NUM] => 0.8
+    [HS_CODE] => 1901101000
+    [IN_AREA_UNIT] => 122
+    [CONV_IN_AREA_UNIT_NUM] => 1
+    [IS_EXPERIMENT_GOODS] => 1
+    [ORIGIN_COUNTRY_CODE] => 0
+    [CHECK_ORG_CODE] => SORTLINE02
+    [SUPPLIER_NAME] => 
+    [POST_TAX_RATE] => 0
+    [sign] => 99c71082ff9bc072239fefba00af0963
+)

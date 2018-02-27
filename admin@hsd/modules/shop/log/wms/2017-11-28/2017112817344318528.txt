@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112817344318528
+                    [ferpbillno] => 036.2017112817344318528
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-28 18:35:15
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 邱晨
+                    [fc_province] => 360000
+                    [fc_provincename] => 江西
+                    [fc_city] => 360100
+                    [fc_cityname] => 南昌市
+                    [fc_area] => 360122
+                    [fc_areaname] => 新建县
+                    [fnotes] => 江西南昌市新建县红湾公路工业五路720厂227路公交总站
+                    [fc_zip] => 330100
+                    [fc_contact1] => 邱晨
+                    [fc_phone] => 13979183611
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 188.00
+                    [fhwab] => 19.99
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042292300
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 188.00
+                                    [famount] => 188.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

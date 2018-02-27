@@ -1,0 +1,24 @@
+Array
+(
+    [time] => 2017-11-15 16:31:21
+    [method] => item.in
+    [dhfcode] => 
+    [sku] => 3091003703
+    [goods_name] => Nutrilon荷兰本土牛栏奶粉标准段3段800g
+    [barcode] => 3091003703
+    [GOODS_SPEC] => 牛栏Nutrilon三段，热量70千卡/碳水化合物8.8g/膳食纤维0.6g/矿物质274.3mg/其他24.1mg/
+    [PRICE] => 0
+    [DECLARE_UNIT] => 122
+    [POST_TAX_NO] => 01010700
+    [LEGAL_UNIT] => 035
+    [CONV_LEGAL_UNIT_NUM] => 0.8
+    [HS_CODE] => 1901101000
+    [IN_AREA_UNIT] => 122
+    [CONV_IN_AREA_UNIT_NUM] => 1
+    [IS_EXPERIMENT_GOODS] => 1
+    [ORIGIN_COUNTRY_CODE] => 309
+    [CHECK_ORG_CODE] => SORTLINE02
+    [SUPPLIER_NAME] => 
+    [POST_TAX_RATE] => 0
+    [sign] => b1ee7aadd2a45d293e529c2edd797608
+)

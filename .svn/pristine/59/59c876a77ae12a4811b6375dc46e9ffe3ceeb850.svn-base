@@ -1,0 +1,42 @@
+[2018-01-09 17:20:23] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'store_storage_id' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,fremark,fstockinno,order_remark) VALUES ('2018010917202358089','YZG2018010828','680568833623192006','3','倍赞店铺','6','13892306709','admin@qq.com','1515489622','online','10','140','0','0','140','99','610431198602100639',NULL,'','01','')
+[2018-01-09 17:26:09] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'store_storage_id' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,fremark,fstockinno,order_remark) VALUES ('2018010917260915985','wycs','840568833969095006','3','倍赞店铺','6','13892306709','admin@qq.com','1515489968','online','10','140','0','0','140','99','610431198602100639',NULL,'','01','')
+[2018-01-09 17:31:07] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'store_storage_id' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,fremark,fstockinno,order_remark) VALUES ('2018010917310795941','wy00000','900568834267764006','3','倍赞店铺','6','13892306709','admin@qq.com','1515490266','online','10','140','0','0','140','99','610431198602100639',NULL,'','01','')
+[2018-01-09 17:35:22] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT goods_storage_id FROM `kjyp_goods_common` WHERE ( goods_id = NULL ) LIMIT 1  
+[2018-01-09 17:35:22] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'store_storage_id' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,fremark,fstockinno,order_remark) VALUES ('2018010917352267211','wy00000','160568834522341006','3','倍赞店铺','6','13892306709','admin@qq.com','1515490521','online','10','140','0','0','140','99','610431198602100639',NULL,'','01','')
+[2018-01-09 17:44:51] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT goods_storage_id FROM `kjyp_goods_common` WHERE ( goods_id = NULL ) LIMIT 1  
+[2018-01-09 17:48:32] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT goods_storage_id FROM `kjyp_goods_common` WHERE ( goods_id = '150770' ) LIMIT 1  
+[2018-01-09 17:48:47] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT goods_storage_id FROM `kjyp_goods_common` WHERE ( goods_id = '150770' ) LIMIT 1  
+[2018-01-09 17:49:56] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT goods_storage_id FROM `kjyp_goods_common` WHERE ( goods_id = '150770' ) LIMIT 1  
+[2018-01-09 17:49:56] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'store_storage_id' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,fremark,fstockinno,order_remark) VALUES ('2018010917495691189','wy00000','850568835396736006','3','倍赞店铺','6','13892306709','admin@qq.com','1515491395','online','10','140','0','0','140','99','610431198602100639',NULL,'','01','')
+[2018-01-09 17:53:47] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT goods_storage_id FROM `kjyp_goods_common` WHERE ( goods_id = '150770' ) LIMIT 1  
+[2018-01-09 17:53:47] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'store_storage_id' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,fremark,fstockinno,order_remark) VALUES ('2018010917534767013','wy00000','130568835627384006','3','倍赞店铺','6','13892306709','admin@qq.com','1515491626','online','10','140','0','0','140','99','610431198602100639',NULL,'','01','')
+[2018-01-09 17:56:50] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Unknown column 'goods_id' in 'where clause'
+SELECT goods_storage_id FROM `kjyp_goods_common` WHERE ( goods_id = NULL ) LIMIT 1  
+[2018-01-09 17:56:50] /hsd/admin@hsd/modules/shop/index.php?m=order_import&a=order_import_save ( m=order_import&a=order_import_save ) 
+ERR: Db Error: Column 'store_storage_id' cannot be null
+INSERT  INTO `kjyp_orders` (order_sn,external_order,pay_sn,store_id,store_name,buyer_id,buyer_name,buyer_email,add_time,payment_code,order_state,order_amount,shipping_fee,order_tax,goods_amount,order_from,member_idcard,store_storage_id,fremark,fstockinno,order_remark) VALUES ('2018010917565098765','wy00000','410568835810205006','3','倍赞店铺','6','13892306709','admin@qq.com','1515491809','online','10','140','0','0','140','99','610431198602100639',NULL,'','01','')

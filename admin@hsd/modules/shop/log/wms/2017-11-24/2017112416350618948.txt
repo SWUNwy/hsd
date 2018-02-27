@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112416350618948
+                    [ferpbillno] => 036.2017112416350618948
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-24 17:49:57
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 于淑丽
+                    [fc_province] => 410000
+                    [fc_provincename] => 河南
+                    [fc_city] => 410500
+                    [fc_cityname] => 安阳市
+                    [fc_area] => 410526
+                    [fc_areaname] => 滑县
+                    [fnotes] => 河南安阳市滑县道口镇解放北路道北新村3号
+                    [fc_zip] => 456400
+                    [fc_contact1] => 于淑丽
+                    [fc_phone] => 13569089786
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 145.00
+                    [fhwab] => 15.42
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 145.00
+                                    [famount] => 145.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

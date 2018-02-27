@@ -1,0 +1,3 @@
+[2017-12-21 15:33:27] /hsd/member/index.php?m=login&a=usersave&inajax=1 ( m=login&a=usersave ) 
+ERR: Db Error: Duplicate entry '9' for key 'PRIMARY'
+INSERT  INTO `kjyp_member_common` (member_id) VALUES ('9')

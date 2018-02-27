@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:x="urn:schemas-microsoft-com:office:excel"
+	xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:html="http://www.w3.org/TR/REC-html40">
+<Styles>
+<Style ss:ID="Default" ss:Name="Normal">
+			   <Alignment ss:Vertical="Center"/>
+			   <Borders/>
+			   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+			   <Interior/>
+			   <NumberFormat/>
+			   <Protection/>
+			  </Style>
+<Style ss:ID="s_title"><Font  ss:FontName="宋体" ss:Size="12" ss:Bold="1"/></Style>
+</Styles>
+<Worksheet ss:Name="错误订单">
+<Table ss:DefaultRowHeight="20">
+<Column ss:Index="1" ss:AutoFitWidth="0"/>
+<Row>
+<Cell  ><Data ss:Type="String">商品总数</Data></Cell>
+<Cell  ><Data ss:Type="String">订单号</Data></Cell>
+<Cell  ><Data ss:Type="String">收货电话</Data></Cell>
+<Cell  ><Data ss:Type="String">收货地址</Data></Cell>
+<Cell  ><Data ss:Type="String">商品编号</Data></Cell>
+<Cell  ><Data ss:Type="String">顾客姓名</Data></Cell>
+<Cell  ><Data ss:Type="String">顾客身份证号</Data></Cell>
+<Cell  ><Data ss:Type="String">失败原因</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">3</Data></Cell>
+<Cell  ><Data ss:Type="String">48522143107</Data></Cell>
+<Cell  ><Data ss:Type="String">13578396479</Data></Cell>
+<Cell  ><Data ss:Type="String">云南省，丽江市，古城区，城区丽江市阿丹阁村106号</Data></Cell>
+<Cell  ><Data ss:Type="String">8716677005751</Data></Cell>
+<Cell  ><Data ss:Type="String">杨婷</Data></Cell>
+<Cell  ><Data ss:Type="String">533221199007175226</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String">姓名或身份证有误</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String">姓名或身份证有误</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String">姓名或身份证有误</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String">姓名或身份证有误</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String">姓名或身份证有误</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String">姓名或身份证有误</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String">姓名或身份证有误</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String"></Data></Cell>
+<Cell  ><Data ss:Type="String">姓名或身份证有误</Data></Cell>
+</Row>
+</Table>
+</Worksheet>
+</Workbook>

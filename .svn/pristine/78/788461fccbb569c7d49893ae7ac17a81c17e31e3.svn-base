@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112916405335703
+                    [ferpbillno] => 036.2017112916405335703
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-29 17:35:13
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 刘玉连
+                    [fc_province] => 130000
+                    [fc_provincename] => 河北
+                    [fc_city] => 131000
+                    [fc_cityname] => 廊坊市
+                    [fc_area] => 131028
+                    [fc_areaname] => 大厂回族自治县
+                    [fnotes] => 河北廊坊市大厂回族自治县河北省廊坊市大厂县潮白河河孔雀城英国宫五期15号楼2单2403
+                    [fc_zip] => 065300
+                    [fc_contact1] => 刘玉连
+                    [fc_phone] => 13691316238
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 478.00
+                    [fhwab] => 50.83
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042291602
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 239.00
+                                    [famount] => 478.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

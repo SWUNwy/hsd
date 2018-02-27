@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112717344159992
+                    [ferpbillno] => 036.2017112717344159992
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-27 18:54:57
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 戴坚
+                    [fc_province] => 440000
+                    [fc_provincename] => 广东
+                    [fc_city] => 441500
+                    [fc_cityname] => 汕尾市
+                    [fc_area] => 441521
+                    [fc_areaname] => 海丰县
+                    [fnotes] => 广东汕尾市海丰县广东省汕尾市海丰县公平银苑五街15号楼下
+                    [fc_zip] => 516400
+                    [fc_contact1] => 戴坚
+                    [fc_phone] => 18898781284
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 33.00
+                    [fhwab] => 3.51
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.6010090701
+                                    [funit] => 个
+                                    [fqty] => 1
+                                    [fprice] => 20.00
+                                    [famount] => 33.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

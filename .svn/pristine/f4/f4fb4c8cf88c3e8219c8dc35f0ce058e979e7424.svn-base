@@ -1,0 +1,307 @@
+.pro-title {
+	line-height:25px;
+	vertical-align:bottom
+}
+.lh-32 {
+	line-height:32px
+}
+.pro-box {
+	height:470px
+}
+.pro-item {
+	width:197px;
+	height:235px;
+	cursor:pointer
+}
+.pro-name {
+	height:30px;
+	line-height:15px;
+	overflow:hidden
+}
+.pro-item:hover .pro-name {
+	text-decoration:underline
+}
+.pro-img {
+	width:150px;
+	height:150px;
+	line-height:150px;
+	overflow:hidden;
+	padding-top:15px;
+	margin:0 auto
+}
+.w-198px {
+	width:198px
+}
+.w-199px {
+	width:199px
+}
+.ml-198px {
+	margin-left:199px
+}
+.mt-5 {
+	margin-top:5px
+}
+.w-990px {
+	width:990px
+}
+.h-470px {
+	height:470px
+}
+.lh-470px {
+	line-height:470px
+}
+.lh-150px {
+	line-height:150px
+}
+.w-35px {
+	width:35px
+}
+.lh-17px {
+	line-height:17px
+}
+.t-210px {
+	top:230px
+}
+.right-0 {
+	right:0
+}
+.w-25px {
+	width:25px
+}
+.w-382px {
+	width:382px
+}
+.ad-item, .ml-22 {
+	margin-left:22px
+}
+.mr-25 {
+	margin-right:22px
+}
+.h-35px {
+	height:35px;
+	line-height:35px
+}
+.pb-55 {
+	padding-bottom:55px
+}
+.r-50 {
+	left:50%
+}
+.mr-640 {
+	margin-left:-640px
+}
+.lift-checked {
+	background:#FF5C5C;
+	right:35px;
+	position:absolute
+}
+.lift-right {
+	left:35px
+}
+.bg-9 {
+	background:#999
+}
+.mt-3 {
+	margin-top:3px
+}
+.hov-deline:hover {
+	text-decoration:underline
+}
+.new-item {
+	width:236.6px
+}
+.mb-5 {
+	margin-bottom:5px
+}
+.w-1188px {
+	width:1188px
+}
+.w-250px {
+	width:200px
+}
+.m-auto {
+	margin:0 auto
+}
+.new-name {
+	height:40px;
+	line-height:20px;
+	overflow:hidden
+}
+.new-item:hover .new-name {
+	text-decoration:underline
+}
+.mh-360 {
+	min-height:360px
+}
+.h-250px {
+	height:187px;
+	line-height:187px
+}
+.banner-img {
+	vertical-align:middle;
+	display:inline-block;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-960px
+}
+.h-320px {
+	height:320px
+}
+.w-650 {
+	width:650px
+}
+.h-400 {
+	height:400px
+}
+.close-icon {
+	top:10px;
+	font-size:20px;
+	cursor:pointer;
+	right:40px
+}
+.mt-25 {
+	margin-top:22px
+}
+.z-100 {
+	z-index:100
+}
+.cheap-tag {
+	background:url(../../images/cheap-tag.png) no-repeat;
+	width:64px;
+	height:61px;
+	z-index:1;
+	text-align:center;
+	padding-top:5px;
+	font-size:13px;
+	line-height:18px
+}
+.profit-tag {
+	background:url(../../images/profit-tag.png) no-repeat;
+	width:52px;
+	height:47px;
+	z-index:1;
+	padding-top:4px;
+	text-align:center;
+	font-size:13px;
+	line-height:18px
+}
+.w-slider {
+	height:450px;
+	position:relative;
+	overflow:hidden
+}
+.sliderContent {
+	width:1190px;
+	height:450px;
+	margin:0 auto;
+	position:relative
+}
+.slider-box {
+	width:9999px;
+	height:450px;
+	position:absolute;
+	top:0;
+	left:0;
+	margin-left:-365px;
+	z-index:1
+}
+.slider-unit {
+	width:1920px;
+	float:left;
+	text-align:center
+}
+.sliderTriggle {
+	text-align:center;
+	width:1190px;
+	margin:0 auto;
+	height:22px;
+	position:relative;
+	z-index:2;
+	bottom:50px
+}
+.sliderTriggle .next, .sliderTriggle .prev {
+	position:absolute;
+	top:50%;
+	margin-top:-225px;
+	visibility:hidden;
+	width:34px;
+	height:68px;
+transition:all .5s;
+	opacity:.4;
+	filter:alpha(opacity=40);
+	cursor:pointer;
+	background-color: #000;
+	background-image: url(../images/seller/jt.png);
+	background-repeat: no-repeat;
+}
+.w-slider:hover .next, .w-slider:hover .prev {
+	visibility:visible
+}
+.sliderTriggle .prev {
+	left:190px;
+	background-position:9px 21px
+}
+.sliderTriggle .next {
+	right:0;
+	background-position:-25px 21px
+}
+.sliderCircle a {
+	margin:0 1px;
+	color:#675D71
+}
+.sliderCircle .a-num {
+	top:12px;
+	left:15px
+}
+.sliderCircle a.cur {
+	color:#FF5C5C
+}
+div[aria-labelledby='title:popLayer'] .ui-dialog-body {
+	padding:0
+}
+div[aria-labelledby='title:popLayer'] .ui-dialog {
+	border:none;
+	background:0 0;
+	box-shadow:none
+}
+.down-app {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:110
+}
+.down-app-wrap {
+	position:relative
+}
+.down-app-wrap .bg {
+	background:#000;
+	opacity:.7;
+	-moz-opacity:.7;
+	width:100%;
+	height:120px
+}
+.down-img {
+	position:absolute;
+	width:1022px;
+	margin-left:-511px;
+	left:50%;
+	bottom:0
+}
+.down-img img {
+	width:1022px
+}
+.down-img a {
+	position:absolute;
+	right:30px;
+	bottom:105px;
+	color:#fff;
+	background:#b61a1a;
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	display:block;
+	line-height:16px;
+	text-align:center
+}

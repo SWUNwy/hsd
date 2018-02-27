@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017113016561470883
+                    [ferpbillno] => 036.2017113016561470883
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-30 18:03:09
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 费文杰
+                    [fc_province] => 320000
+                    [fc_provincename] => 江苏
+                    [fc_city] => 321200
+                    [fc_cityname] => 泰州市
+                    [fc_area] => 321202
+                    [fc_areaname] => 海陵区
+                    [fnotes] => 江苏泰州市海陵区江苏省泰州市海陵区金鹰商贸区横店影城1楼爱亲母婴生活馆
+                    [fc_zip] => 225300
+                    [fc_contact1] => 费文杰
+                    [fc_phone] => 15195208715
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 478.00
+                    [fhwab] => 50.83
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042291602
+                                    [funit] => 个
+                                    [fqty] => 2
+                                    [fprice] => 239.00
+                                    [famount] => 478.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

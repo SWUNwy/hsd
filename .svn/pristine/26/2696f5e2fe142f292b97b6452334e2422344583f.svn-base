@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * 智付notify回调
+ */
+$_GET['m']	= 'payment';
+$_GET['a']		= 'notify';
+$_POST['extra_common_param'] = 'real_order';
+$_POST['out_trade_no'] = $_POST['order_no'];
+$_POST['trade_no'] = $_POST['trade_no'];
+$_GET['payment_code'] = 'dingpay';
+require_once(dirname(__FILE__).'/../../../index.php');

@@ -1,0 +1,24 @@
+Array
+(
+    [time] => 2016-05-14 11:33:40
+    [method] => item.in
+    [dhfcode] => D00002
+    [sku] => CQZY8716677005751
+    [goods_name] => 海外直邮荷兰Kabrita羊奶粉2段
+    [barcode] => CQZY8716677005751
+    [GOODS_SPEC] => 奶粉；能量280/67前焦/千卡，脂肪3.0g，蛋白质1.8g，纤维素0.4g，碳水化合物8.0g等；供婴幼儿食用；800g；Kabrita
+    [PRICE] => 0
+    [DECLARE_UNIT] => 122
+    [POST_TAX_NO] => 01010700
+    [LEGAL_UNIT] => 035
+    [CONV_LEGAL_UNIT_NUM] => 0.8
+    [HS_CODE] => 1901101000
+    [IN_AREA_UNIT] => 122
+    [CONV_IN_AREA_UNIT_NUM] => 1
+    [IS_EXPERIMENT_GOODS] => 1
+    [ORIGIN_COUNTRY_CODE] => 0
+    [CHECK_ORG_CODE] => SORTLINE02
+    [SUPPLIER_NAME] => 
+    [POST_TAX_RATE] => 0
+    [sign] => 972d9e2fe100b0e268fcb55301dffd6e
+)

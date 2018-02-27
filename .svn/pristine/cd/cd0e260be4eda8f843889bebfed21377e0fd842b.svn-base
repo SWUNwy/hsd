@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112916405313906
+                    [ferpbillno] => 036.2017112916405313906
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-29 17:35:21
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 于顺利
+                    [fc_province] => 130000
+                    [fc_provincename] => 河北
+                    [fc_city] => 130100
+                    [fc_cityname] => 石家庄市
+                    [fc_area] => 130108
+                    [fc_areaname] => 裕华区
+                    [fnotes] => 河北石家庄市裕华区翟营南大街与方兴路交口南行200米路西自由自在进口超市
+                    [fc_zip] => 050031
+                    [fc_contact1] => 于顺利
+                    [fc_phone] => 18633456869
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 580.00
+                    [fhwab] => 61.68
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 145.00
+                                    [famount] => 580.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

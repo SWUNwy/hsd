@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><DTC_Message>
+		<MessageHead>
+		<MessageType>ORDER_INFO</MessageType>
+		<MessageId>0d90bc4f-ba5d-977c-19e8-047a282a2292</MessageId>
+		<ActionType>1</ActionType>
+		<MessageTime>2017-11-29 11:26:17</MessageTime>
+		<SenderId>5012260547</SenderId>
+		<ReceiverId>CQITC</ReceiverId>
+		<SenderAddress />
+	    <ReceiverAddress />
+	    <PlatFormNo />
+	    <CustomCode />
+	    <SeqNo />
+	    <Note />
+		<UserNo>5012260547</UserNo>
+		<Password>6a2ade4f3669f0a6ec72c1dfbce8e485</Password>
+		</MessageHead><MessageBody>
+				 <DTCFlow>
+				  <ORDER_HEAD>
+				    <CUSTOMS_CODE>8013</CUSTOMS_CODE>
+				    <SORTLINE_ID>SORTLINE02</SORTLINE_ID>
+				    <BIZ_TYPE_CODE>I20</BIZ_TYPE_CODE>
+				    <ORIGINAL_ORDER_NO>2017112911173643025</ORIGINAL_ORDER_NO>
+				    <ESHOP_ENT_CODE>5012260547</ESHOP_ENT_CODE>
+				    <ESHOP_ENT_NAME>重庆倍赞电子商务有限公司</ESHOP_ENT_NAME>
+				    <DESP_ARRI_COUNTRY_CODE>142</DESP_ARRI_COUNTRY_CODE>
+				    <SHIP_TOOL_CODE>Y</SHIP_TOOL_CODE>
+				    <RECEIVER_ID_NO>500108198703290413</RECEIVER_ID_NO>
+				    <RECEIVER_NAME>孙毅</RECEIVER_NAME>
+				    <RECEIVER_ADDRESS>重庆重庆市南岸区南坪长江村1-27</RECEIVER_ADDRESS>
+				    <RECEIVER_TEL>13368256790</RECEIVER_TEL>
+				    <GOODS_FEE>675.6</GOODS_FEE>
+				    <TAX_FEE>80.40</TAX_FEE>
+				    <GROSS_WEIGHT>1.1</GROSS_WEIGHT>
+				    <PROXY_ENT_CODE/>
+				    <PROXY_ENT_NAME/>
+				    <TRANSPORT_FEE>0</TRANSPORT_FEE>
+					<CHECK_TYPE>P</CHECK_TYPE>
+			        <CC_TRADE_CODE>5006660012</CC_TRADE_CODE>
+			        <CC_TRADE_NAME>重庆嘉铂国际物流有限公司</CC_TRADE_NAME>
+				    <UNI_ESHOP_ENT_CODE/>
+				    <UNI_ESHOP_ENT_NAME/>
+				    <EBP_CODE>5012260547</EBP_CODE>
+        			<EBP_NAME>重庆倍赞电子商务有限公司</EBP_NAME>
+        			<ASSURE_CODE>5012260547</ASSURE_CODE>
+        			<SEND_ENT_CODE>5012260547</SEND_ENT_CODE>
+				    <BUYER_REG_NO>13368256790</BUYER_REG_NO>
+				    <BUYER_NAME>孙毅</BUYER_NAME>
+					<BUYER_ID_TYPE>1</BUYER_ID_TYPE>
+					<BUYER_ID>500108198703290413</BUYER_ID>
+					<DISCOUNT>0</DISCOUNT>
+					<ACTUAL_PAID>756.00</ACTUAL_PAID>
+					<INSURED_FEE>0</INSURED_FEE>
+					<NET_WEIGHT>0.9</NET_WEIGHT>
+					
+				  <ORDER_DETAIL>
+				      <SKU>6010019803</SKU>
+				      <GOODS_SPEC>1品名:婴幼儿奶粉;2成分:有机全脂奶粉,有机脱脂奶粉,有机脱盐乳清粉,有机大豆油,有机低聚半乳糖,有机向日葵油,含牛奶和大豆制品;3用途:供婴幼儿食用,3段;4包装规格:0.9kg/罐;5:品牌:澳大利亚贝拉米</GOODS_SPEC>
+				      <GOODS_NAME>贝拉米婴幼儿有机奶粉3段900g</GOODS_NAME>
+				      <HS_CODE>1901101000</HS_CODE>
+				      <CURRENCY_CODE>142</CURRENCY_CODE>
+				      <PRICE>112.60</PRICE>
+				      <QTY>6</QTY>
+				      <GOODS_FEE>675.6</GOODS_FEE>
+				      <TAX_FEE>80.40</TAX_FEE>
+				      <COUNTRY>601</COUNTRY>
+				      <UNIT_CODE>122</UNIT_CODE>
+          			  <NOTE>已向海关提交活动报备</NOTE>
+				      <G_NUM>1</G_NUM>
+				      <QTY2></QTY2>
+				      <UNIT2></UNIT2>
+			      </ORDER_DETAIL>
+			      </ORDER_HEAD>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>

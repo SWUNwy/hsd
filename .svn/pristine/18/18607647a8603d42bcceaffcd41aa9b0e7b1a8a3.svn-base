@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017113016561334947
+                    [ferpbillno] => 036.2017113016561334947
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-30 18:09:20
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 范光亮
+                    [fc_province] => 350000
+                    [fc_provincename] => 福建省
+                    [fc_city] => 350300
+                    [fc_cityname] => 莆田市
+                    [fc_area] => 350303
+                    [fc_areaname] => 涵江区
+                    [fnotes] => 福建省莆田市涵江区梧塘镇东坡村(莆田市精密铸锻有限公司)
+                    [fc_zip] => 351111
+                    [fc_contact1] => 范光亮
+                    [fc_phone] => 13015906797
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 650.00
+                    [fhwab] => 69.12
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 5
+                                    [fprice] => 130.00
+                                    [famount] => 650.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

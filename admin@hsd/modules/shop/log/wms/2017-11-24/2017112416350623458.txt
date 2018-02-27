@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112416350623458
+                    [ferpbillno] => 036.2017112416350623458
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-24 17:50:04
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 张怀飞
+                    [fc_province] => 340000
+                    [fc_provincename] => 安徽
+                    [fc_city] => 340100
+                    [fc_cityname] => 合肥市
+                    [fc_area] => 340103
+                    [fc_areaname] => 庐阳区
+                    [fnotes] => 安徽合肥市庐阳区四里河路明发广场一楼B1区133
+                    [fc_zip] => 230001
+                    [fc_contact1] => 张怀飞
+                    [fc_phone] => 13905644997
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 956.00
+                    [fhwab] => 101.67
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042291602
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 239.00
+                                    [famount] => 956.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:x="urn:schemas-microsoft-com:office:excel"
+	xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+	xmlns:html="http://www.w3.org/TR/REC-html40">
+<Styles>
+<Style ss:ID="Default" ss:Name="Normal">
+			   <Alignment ss:Vertical="Center"/>
+			   <Borders/>
+			   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+			   <Interior/>
+			   <NumberFormat/>
+			   <Protection/>
+			  </Style>
+<Style ss:ID="s_title"><Font  ss:FontName="宋体" ss:Size="12" ss:Bold="1"/></Style>
+</Styles>
+<Worksheet ss:Name="错误订单">
+<Table ss:DefaultRowHeight="20">
+<Column ss:Index="1" ss:AutoFitWidth="0"/>
+<Row>
+<Cell  ><Data ss:Type="String">商品总数</Data></Cell>
+<Cell  ><Data ss:Type="String">订单号</Data></Cell>
+<Cell  ><Data ss:Type="String">收货电话</Data></Cell>
+<Cell  ><Data ss:Type="String">收货地址</Data></Cell>
+<Cell  ><Data ss:Type="String">商品编号</Data></Cell>
+<Cell  ><Data ss:Type="String">顾客姓名</Data></Cell>
+<Cell  ><Data ss:Type="String">顾客身份证号</Data></Cell>
+<Cell  ><Data ss:Type="String">失败原因</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">6</Data></Cell>
+<Cell  ><Data ss:Type="String">O45120530924997658</Data></Cell>
+<Cell  ><Data ss:Type="String">15074456262</Data></Cell>
+<Cell  ><Data ss:Type="String">湖南，张家界市，永定区，文昌阁工商银行上面千仞岗旁边19号</Data></Cell>
+<Cell  ><Data ss:Type="String">3042291602</Data></Cell>
+<Cell  ><Data ss:Type="String">姜楠</Data></Cell>
+<Cell  ><Data ss:Type="String">430802198004010568</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">6</Data></Cell>
+<Cell  ><Data ss:Type="String">O45120450859202148</Data></Cell>
+<Cell  ><Data ss:Type="String">18530898822</Data></Cell>
+<Cell  ><Data ss:Type="String">河南，郑州市，郑东新区，东周路五洲小区12号院12号楼1单元1楼东户</Data></Cell>
+<Cell  ><Data ss:Type="String">3042232901</Data></Cell>
+<Cell  ><Data ss:Type="String">谢紫月</Data></Cell>
+<Cell  ><Data ss:Type="String">410108199303070027</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">4</Data></Cell>
+<Cell  ><Data ss:Type="String">O15120291591045447</Data></Cell>
+<Cell  ><Data ss:Type="String">15965093547</Data></Cell>
+<Cell  ><Data ss:Type="String">山东，潍坊市，诸城市，繁荣西路宝龙大厦沿街小豆叮</Data></Cell>
+<Cell  ><Data ss:Type="String">6010090701</Data></Cell>
+<Cell  ><Data ss:Type="String">吴传国</Data></Cell>
+<Cell  ><Data ss:Type="String">371323198307176716</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">6</Data></Cell>
+<Cell  ><Data ss:Type="String">O25120277595629467</Data></Cell>
+<Cell  ><Data ss:Type="String">13890174105</Data></Cell>
+<Cell  ><Data ss:Type="String">四川，绵阳市，涪城区，凯德广场旁酒店国家电网</Data></Cell>
+<Cell  ><Data ss:Type="String">3042291602</Data></Cell>
+<Cell  ><Data ss:Type="String">常涛</Data></Cell>
+<Cell  ><Data ss:Type="String">510722198502178320</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">6</Data></Cell>
+<Cell  ><Data ss:Type="String">O25120277595534352</Data></Cell>
+<Cell  ><Data ss:Type="String">15281114506</Data></Cell>
+<Cell  ><Data ss:Type="String">四川，绵阳市，涪城区，会仙路17号3号门，临时停车区</Data></Cell>
+<Cell  ><Data ss:Type="String">3042291602</Data></Cell>
+<Cell  ><Data ss:Type="String">张家珍</Data></Cell>
+<Cell  ><Data ss:Type="String">510702196609061128</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">6</Data></Cell>
+<Cell  ><Data ss:Type="String">O25120277595445722</Data></Cell>
+<Cell  ><Data ss:Type="String">17683271222</Data></Cell>
+<Cell  ><Data ss:Type="String">四川，绵阳市，涪城区，会仙路17号社区服务中心</Data></Cell>
+<Cell  ><Data ss:Type="String">3042291602</Data></Cell>
+<Cell  ><Data ss:Type="String">贺丽</Data></Cell>
+<Cell  ><Data ss:Type="String">51070419860417212X</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">6</Data></Cell>
+<Cell  ><Data ss:Type="String">O25120277595339964</Data></Cell>
+<Cell  ><Data ss:Type="String">15386647040</Data></Cell>
+<Cell  ><Data ss:Type="String">四川，绵阳市，涪城区，临园路东段74号二期卸货平台</Data></Cell>
+<Cell  ><Data ss:Type="String">3042291602</Data></Cell>
+<Cell  ><Data ss:Type="String">王艳</Data></Cell>
+<Cell  ><Data ss:Type="String">510703198401201924</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">6</Data></Cell>
+<Cell  ><Data ss:Type="String">O25120277595234211</Data></Cell>
+<Cell  ><Data ss:Type="String">18784025292</Data></Cell>
+<Cell  ><Data ss:Type="String">四川，绵阳市，涪城区，会仙路17号</Data></Cell>
+<Cell  ><Data ss:Type="String">3042291602</Data></Cell>
+<Cell  ><Data ss:Type="String">黄尧</Data></Cell>
+<Cell  ><Data ss:Type="String">510725198309165420</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">6</Data></Cell>
+<Cell  ><Data ss:Type="String">O25120277595131471</Data></Cell>
+<Cell  ><Data ss:Type="String">13990197509</Data></Cell>
+<Cell  ><Data ss:Type="String">四川，绵阳市，涪城区，临园路东段74号2期负1楼</Data></Cell>
+<Cell  ><Data ss:Type="String">3042291602</Data></Cell>
+<Cell  ><Data ss:Type="String">杨程马姣</Data></Cell>
+<Cell  ><Data ss:Type="String">513127198902152623</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">2</Data></Cell>
+<Cell  ><Data ss:Type="String">O25120277595031700</Data></Cell>
+<Cell  ><Data ss:Type="String">18515777773</Data></Cell>
+<Cell  ><Data ss:Type="String">四川，绵阳市，涪城区，临园路东段74号肯德基门口</Data></Cell>
+<Cell  ><Data ss:Type="String">3042291602</Data></Cell>
+<Cell  ><Data ss:Type="String">霍英</Data></Cell>
+<Cell  ><Data ss:Type="String">510722199301084760</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">2</Data></Cell>
+<Cell  ><Data ss:Type="String">O25120271292583892</Data></Cell>
+<Cell  ><Data ss:Type="String">13356362787</Data></Cell>
+<Cell  ><Data ss:Type="String">山东，潍坊市，临朐县，山东潍坊市临朐县县城内文化路2808号</Data></Cell>
+<Cell  ><Data ss:Type="String">6010090701</Data></Cell>
+<Cell  ><Data ss:Type="String">杜泉</Data></Cell>
+<Cell  ><Data ss:Type="String">370705198111140517</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">3</Data></Cell>
+<Cell  ><Data ss:Type="String">O45120950157051927</Data></Cell>
+<Cell  ><Data ss:Type="String">18823716359</Data></Cell>
+<Cell  ><Data ss:Type="String">广东，汕尾市，海丰县，公平镇南盛小区四街十四号</Data></Cell>
+<Cell  ><Data ss:Type="String">3042232901</Data></Cell>
+<Cell  ><Data ss:Type="String">陈宇聪</Data></Cell>
+<Cell  ><Data ss:Type="String">441521198708201392</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">2</Data></Cell>
+<Cell  ><Data ss:Type="String">O25121039856968410</Data></Cell>
+<Cell  ><Data ss:Type="String">18945670233</Data></Cell>
+<Cell  ><Data ss:Type="String">北京，北京市，朝阳区，䢖国路三间房十五号院北岸商业五号楼204室</Data></Cell>
+<Cell  ><Data ss:Type="String">6010090701</Data></Cell>
+<Cell  ><Data ss:Type="String">裴义强</Data></Cell>
+<Cell  ><Data ss:Type="String">230103195501031615</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">2</Data></Cell>
+<Cell  ><Data ss:Type="String">O15121039452924940</Data></Cell>
+<Cell  ><Data ss:Type="String">15864616189</Data></Cell>
+<Cell  ><Data ss:Type="String">山东，菏泽市，牡丹区，黄堽镇杜庙村</Data></Cell>
+<Cell  ><Data ss:Type="String">6010090701</Data></Cell>
+<Cell  ><Data ss:Type="String">杜亚敏</Data></Cell>
+<Cell  ><Data ss:Type="String">372901199001024402</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+
+<Row>
+<Cell  ><Data ss:Type="String">1</Data></Cell>
+<Cell  ><Data ss:Type="String">O45121113057907038</Data></Cell>
+<Cell  ><Data ss:Type="String">18984846610</Data></Cell>
+<Cell  ><Data ss:Type="String">贵州，贵阳市，南明区，花果园一期三栋一单元</Data></Cell>
+<Cell  ><Data ss:Type="String">3042232901</Data></Cell>
+<Cell  ><Data ss:Type="String">梁彬</Data></Cell>
+<Cell  ><Data ss:Type="String">522601198105220819</Data></Cell>
+<Cell  ><Data ss:Type="String">外部订单号已存在</Data></Cell>
+</Row>
+</Table>
+</Worksheet>
+</Workbook>

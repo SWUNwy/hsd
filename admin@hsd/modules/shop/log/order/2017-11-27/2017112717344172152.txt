@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><DTC_Message>
+		<MessageHead>
+		<MessageType>ORDER_INFO</MessageType>
+		<MessageId>48d9dbdd-54f8-b3f7-92fc-496a57c0d36e</MessageId>
+		<ActionType>1</ActionType>
+		<MessageTime>2017-11-27 18:46:50</MessageTime>
+		<SenderId>5012260547</SenderId>
+		<ReceiverId>CQITC</ReceiverId>
+		<SenderAddress />
+	    <ReceiverAddress />
+	    <PlatFormNo />
+	    <CustomCode />
+	    <SeqNo />
+	    <Note />
+		<UserNo>5012260547</UserNo>
+		<Password>1391b8552d4e710f8f432d6da248fc4e</Password>
+		</MessageHead><MessageBody>
+				 <DTCFlow>
+				  <ORDER_HEAD>
+				    <CUSTOMS_CODE>8013</CUSTOMS_CODE>
+				    <SORTLINE_ID>SORTLINE02</SORTLINE_ID>
+				    <BIZ_TYPE_CODE>I20</BIZ_TYPE_CODE>
+				    <ORIGINAL_ORDER_NO>2017112717344172152</ORIGINAL_ORDER_NO>
+				    <ESHOP_ENT_CODE>5012260547</ESHOP_ENT_CODE>
+				    <ESHOP_ENT_NAME>重庆倍赞电子商务有限公司</ESHOP_ENT_NAME>
+				    <DESP_ARRI_COUNTRY_CODE>142</DESP_ARRI_COUNTRY_CODE>
+				    <SHIP_TOOL_CODE>Y</SHIP_TOOL_CODE>
+				    <RECEIVER_ID_NO>511521198804056939</RECEIVER_ID_NO>
+				    <RECEIVER_NAME>王国君</RECEIVER_NAME>
+				    <RECEIVER_ADDRESS>四川宜宾市翠屏区西郊街道金帝庄园AB区之间milkfamily生活馆（竹维斯旁）</RECEIVER_ADDRESS>
+				    <RECEIVER_TEL>15281402167</RECEIVER_TEL>
+				    <GOODS_FEE>518.32</GOODS_FEE>
+				    <TAX_FEE>61.68</TAX_FEE>
+				    <GROSS_WEIGHT>1</GROSS_WEIGHT>
+				    <PROXY_ENT_CODE/>
+				    <PROXY_ENT_NAME/>
+				    <TRANSPORT_FEE>0</TRANSPORT_FEE>
+					<CHECK_TYPE>P</CHECK_TYPE>
+			        <CC_TRADE_CODE>5006660012</CC_TRADE_CODE>
+			        <CC_TRADE_NAME>重庆嘉铂国际物流有限公司</CC_TRADE_NAME>
+				    <UNI_ESHOP_ENT_CODE/>
+				    <UNI_ESHOP_ENT_NAME/>
+				    <EBP_CODE>5012260547</EBP_CODE>
+        			<EBP_NAME>重庆倍赞电子商务有限公司</EBP_NAME>
+        			<ASSURE_CODE>5012260547</ASSURE_CODE>
+        			<SEND_ENT_CODE>5012260547</SEND_ENT_CODE>
+				    <BUYER_REG_NO>15281402167</BUYER_REG_NO>
+				    <BUYER_NAME>王国君</BUYER_NAME>
+					<BUYER_ID_TYPE>1</BUYER_ID_TYPE>
+					<BUYER_ID>511521198804056939</BUYER_ID>
+					<DISCOUNT>0</DISCOUNT>
+					<ACTUAL_PAID>580.00</ACTUAL_PAID>
+					<INSURED_FEE>0</INSURED_FEE>
+					<NET_WEIGHT>0.8</NET_WEIGHT>
+					
+				  <ORDER_DETAIL>
+				      <SKU>3042232901</SKU>
+				      <GOODS_SPEC>1品名:婴幼儿奶粉;成分:脱盐乳精,植物油,低聚糖,乳糖,,磷酸钙,柠檬酸钾,维生素,大豆软磷脂,氯化胆碱,牛磺酸,核苷酸;3用途:供婴幼儿食用,1段;4包装规格:0.8kg/盒;5品牌:德国爱他美牌</GOODS_SPEC>
+				      <GOODS_NAME>德国爱他美1段</GOODS_NAME>
+				      <HS_CODE>1901101000</HS_CODE>
+				      <CURRENCY_CODE>142</CURRENCY_CODE>
+				      <PRICE>129.58</PRICE>
+				      <QTY>4</QTY>
+				      <GOODS_FEE>518.32</GOODS_FEE>
+				      <TAX_FEE>61.68</TAX_FEE>
+				      <COUNTRY>304</COUNTRY>
+				      <UNIT_CODE>122</UNIT_CODE>
+          			  <NOTE></NOTE>
+				      <G_NUM>1</G_NUM>
+				      <QTY2></QTY2>
+				      <UNIT2></UNIT2>
+			      </ORDER_DETAIL>
+			      </ORDER_HEAD>
+			</DTCFlow>
+		  </MessageBody>
+		</DTC_Message>

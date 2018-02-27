@@ -1,0 +1,3 @@
+[2018-01-05 14:23:30] /hsd/admin@hsd/modules/shop/index.php?m=push&a=pushCustoms&order_id=4136 ( m=push&a=pushcustoms ) 
+ERR: Db Error: Unknown column 'wms_name' in 'field list'
+SELECT wms_name,wms_code FROM `kjyp_ci_storage` WHERE ( id = '1' ) LIMIT 1  

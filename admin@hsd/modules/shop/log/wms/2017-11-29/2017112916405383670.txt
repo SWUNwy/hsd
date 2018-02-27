@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017112916405383670
+                    [ferpbillno] => 036.2017112916405383670
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-29 17:33:07
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 马秀梅
+                    [fc_province] => 650000
+                    [fc_provincename] => 新疆维吾尔自治区
+                    [fc_city] => 652200
+                    [fc_cityname] => 哈密地区
+                    [fc_area] => 652201
+                    [fc_areaname] => 哈密市
+                    [fnotes] => 新疆维吾尔自治区哈密地区哈密市伊州区兵团黄田农场全鑫小区15号楼2单元202
+                    [fc_zip] => 839000
+                    [fc_contact1] => 马秀梅
+                    [fc_phone] => 13579664589
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 900.00
+                    [fhwab] => 95.71
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091002002
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 150.00
+                                    [famount] => 900.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

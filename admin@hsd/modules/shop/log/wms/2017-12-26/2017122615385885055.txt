@@ -1,0 +1,72 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017122615385885055
+                    [ferpbillno] => 036.2017122615385885055
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-12-26 15:46:15
+                    [fremark] => 残次01
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 王冬松
+                    [fc_province] => 340000
+                    [fc_provincename] => 安徽省
+                    [fc_city] => 341200
+                    [fc_cityname] => 阜阳市
+                    [fc_area] => 341202
+                    [fc_areaname] => 颍州区
+                    [fnotes] => 安徽省阜阳市颍州区安徽省阜阳文峰路14号碟海文化
+                    [fc_zip] => 236001
+                    [fc_contact1] => 王冬松
+                    [fc_phone] => 15905589118
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 870.00
+                    [fhwab] => 92.52
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091109605
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 150.00
+                                    [famount] => 870.00
+                                    [fremarkdtail] => 个
+                                )
+
+                            [1] => Array
+                                (
+                                    [ficno] => 036.6010017401
+                                    [funit] => 个
+                                    [fqty] => 4
+                                    [fprice] => 160.00
+                                    [famount] => 640.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

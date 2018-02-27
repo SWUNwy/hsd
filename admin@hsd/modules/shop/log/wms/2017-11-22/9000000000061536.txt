@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 9000000000061536
+                    [ferpbillno] => 036.9000000000061536
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-22 11:45:30
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 吴琰
+                    [fc_province] => 650000
+                    [fc_provincename] => 新疆
+                    [fc_city] => 650100
+                    [fc_cityname] => 乌鲁木齐市
+                    [fc_area] => 650105
+                    [fc_areaname] => 水磨沟区
+                    [fnotes] => 新疆乌鲁木齐市水磨沟区鲁木齐市水磨沟区华凌干果市场C区东直排69号
+                    [fc_zip] => 830017
+                    [fc_contact1] => 吴琰
+                    [fc_phone] => 13039463298
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 780.00
+                    [fhwab] => 82.95
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 130.00
+                                    [famount] => 780.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

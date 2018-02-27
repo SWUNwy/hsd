@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017120116430092552
+                    [ferpbillno] => 036.2017120116430092552
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-12-01 17:47:46
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 谢梦熊
+                    [fc_province] => 530000
+                    [fc_provincename] => 云南省
+                    [fc_city] => 533100
+                    [fc_cityname] => 德宏傣族景颇族自治州
+                    [fc_area] => 533103
+                    [fc_areaname] => 芒市
+                    [fnotes] => 云南省德宏傣族景颇族自治州芒市潞西市芒市团结大街老一小斜对面130-5号
+                    [fc_zip] => 678400
+                    [fc_contact1] => 谢梦熊
+                    [fc_phone] => 15184949446
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 780.00
+                    [fhwab] => 82.95
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3091013601
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 130.00
+                                    [famount] => 780.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)

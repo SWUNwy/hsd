@@ -1,0 +1,363 @@
+[2017-11-26 00:02:30] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%BE%8E%E7%B4%A0&gift=1&area_id=19 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%美素%') OR (goods_jingle LIKE '%美素%') ) AND ( areaid_1 = '19' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:13:51] /index.php?m=index&a=index&m=search&a=index&keyword=&gift=1&area_id=32 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '32' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:16:46] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%BE%8E%E7%B4%A0&gift=1&area_id=18 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%美素%') OR (goods_jingle LIKE '%美素%') ) AND ( areaid_1 = '18' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:17:38] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%89%9B%E6%A0%8F&gift=1&area_id=6 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%牛栏%') OR (goods_jingle LIKE '%牛栏%') ) AND ( areaid_1 = '6' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:20:19] /index.php?m=index&a=index&m=search&a=index&keyword=&gift=1&area_id=23 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '23' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:20:59] /index.php?m=index&a=index&m=search&a=index&keyword=&gift=1&area_id=16 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '16' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:21:44] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&area_id=10&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '10' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:25:12] /index.php?m=index&a=index&m=search&a=index&keyword=&area_id=2&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '2' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:27:41] /index.php?m=index&a=index&m=search&a=index&keyword=&area_id=0&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:28:59] /index.php?m=index&a=index&m=search&a=index&keyword=&area_id=2&gift=1&order=0&key=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '2' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:41:56] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%BE%8E%E7%B4%A0&gift=1&area_id=19 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%美素%') OR (goods_jingle LIKE '%美素%') ) AND ( areaid_1 = '19' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 00:47:04] /index.php?m=index&a=index&m=search&a=index&keyword=&area_id=2&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '2' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 01:29:32] /index.php?m=index&a=index&m=search&a=index&keyword=&gift=1&area_id=11 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '11' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 01:44:40] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&area_id=35&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '35' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 01:47:55] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%89%9B%E6%A0%8F&gift=1&area_id=6 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%牛栏%') OR (goods_jingle LIKE '%牛栏%') ) AND ( areaid_1 = '6' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 01:56:13] /index.php?m=index&a=index&m=search&a=index&keyword=&area_id=16&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '16' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 02:03:34] /index.php?m=index&a=index&m=search&a=index&keyword=&gift=1&area_id=31 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '31' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 02:07:23] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&key=1&order=2 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 02:07:55] /index.php?m=index&a=index&m=search&a=index&keyword=&gift=1&area_id=31&order=0&key=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '31' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 02:11:08] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%89%9B%E6%A0%8F&gift=1&key=3&order=2 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%牛栏%') OR (goods_jingle LIKE '%牛栏%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 02:14:55] /index.php?m=index&a=index&m=search&a=index&keyword=&gift=1&area_id=13 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '13' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 02:42:42] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%88%B1%E4%BB%96%E7%BE%8E&area_id=17&order=0&key=0&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%爱他美%') OR (goods_jingle LIKE '%爱他美%') ) AND ( areaid_1 = '17' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 03:29:25] /index.php?m=index&a=index&m=search&a=index&keyword=&gift=1&area_id=31 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '31' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 03:34:22] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&area_id=4&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '4' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 03:49:31] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%BE%8E%E7%B4%A0&gift=1&area_id=11 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%美素%') OR (goods_jingle LIKE '%美素%') ) AND ( areaid_1 = '11' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 03:53:17] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&area_id=0&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 04:01:05] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%88%B1%E4%BB%96%E7%BE%8E&gift=1&area_id=8 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%爱他美%') OR (goods_jingle LIKE '%爱他美%') ) AND ( areaid_1 = '8' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 05:01:34] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%88%B1%E4%BB%96%E7%BE%8E&gift=1&area_id=10 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%爱他美%') OR (goods_jingle LIKE '%爱他美%') ) AND ( areaid_1 = '10' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 05:02:32] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%88%B1%E4%BB%96%E7%BE%8E&gift=1&area_id=10&key=3&order=2 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%爱他美%') OR (goods_jingle LIKE '%爱他美%') ) AND ( areaid_1 = '10' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 05:12:44] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%BE%8E%E7%B4%A0&gift=1&area_id=3 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%美素%') OR (goods_jingle LIKE '%美素%') ) AND ( areaid_1 = '3' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 05:20:18] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%88%B1%E4%BB%96%E7%BE%8E&area_id=9&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%爱他美%') OR (goods_jingle LIKE '%爱他美%') ) AND ( areaid_1 = '9' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 05:31:39] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%89%9B%E6%A0%8F&gift=1&area_id=25 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%牛栏%') OR (goods_jingle LIKE '%牛栏%') ) AND ( areaid_1 = '25' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 05:32:49] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%89%9B%E6%A0%8F&gift=1&area_id=15 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%牛栏%') OR (goods_jingle LIKE '%牛栏%') ) AND ( areaid_1 = '15' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 06:09:31] /index.php?m=index&a=index&m=search&a=index&keyword=&gift=1&area_id=10 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( areaid_1 = '10' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 06:28:25] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%89%9B%E6%A0%8F&area_id=26&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%牛栏%') OR (goods_jingle LIKE '%牛栏%') ) AND ( areaid_1 = '26' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 13:39:47] /index.php?m=index&a=index&m=search&a=index&cate_id=255&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( gc_id_2 = '255' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 14:47:52] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=26&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '26' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 14:51:39] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=17&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '17' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 14:55:26] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=19&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '19' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 14:59:13] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=7&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '7' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 15:14:21] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=33&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '33' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 15:18:08] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=4&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '4' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 15:21:55] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=28&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '28' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 15:29:30] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=32&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '32' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 15:40:50] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=22&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '22' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 15:48:24] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=11&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '11' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 15:59:45] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=13&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '13' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 16:07:19] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=27&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '27' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 16:18:40] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=7&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '7' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 16:22:27] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=24&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '24' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 16:26:26] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=30&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '30' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 16:33:48] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=28&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '28' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 16:37:35] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=33&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '33' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 16:45:09] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=16&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '16' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 16:52:43] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=19&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '19' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 16:56:30] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=18&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '18' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:04:04] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=23&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '23' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:07:51] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=4&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '4' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:07:59] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%88%B1%E4%BB%96%E7%BE%8E&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%爱他美%') OR (goods_jingle LIKE '%爱他美%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:08:14] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%89%9B%E6%A0%8F&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%牛栏%') OR (goods_jingle LIKE '%牛栏%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:08:32] /index.php?m=index&a=index&m=search&a=index&keyword=%E7%BE%8E%E7%B4%A0&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%美素%') OR (goods_jingle LIKE '%美素%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:08:42] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:19:13] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=5&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '5' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:31:48] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=27&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '27' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:36:37] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=0&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:45:42] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=20&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '20' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 17:53:16] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=10&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '10' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:08:24] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=16&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '16' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:16:34] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=12&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '12' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:19:46] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=15&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '15' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:23:32] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=8&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '8' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:27:19] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=2&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '2' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:31:19] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=18&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '18' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:34:54] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=14&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '14' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:38:40] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=9&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '9' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:42:27] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=27&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '27' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 18:50:02] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=3&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '3' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 19:01:32] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=23&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '23' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 19:05:10] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=3&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '3' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 19:24:04] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=32&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '32' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 19:27:51] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=26&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '26' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 19:35:25] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=17&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '17' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 19:39:12] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=9&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '9' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 19:42:59] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=31&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '31' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 19:46:47] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=20&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '20' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 19:58:08] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=11&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '11' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:06:20] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=8&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '8' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:09:30] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=25&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '25' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:20:50] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=17&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '17' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:24:37] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=21&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '21' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:28:24] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=10&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '10' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:32:11] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=5&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '5' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:39:46] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=0&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:43:32] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=12&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '12' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:51:06] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=25&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '25' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 20:54:53] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=35&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '35' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 21:06:16] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&type=1&key=2&order=1&area_id=27&gift=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '27' ) AND ( is_own_shop = '1' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 21:10:02] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=15&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '15' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 21:25:10] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=30&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '30' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 21:28:56] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=14&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '14' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 21:32:43] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=34&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '34' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 21:36:34] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=22&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '22' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 21:47:51] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=35&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '35' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:02:59] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=34&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '34' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:06:49] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=25&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '25' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:14:21] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=6&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '6' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:18:08] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=15&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '15' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:26:43] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=31&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '31' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:33:16] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=21&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '21' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:37:03] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=13&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '13' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:44:38] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=2&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '2' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:48:24] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=0&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:52:11] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=1&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '1' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 22:55:58] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=19&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '19' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 23:01:18] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=12 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '12' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 23:03:32] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=33&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '33' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 23:30:01] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=31&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '31' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 23:37:35] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=18&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '18' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 23:41:22] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=0&order=0&area_id=3&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '3' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 23:48:56] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&gift=1&area_id=5&key=3&order=1 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '5' ) AND ( have_gift = '1' ) LIMIT 1  
+[2017-11-26 23:52:43] /index.php?m=index&a=index&m=search&a=index&keyword=%E8%8A%B1%E7%8E%8B&key=1&order=1&area_id=7&gift=1&type=0 ( m=search&a=index ) 
+ERR: Db Error: Unknown column 'have_gift' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `kjyp_goods_common` WHERE ( (goods_name LIKE '%花王%') OR (goods_jingle LIKE '%花王%') ) AND ( areaid_1 = '7' ) AND ( have_gift = '1' ) LIMIT 1  

@@ -1,0 +1,21 @@
+Array
+(
+    [payAmount] => 26000
+    [payDatetime] => 20171201174030
+    [signType] => 1
+    [returnDatetime] => 20171201174032
+    [paymentOrderId] => 201712011740062615
+    [version] => v1.0
+    [issuerId] => 
+    [orderNo] => 2017120116321135243
+    [payResult] => 1
+    [ext1] => 950565461131806006
+    [ext2] => 137F524797673B17D0893D7CA2B672D9
+    [orderAmount] => 26000
+    [signMsg] => BIwWKmHyeNv/Aq88rq+wq0lx6j5zahLqef0JbDY0qPrN9z/qi3MCiXK1tUdVdQr1Re0fE34VhmSBlvwWB+dyW8l97CDq4MnPoXK+IAW/co1vt3n7ru7yrudgtz2f60h1f/YWBadHQiQiL7l2VvFMtZRy4laIc8Vc2sQNvp7cIUA=
+    [errorCode] => 
+    [payType] => 0
+    [merchantId] => 109310231716002
+    [language] => 
+    [orderDatetime] => 20171201174005
+)

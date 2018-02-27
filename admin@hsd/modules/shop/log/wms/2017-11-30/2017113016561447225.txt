@@ -1,0 +1,62 @@
+Array
+(
+    [action] => billfromerptowms
+    [data] => Array
+        (
+            [head] => Array
+                (
+                    [fbilltype] => 2
+                    [faccountno] => 036
+                    [ferporderbillno] => 2017113016561447225
+                    [ferpbillno] => 036.2017113016561447225
+                    [fcustno] => 036
+                    [fstockinno] => 01
+                    [fstockoutno] => 01
+                    [fbillerno] => 
+                    [fbillrepno] => 
+                    [fcheckerno] => 
+                    [fbilldate] => 2017-11-30 18:03:17
+                    [fremark] => 
+                    [fdischargeplace] => 07
+                    [fdeliverplace] => 
+                    [fconsigneekey] => 晏山
+                    [fc_province] => 340000
+                    [fc_provincename] => 安徽
+                    [fc_city] => 340100
+                    [fc_cityname] => 合肥市
+                    [fc_area] => 340123
+                    [fc_areaname] => 肥西县
+                    [fnotes] => 安徽合肥市肥西县安徽省合肥市肥西县人民西路翰林水岸8-2502
+                    [fc_zip] => 231200
+                    [fc_contact1] => 晏山
+                    [fc_phone] => 15855100707
+                    [fhgbarcode] => 
+                    [fbigpen] => 
+                    [ftxlogisticid] => 
+                    [fmawb] => 870.00
+                    [fhwab] => 92.52
+                    [fbjflag] => N
+                    [fbjamt] => 0
+                )
+
+            [detail] => Array
+                (
+                    [list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [ficno] => 036.3042232901
+                                    [funit] => 个
+                                    [fqty] => 6
+                                    [fprice] => 145.00
+                                    [famount] => 870.00
+                                    [fremarkdtail] => 个
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
