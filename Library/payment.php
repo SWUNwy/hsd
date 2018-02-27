@@ -308,12 +308,19 @@ class paymentControl extends BaseHomeControl{
 
             file_put_contents("./theNotify.txt",print_r($_POST,true),FILE_APPEND);
 
+
             if ($_POST['merchant_code'] == "2020141350") {      //排除返回的总数据
              
                 $order_type = 'real_order';
                 $pay_sn = explode(',', $_POST['extra_return_param']);
                 $out_trade_no = $_POST['order_no'];
                 $trade_no = $_POST['trade_no'];
+
+                $arr = array(
+                    'out_trade_no' => $out_trade_no,
+                    'trade_no'     => $trade_no,
+                );
+                file_put_contents("./arr.txt",print_r($arr,true),FILE_APPEND);
 
                 $model_pd = Model('predeposit');
                 $logic_payment = Logic('payment');
@@ -360,7 +367,7 @@ class paymentControl extends BaseHomeControl{
 
                 //购买商品
 
-                    $result = $logic_payment->updateRealOrder($out_trade_no, $payment_info['payment_code'], $order_list, $trade_no);
+                $result = $logic_payment->updateRealOrder($out_trade_no, $payment_info['payment_code'], $order_list, $trade_no);
                     // file_put_contents("./order_list.txt",print_r($order_list,true),FILE_APPEND);
 
                 if ($result['state']) {
@@ -376,13 +383,8 @@ class paymentControl extends BaseHomeControl{
 
                 exit($result['state'] ? $success : $fail);
 
-                // foreach ($order_list as $order_data) {
-                //     file_put_contents("./oinfo.txt",print_r($order_data,true),FILE_APPEND);
-                //     // $model_order= Model('order');
-                //     // $order_infos = $model_order->getOrderInfo( $out_trade_no,array('order_goods','order_common'));
-                //     // file_put_contents("./oinfo.txt",print_r($order_infos,true),FILE_APPEND);                       
-                //    }
-            }
+            }                
+
         }
     }
 

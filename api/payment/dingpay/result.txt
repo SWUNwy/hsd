@@ -10773,3 +10773,267 @@ Array
         )
 
 )
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
+Array
+(
+    [state] => 1
+    [msg] => 
+    [data] => Array
+        (
+            [api_pay_state] => 1
+            [pay_sn] => Array
+                (
+                    [0] => 1
+                )
+
+            [subject] => 实物订单_
+            [order_type] => real_order
+            [order_list] => Array
+                (
+                )
+
+            [if_buyer_repay] => 
+        )
+
+)
