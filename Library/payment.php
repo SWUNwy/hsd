@@ -322,16 +322,15 @@ class paymentControl extends BaseHomeControl{
                 );
                 file_put_contents("./arr.txt",print_r($arr,true),FILE_APPEND);
 
-                $model_pd = Model('predeposit');
                 $logic_payment = Logic('payment');
 
 
-                $result = $logic_payment->getDingPayOrderInfo($pay_sn);
+                $result = $logic_payment->getDingPayOrderInfo($out_trade_no);
                 file_put_contents("./result.txt",print_r($result,true),FILE_APPEND);
 
-                if (intval($result['data']['api_pay_state'])) {
-                    exit($success);
-                }
+                // if (intval($result['data']['api_pay_state'])) {
+                //     exit($success);
+                // }
 
                 $order_list = $result['data']['order_list'];
                 
@@ -351,24 +350,14 @@ class paymentControl extends BaseHomeControl{
 
                 //取得支付方式
                 $result = $logic_payment->getPaymentInfo($_GET['payment_code']);
-                if (!$result['state']) {
-                    exit($fail);
-                }
+
                 $payment_info = $result['data'];
 
-                //创建支付接口对象
-                $payment_api    = new $payment_info['payment_code']($payment_info,$order_pay_info);
-
-                //对进入的参数进行远程数据判断
-                $verify = $payment_api->notify_verify();
-                if (!$verify) {
-                    exit($fail);
-                }
 
                 //购买商品
 
                 $result = $logic_payment->updateRealOrder($out_trade_no, $payment_info['payment_code'], $order_list, $trade_no);
-                    // file_put_contents("./order_list.txt",print_r($order_list,true),FILE_APPEND);
+                // file_put_contents("./order_list.txt",print_r($order_list,true),FILE_APPEND);
 
                 if ($result['state']) {
                     //记录消费日志

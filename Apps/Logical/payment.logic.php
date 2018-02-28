@@ -248,12 +248,12 @@ class paymentLogic {
      * @param int $member_id
      * @return array
      */
-    public function getDingPayOrderInfo($pay_sn, $member_id = null) {
+    public function getDingPayOrderInfo($order_sn, $member_id = null) {
 
         //验证订单信息
         $model_order = Model('order');
         $condition = array();
-        $condition['pay_sn'] = array('in',$pay_sn);
+        $condition['order_sn'] = array('in',$order_sn);
         if (!empty($member_id)) {
             $condition['buyer_id'] = $member_id;
         }
@@ -268,7 +268,7 @@ class paymentLogic {
             }
         }
         $order_pay_info['api_pay_state'] = $state;
-        $order_pay_info['pay_sn'] = $pay_sn;
+        $order_pay_info['order_sn'] = $order_sn;
         if(count($pay_sn_arr)>1){
             $order_pay_info['subject'] = '实物订单_批量支付';  
         }else{
@@ -277,7 +277,7 @@ class paymentLogic {
         $order_pay_info['order_type'] = 'real_order';
 
         $condition = array();
-        $condition['pay_sn'] = array('in',$pay_sn);
+        $condition['order_sn'] = array('in',$order_sn);
 
         //同步异步通知时,预定支付尾款时需要用到已经支付状态
         $condition['order_state'] = array('in',array(ORDER_STATE_NEW,ORDER_STATE_PAY));

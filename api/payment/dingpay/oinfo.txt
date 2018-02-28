@@ -2698,3 +2698,543 @@ Array
         )
 
 )
+Array
+(
+    [order_id] => 8542
+    [order_sn] => 20180227173512001
+    [external_order] => WYCS20180227001
+    [pay_sn] => 360573068112847006
+    [store_id] => 3
+    [store_name] => 倍赞店铺
+    [buyer_id] => 6
+    [buyer_name] => 15213351949
+    [buyer_email] => admin@qq.com
+    [buyer_phone] => 0
+    [add_time] => 1519724112
+    [payment_code] => online
+    [payment_time] => 0
+    [finnshed_time] => 0
+    [goods_amount] => 60.77
+    [order_amount] => 0.10
+    [order_tax] => 7.23
+    [rcb_amount] => 0.00
+    [pd_amount] => 0.00
+    [shipping_fee] => 0.00
+    [evaluation_state] => 0
+    [evaluation_again_state] => 0
+    [order_state] => 10
+    [refund_state] => 0
+    [lock_state] => 0
+    [delete_state] => 0
+    [refund_amount] => 0.00
+    [delay_time] => 0
+    [order_from] => 99
+    [shipping_code] => 
+    [order_type] => 1
+    [api_pay_time] => 1519727411
+    [chain_id] => 0
+    [chain_code] => 0
+    [rpt_amount] => 0.00
+    [trade_no] => 
+    [member_idcard] => 513030199101065236
+    [is_postkjyp] => 0
+    [order_remark] => 已向海关提交活动报备
+    [fremark] => CC
+    [fstockinno] => 00
+    [is_refund] => 0
+    [tao_state] => 1
+    [d_id] => 0
+    [store_storage_id] => 1
+    [chain_member_id] => 
+    [order_points] => 0
+    [commision_state] => 0
+    [sms_send_num] => 0
+    [is_postmessage] => 0
+    [postmessagetime] => 0
+    [messagecode] => 0
+    [messagememo] => 
+    [hg_order_sn] => 
+    [code] => 
+    [msg_time] => 0
+    [ea_status] => 0
+    [b_status] => 0
+    [pay_status] => 0
+    [pay_msg] => 
+    [tao_status] => 0
+    [jgtime] => 0
+    [goods_commission] => 0.00
+    [cancel_state] => 0
+    [order_list_state] => 0
+    [order_status] => 0
+    [shipping_status] => 0
+    [custom_status] => 0
+    [state_desc] => 
+    [payment_name] => 在线付款
+    [extend_order_common] => Array
+        (
+            [order_id] => 8542
+            [store_id] => 3
+            [shipping_time] => 0
+            [shipping_express_id] => 40
+            [evaluation_time] => 0
+            [evalseller_time] => 
+            [order_message] => 
+            [order_pointscount] => 0
+            [voucher_price] => 
+            [voucher_code] => 
+            [deliver_explain] => 
+            [daddress_id] => 0
+            [reciver_name] => 寇小波
+            [reciver_info] => Array
+                (
+                    [phone] => 15213351949
+                    [mob_phone] => 15213351949
+                    [tel_phone] => 15213351949
+                    [address] => 重庆 重庆市 渝北区 嘉鸿大道时光城19-2
+                    [area] => 重庆 重庆市 渝北区
+                    [street] => 嘉鸿大道时光城19-2
+                    [member_idcard] => 513030199101065236
+                )
+
+            [reciver_province_id] => 0
+            [reciver_city_id] => 0
+            [invoice_info] => 
+            [promotion_info] => 
+            [dlyo_pickup_code] => 
+            [promotion_total] => 0.00
+            [discount] => 0
+        )
+
+    [extend_order_goods] => Array
+        (
+            [0] => Array
+                (
+                    [rec_id] => 8554
+                    [order_id] => 8542
+                    [goods_id] => 152179
+                    [goods_name] => 荷兰牛栏婴幼儿配方奶粉4段 残次 1罐
+                    [goods_price] => 68.00
+                    [goods_num] => 1
+                    [goods_image] => 1_05642480638280033.png
+                    [goods_tax] => 7.23
+                    [goods_pay_price] => 0.10
+                    [store_id] => 3
+                    [buyer_id] => 6
+                    [goods_type] => 3
+                    [promotions_id] => 2
+                    [commis_rate] => 0
+                    [gc_id] => 0
+                    [goods_spec] => 
+                    [goods_contractid] => 
+                    [invite_rates] => 0
+                    [goods_wmstype] => 01
+                )
+
+        )
+
+)
+Array
+(
+    [order_id] => 8543
+    [order_sn] => 20180227173512002
+    [external_order] => WYCS20180227002
+    [pay_sn] => 140573068112899006
+    [store_id] => 3
+    [store_name] => 倍赞店铺
+    [buyer_id] => 6
+    [buyer_name] => 15213351949
+    [buyer_email] => admin@qq.com
+    [buyer_phone] => 0
+    [add_time] => 1519724112
+    [payment_code] => online
+    [payment_time] => 0
+    [finnshed_time] => 0
+    [goods_amount] => 60.77
+    [order_amount] => 0.10
+    [order_tax] => 7.23
+    [rcb_amount] => 0.00
+    [pd_amount] => 0.00
+    [shipping_fee] => 0.00
+    [evaluation_state] => 0
+    [evaluation_again_state] => 0
+    [order_state] => 10
+    [refund_state] => 0
+    [lock_state] => 0
+    [delete_state] => 0
+    [refund_amount] => 0.00
+    [delay_time] => 0
+    [order_from] => 99
+    [shipping_code] => 
+    [order_type] => 1
+    [api_pay_time] => 1519727411
+    [chain_id] => 0
+    [chain_code] => 0
+    [rpt_amount] => 0.00
+    [trade_no] => 
+    [member_idcard] => 513030199101065236
+    [is_postkjyp] => 0
+    [order_remark] => 已向海关提交活动报备
+    [fremark] => CC
+    [fstockinno] => 00
+    [is_refund] => 0
+    [tao_state] => 1
+    [d_id] => 0
+    [store_storage_id] => 1
+    [chain_member_id] => 
+    [order_points] => 0
+    [commision_state] => 0
+    [sms_send_num] => 0
+    [is_postmessage] => 0
+    [postmessagetime] => 0
+    [messagecode] => 0
+    [messagememo] => 
+    [hg_order_sn] => 
+    [code] => 
+    [msg_time] => 0
+    [ea_status] => 0
+    [b_status] => 0
+    [pay_status] => 0
+    [pay_msg] => 
+    [tao_status] => 0
+    [jgtime] => 0
+    [goods_commission] => 0.00
+    [cancel_state] => 0
+    [order_list_state] => 0
+    [order_status] => 0
+    [shipping_status] => 0
+    [custom_status] => 0
+    [state_desc] => 
+    [payment_name] => 在线付款
+    [extend_order_common] => Array
+        (
+            [order_id] => 8543
+            [store_id] => 3
+            [shipping_time] => 0
+            [shipping_express_id] => 40
+            [evaluation_time] => 0
+            [evalseller_time] => 
+            [order_message] => 
+            [order_pointscount] => 0
+            [voucher_price] => 
+            [voucher_code] => 
+            [deliver_explain] => 
+            [daddress_id] => 0
+            [reciver_name] => 寇小波
+            [reciver_info] => Array
+                (
+                    [phone] => 15213351949
+                    [mob_phone] => 15213351949
+                    [tel_phone] => 15213351949
+                    [address] => 重庆 重庆市 渝北区 嘉鸿大道时光城19-2
+                    [area] => 重庆 重庆市 渝北区
+                    [street] => 嘉鸿大道时光城19-2
+                    [member_idcard] => 513030199101065236
+                )
+
+            [reciver_province_id] => 0
+            [reciver_city_id] => 0
+            [invoice_info] => 
+            [promotion_info] => 
+            [dlyo_pickup_code] => 
+            [promotion_total] => 0.00
+            [discount] => 0
+        )
+
+    [extend_order_goods] => Array
+        (
+            [0] => Array
+                (
+                    [rec_id] => 8555
+                    [order_id] => 8543
+                    [goods_id] => 152179
+                    [goods_name] => 荷兰牛栏婴幼儿配方奶粉4段 残次 1罐
+                    [goods_price] => 68.00
+                    [goods_num] => 1
+                    [goods_image] => 1_05642480638280033.png
+                    [goods_tax] => 7.23
+                    [goods_pay_price] => 0.10
+                    [store_id] => 3
+                    [buyer_id] => 6
+                    [goods_type] => 3
+                    [promotions_id] => 2
+                    [commis_rate] => 0
+                    [gc_id] => 0
+                    [goods_spec] => 
+                    [goods_contractid] => 
+                    [invite_rates] => 0
+                    [goods_wmstype] => 01
+                )
+
+        )
+
+)
+Array
+(
+    [order_id] => 8544
+    [order_sn] => 2018022810113800002
+    [external_order] => WYCS20180227001
+    [pay_sn] => 190573127898453006
+    [store_id] => 3
+    [store_name] => 倍赞店铺
+    [buyer_id] => 6
+    [buyer_name] => 15213351949
+    [buyer_email] => admin@qq.com
+    [buyer_phone] => 0
+    [add_time] => 1519783898
+    [payment_code] => online
+    [payment_time] => 0
+    [finnshed_time] => 0
+    [goods_amount] => 60.77
+    [order_amount] => 0.10
+    [order_tax] => 7.23
+    [rcb_amount] => 0.00
+    [pd_amount] => 0.00
+    [shipping_fee] => 0.00
+    [evaluation_state] => 0
+    [evaluation_again_state] => 0
+    [order_state] => 10
+    [refund_state] => 0
+    [lock_state] => 0
+    [delete_state] => 0
+    [refund_amount] => 0.00
+    [delay_time] => 0
+    [order_from] => 99
+    [shipping_code] => 
+    [order_type] => 1
+    [api_pay_time] => 1519785259
+    [chain_id] => 0
+    [chain_code] => 0
+    [rpt_amount] => 0.00
+    [trade_no] => 
+    [member_idcard] => 513030199101065236
+    [is_postkjyp] => 0
+    [order_remark] => 已向海关提交活动报备
+    [fremark] => CC
+    [fstockinno] => 00
+    [is_refund] => 0
+    [tao_state] => 1
+    [d_id] => 0
+    [store_storage_id] => 1
+    [chain_member_id] => 
+    [order_points] => 0
+    [commision_state] => 0
+    [sms_send_num] => 0
+    [is_postmessage] => 0
+    [postmessagetime] => 0
+    [messagecode] => 0
+    [messagememo] => 
+    [hg_order_sn] => 
+    [code] => 
+    [msg_time] => 0
+    [ea_status] => 0
+    [b_status] => 0
+    [pay_status] => 0
+    [pay_msg] => 
+    [tao_status] => 0
+    [jgtime] => 0
+    [goods_commission] => 0.00
+    [cancel_state] => 0
+    [order_list_state] => 0
+    [order_status] => 0
+    [shipping_status] => 0
+    [custom_status] => 0
+    [state_desc] => 
+    [payment_name] => 在线付款
+    [extend_order_common] => Array
+        (
+            [order_id] => 8544
+            [store_id] => 3
+            [shipping_time] => 0
+            [shipping_express_id] => 40
+            [evaluation_time] => 0
+            [evalseller_time] => 
+            [order_message] => 
+            [order_pointscount] => 0
+            [voucher_price] => 
+            [voucher_code] => 
+            [deliver_explain] => 
+            [daddress_id] => 0
+            [reciver_name] => 寇小波
+            [reciver_info] => Array
+                (
+                    [phone] => 15213351949
+                    [mob_phone] => 15213351949
+                    [tel_phone] => 15213351949
+                    [address] => 重庆 重庆市 渝北区 嘉鸿大道时光城19-2
+                    [area] => 重庆 重庆市 渝北区
+                    [street] => 嘉鸿大道时光城19-2
+                    [member_idcard] => 513030199101065236
+                )
+
+            [reciver_province_id] => 0
+            [reciver_city_id] => 0
+            [invoice_info] => 
+            [promotion_info] => 
+            [dlyo_pickup_code] => 
+            [promotion_total] => 0.00
+            [discount] => 0
+        )
+
+    [extend_order_goods] => Array
+        (
+            [0] => Array
+                (
+                    [rec_id] => 8556
+                    [order_id] => 8544
+                    [goods_id] => 152179
+                    [goods_name] => 荷兰牛栏婴幼儿配方奶粉4段 残次 1罐
+                    [goods_price] => 68.00
+                    [goods_num] => 1
+                    [goods_image] => 1_05642480638280033.png
+                    [goods_tax] => 7.23
+                    [goods_pay_price] => 0.10
+                    [store_id] => 3
+                    [buyer_id] => 6
+                    [goods_type] => 3
+                    [promotions_id] => 2
+                    [commis_rate] => 0
+                    [gc_id] => 0
+                    [goods_spec] => 
+                    [goods_contractid] => 
+                    [invite_rates] => 0
+                    [goods_wmstype] => 01
+                )
+
+        )
+
+)
+Array
+(
+    [order_id] => 8545
+    [order_sn] => 2018022810113800003
+    [external_order] => WYCS20180227002
+    [pay_sn] => 420573127898503006
+    [store_id] => 3
+    [store_name] => 倍赞店铺
+    [buyer_id] => 6
+    [buyer_name] => 15213351949
+    [buyer_email] => admin@qq.com
+    [buyer_phone] => 0
+    [add_time] => 1519783898
+    [payment_code] => online
+    [payment_time] => 0
+    [finnshed_time] => 0
+    [goods_amount] => 60.77
+    [order_amount] => 0.10
+    [order_tax] => 7.23
+    [rcb_amount] => 0.00
+    [pd_amount] => 0.00
+    [shipping_fee] => 0.00
+    [evaluation_state] => 0
+    [evaluation_again_state] => 0
+    [order_state] => 10
+    [refund_state] => 0
+    [lock_state] => 0
+    [delete_state] => 0
+    [refund_amount] => 0.00
+    [delay_time] => 0
+    [order_from] => 99
+    [shipping_code] => 
+    [order_type] => 1
+    [api_pay_time] => 1519785259
+    [chain_id] => 0
+    [chain_code] => 0
+    [rpt_amount] => 0.00
+    [trade_no] => 
+    [member_idcard] => 513030199101065236
+    [is_postkjyp] => 0
+    [order_remark] => 已向海关提交活动报备
+    [fremark] => CC
+    [fstockinno] => 00
+    [is_refund] => 0
+    [tao_state] => 1
+    [d_id] => 0
+    [store_storage_id] => 1
+    [chain_member_id] => 
+    [order_points] => 0
+    [commision_state] => 0
+    [sms_send_num] => 0
+    [is_postmessage] => 0
+    [postmessagetime] => 0
+    [messagecode] => 0
+    [messagememo] => 
+    [hg_order_sn] => 
+    [code] => 
+    [msg_time] => 0
+    [ea_status] => 0
+    [b_status] => 0
+    [pay_status] => 0
+    [pay_msg] => 
+    [tao_status] => 0
+    [jgtime] => 0
+    [goods_commission] => 0.00
+    [cancel_state] => 0
+    [order_list_state] => 0
+    [order_status] => 0
+    [shipping_status] => 0
+    [custom_status] => 0
+    [state_desc] => 
+    [payment_name] => 在线付款
+    [extend_order_common] => Array
+        (
+            [order_id] => 8545
+            [store_id] => 3
+            [shipping_time] => 0
+            [shipping_express_id] => 40
+            [evaluation_time] => 0
+            [evalseller_time] => 
+            [order_message] => 
+            [order_pointscount] => 0
+            [voucher_price] => 
+            [voucher_code] => 
+            [deliver_explain] => 
+            [daddress_id] => 0
+            [reciver_name] => 寇小波
+            [reciver_info] => Array
+                (
+                    [phone] => 15213351949
+                    [mob_phone] => 15213351949
+                    [tel_phone] => 15213351949
+                    [address] => 重庆 重庆市 渝北区 嘉鸿大道时光城19-2
+                    [area] => 重庆 重庆市 渝北区
+                    [street] => 嘉鸿大道时光城19-2
+                    [member_idcard] => 513030199101065236
+                )
+
+            [reciver_province_id] => 0
+            [reciver_city_id] => 0
+            [invoice_info] => 
+            [promotion_info] => 
+            [dlyo_pickup_code] => 
+            [promotion_total] => 0.00
+            [discount] => 0
+        )
+
+    [extend_order_goods] => Array
+        (
+            [0] => Array
+                (
+                    [rec_id] => 8557
+                    [order_id] => 8545
+                    [goods_id] => 152179
+                    [goods_name] => 荷兰牛栏婴幼儿配方奶粉4段 残次 1罐
+                    [goods_price] => 68.00
+                    [goods_num] => 1
+                    [goods_image] => 1_05642480638280033.png
+                    [goods_tax] => 7.23
+                    [goods_pay_price] => 0.10
+                    [store_id] => 3
+                    [buyer_id] => 6
+                    [goods_type] => 3
+                    [promotions_id] => 2
+                    [commis_rate] => 0
+                    [gc_id] => 0
+                    [goods_spec] => 
+                    [goods_contractid] => 
+                    [invite_rates] => 0
+                    [goods_wmstype] => 01
+                )
+
+        )
+
+)
