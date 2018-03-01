@@ -27,7 +27,7 @@ class dingpayModel extends Model {
 		$currency_id = "CNY";	
 
 		$transport_amount = "0";		//物流费用，以分为单位
-		$product_amount = sprintf("%.2f",$order['order_amount']/1.119)*100;			//商品费用，以分为单位sprintf("%.2f",$num)
+		$product_amount = sprintf("%.2f",substr(sprintf("%.3f", $order['order_amount']/1.119), 0, -2))*100;			//商品费用，以分为单位sprintf("%.2f",$num)
 		$duty = sprintf("%.0f",$product_amount*0.119)*1;				//关税，以分为单位
 		$insured_amount = "0";			//运输保险费用
 		$order_amount = $order['order_amount']*100;				//消费者付款金额，以分为单位
