@@ -145,7 +145,7 @@ class datamessageControl extends SystemControl{
 		 //}
 		  
 		$model_hgmessage = Model("hgmessage");
-		$hgmessage = $model_hgmessage->getHgmessageInfo(array('order_sn'=>$order['order_sn'],'messagememo'=>"订单入库成功"));
+		$hgmessage = $model_hgmessage->getHgmessageInfo(array('order_sn'=>$order['order_sn'],'messagememo'=>"KJDD入库成功"));
 		
  		//判断是哪种验证方式 ，如果是收货人R就要提交支付单，如果是支付人P就不用提
  		if($list_setting['hg_type'] == 'R')
@@ -170,17 +170,16 @@ class datamessageControl extends SystemControl{
  			if(empty($hgmessage))
 			{
 				//订单
-		   		$xml_data=$model_datamessage->arraytoxml($order);	
-		   		//$flag=$model_datamessage->datapost($xml_data);
+		   		
 			}
+			$xml_data=$model_datamessage->arraytoxml($order);	
+		   	$flag=$model_datamessage->datapost($xml_data);
+		   	
 			$hgmessage = $model_hgmessage->getHgmessageInfo(array('order_sn'=>$order['order_sn'],'messagememo'=>"支付单入库成功"));
  			//支付企业推支付单的报文
  			if(empty($hgmessage)){ 	
  				$model_payment_message = Model("payment_message");
  				$res = $model_payment_message->SendMessage($order);
- 				var_dump(function_exists("php_curl"));
- 				echo $res ;
- 				die();
  			}
  		}
  		
@@ -443,6 +442,21 @@ class datamessageControl extends SystemControl{
 		
 	}
 	
+	public function paydataOp(){
+		if($_GET['order_id']) {
+            $condition['order_id'] =$_GET['order_id'];
+        }
+		$model_order= Model('order');
+		$model_datamessage= Model('datamessage');
+		$order= $model_order->getOrderInfo( $condition,array('order_goods','order_common'));
+		$model_payment_message = Model("payment_message");
+ 		$res = $model_payment_message->SendPayMessage($order);
+ 		if($res['flag']){
+ 			showMessage("推送成功","",'html','error');
+ 		}else{
+ 			showMessage("推送失败:{$res['pay_msg']}","",'html','error');
+ 		}
+	}
 	
 	//提交运单号
 	public function  postemsOp()
@@ -468,10 +482,10 @@ class datamessageControl extends SystemControl{
 	   			//$update = $model_order->editOrder($update,array('order_sn'=>$order['order_sn']));
   		}
   		$xml_data2=$model_datamessage->arraytoemsxml($order); 		
-		$model_datamessage->datapost($xml_data2);
-		
-		 $xml_data2=$model_datamessage->arraytoemsxml1($order); 		
 		$res = $model_datamessage->datapost($xml_data2);
+		
+		//$xml_data2=$model_datamessage->arraytoemsxml1($order); 		
+		//$res = $model_datamessage->datapost($xml_data2);
      	
 		if($res)
 		{
